@@ -1,0 +1,768 @@
+1: CustomerID, object
+count                5000
+unique               5000
+top       3617-BAILYV-5WS
+freq                    1
+
+
+---------------------
+
+2: Region, category
+count     5000
+unique       5
+top          5
+freq      1027
+
+Categorical Breakdown:
+Region
+1    1009
+2     995
+3    1003
+4     966
+5    1027
+Name: CustomerID, dtype: int64
+Independence Issues:
+TownSize: p-value ->1.753558088e-196
+---------------------
+
+3: TownSize, category
+count     5000
+unique       6
+top          1
+freq      1436
+
+Categorical Breakdown:
+TownSize
+1         1436
+2         1048
+3          907
+4          857
+5          750
+#NULL!       2
+Name: CustomerID, dtype: int64
+Independence Issues:
+Region: p-value ->1.753558088e-196
+---------------------
+
+4: Gender, category
+count       5000
+unique         3
+top       Female
+freq        2494
+
+Categorical Breakdown:
+Gender
+Female    2494
+Male      2473
+NA          33
+Name: CustomerID, dtype: int64
+Independence Issues:
+
+---------------------
+
+5: Age, int64
+count    5000.000000
+mean       47.025600
+std        17.770338
+min        18.000000
+25%        31.000000
+50%        47.000000
+75%        62.000000
+max        79.000000
+
+Normality Snapshot:
+Mean: 47.0256
+Median: 47.0
+Skew: 0.0907600870482
+Kurtosis: -1.18702999556
+
+---------------------
+
+6: EducationYears, int64
+count    5000.000000
+mean       14.543000
+std         3.281083
+min         6.000000
+25%        12.000000
+50%        14.000000
+75%        17.000000
+max        23.000000
+
+Normality Snapshot:
+Mean: 14.543
+Median: 14.0
+Skew: 0.00373352092056
+Kurtosis: -0.607062919132
+
+---------------------
+
+7: JobCategory, object
+count      4985
+unique        6
+top       Sales
+freq       1635
+
+
+---------------------
+
+8: UnionMember, category
+count     5000
+unique       2
+top         No
+freq      4244
+
+Categorical Breakdown:
+UnionMember
+No     4244
+Yes     756
+Name: CustomerID, dtype: int64
+Independence Issues:
+
+---------------------
+
+9: EmploymentLength, int64
+count    5000.000000
+mean        9.730400
+std         9.690929
+min         0.000000
+25%         2.000000
+50%         7.000000
+75%        15.000000
+max        52.000000
+
+Normality Snapshot:
+Mean: 9.7304
+Median: 7.0
+Skew: 1.25191770218
+Kurtosis: 1.05286542766
+
+---------------------
+
+10: Retired, object
+count     5000
+unique       2
+top         No
+freq      4262
+
+
+---------------------
+
+11: HHIncome, int64
+count    5.000000e+03
+mean     5.475960e+04
+std      5.537751e+04
+min      9.000000e+03
+25%      2.400000e+04
+50%      3.800000e+04
+75%      6.700000e+04
+max      1.073000e+06
+
+Normality Snapshot:
+Mean: 54759.6
+Median: 38000.0
+Skew: 5.17921636199
+Kurtosis: 57.0770365314
+
+---------------------
+
+12: DebtToIncomeRatio, float64
+count    5000.000000
+mean        9.954160
+std         6.399783
+min         0.000000
+25%         5.100000
+50%         8.800000
+75%        13.600000
+max        43.100000
+
+
+---------------------
+
+13: CreditDebt, float64
+count    5000.000000
+mean        1.857326
+std         3.415732
+min         0.000000
+25%         0.385520
+50%         0.926437
+75%         2.063820
+max       109.072596
+
+
+---------------------
+
+14: OtherDebt, float64
+count    5000.000000
+mean        3.654460
+std         5.395172
+min         0.000000
+25%         0.980301
+50%         2.098540
+75%         4.314780
+max       141.459150
+
+
+---------------------
+
+15: LoanDefault, object
+count     5000
+unique       2
+top         No
+freq      3829
+
+
+---------------------
+
+16: MaritalStatus, object
+count          5000
+unique            2
+top       Unmarried
+freq           2599
+
+
+---------------------
+
+17: HouseholdSize, float64
+count    4992.000000
+mean        2.202324
+std         1.391912
+min         1.000000
+25%         1.000000
+50%         2.000000
+75%         3.000000
+max         9.000000
+
+
+---------------------
+
+18: NumberPets, float64
+count    4994.000000
+mean        3.066680
+std         3.415625
+min         0.000000
+25%         0.000000
+50%         2.000000
+75%         5.000000
+max        21.000000
+
+
+---------------------
+
+19: NumberCats, float64
+count    4993.000000
+mean        0.500300
+std         0.860485
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         1.000000
+max         6.000000
+
+
+---------------------
+
+20: NumberDogs, float64
+count    4992.000000
+mean        0.392829
+std         0.796539
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         0.000000
+max         7.000000
+
+
+---------------------
+
+21: NumberBirds, float64
+count    4966.000000
+mean        0.111156
+std         0.495832
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         0.000000
+max         5.000000
+
+
+---------------------
+
+22: HomeOwner, float64
+count    4987.000000
+mean        0.629637
+std         0.482950
+min         0.000000
+25%         0.000000
+50%         1.000000
+75%         1.000000
+max         1.000000
+
+
+---------------------
+
+23: CarsOwned, int64
+count    5000.000000
+mean        2.130600
+std         1.307473
+min         0.000000
+25%         1.000000
+50%         2.000000
+75%         3.000000
+max         8.000000
+
+Normality Snapshot:
+Mean: 2.1306
+Median: 2.0
+Skew: 0.501722359758
+Kurtosis: 0.328387683685
+
+---------------------
+
+24: CarOwnership, object
+count     5000
+unique       3
+top        Own
+freq      3704
+
+
+---------------------
+
+25: CarBrand, object
+count         5000
+unique           3
+top       Domestic
+freq          2287
+
+
+---------------------
+
+26: CarValue, float64
+count     5000.000000
+mean     23232.580000
+std      21231.636701
+min      -1000.000000
+25%       9200.000000
+50%      17000.000000
+75%      31100.000000
+max      99600.000000
+
+
+---------------------
+
+27: CommuteTime, object
+count     5000
+unique      42
+top         24
+freq       336
+
+
+---------------------
+
+28: PoliticalPartyMem, object
+count     5000
+unique       2
+top         No
+freq      3093
+
+
+---------------------
+
+29: Votes, object
+count     5000
+unique       2
+top        Yes
+freq      2590
+
+
+---------------------
+
+30: CreditCard, object
+count     5000
+unique       5
+top       Disc
+freq      1344
+
+
+---------------------
+
+31: CardTenure, int64
+count    5000.000000
+mean       16.655800
+std        12.020958
+min         0.000000
+25%         6.000000
+50%        14.000000
+75%        26.000000
+max        40.000000
+
+Normality Snapshot:
+Mean: 16.6558
+Median: 14.0
+Skew: 0.429360580299
+Kurtosis: -1.05611212589
+
+---------------------
+
+32: CardItemsMonthly, int64
+count    5000.00000
+mean       10.17740
+std         3.39114
+min         0.00000
+25%         8.00000
+50%        10.00000
+75%        12.00000
+max        23.00000
+
+Normality Snapshot:
+Mean: 10.1774
+Median: 10.0
+Skew: 0.198594077296
+Kurtosis: 0.158161210614
+
+---------------------
+
+33: CardSpendMonth, float64
+count     5000.000000
+mean      3372.025200
+std       2451.450683
+min          0.000000
+25%       1833.775000
+50%       2763.600000
+75%       4185.375000
+max      39264.100000
+
+
+---------------------
+
+34: ActiveLifestyle, object
+count     5000
+unique       2
+top         No
+freq      2670
+
+
+---------------------
+
+35: PhoneCoTenure, int64
+count    5000.000000
+mean       38.204800
+std        22.661888
+min         0.000000
+25%        18.000000
+50%        38.000000
+75%        59.000000
+max        72.000000
+
+Normality Snapshot:
+Mean: 38.2048
+Median: 38.0
+Skew: -0.0363453834774
+Kurtosis: -1.330461631
+
+---------------------
+
+36: VoiceLastMonth, float64
+count    5000.000000
+mean       40.414350
+std        38.320143
+min         2.700000
+25%        17.100000
+50%        28.650000
+75%        49.650000
+max       539.550000
+
+
+---------------------
+
+37: VoiceOverTenure, object
+count     5000.00
+unique    4438.00
+top          2.05
+freq         8.00
+
+
+---------------------
+
+38: EquipmentRental, object
+count     5000
+unique       2
+top         No
+freq      3296
+
+
+---------------------
+
+39: EquipmentLastMonth, float64
+count    5000.000000
+mean       12.991310
+std        19.212943
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        30.800000
+max       106.300000
+
+
+---------------------
+
+40: EquipmentOverTenure, float64
+count    5000.000000
+mean      470.176400
+std       912.220624
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%       510.162500
+max      6525.300000
+
+
+---------------------
+
+41: CallingCard, object
+count     5000
+unique       2
+top        Yes
+freq      3581
+
+
+---------------------
+
+42: WirelessData, object
+count     5000
+unique       2
+top         No
+freq      3656
+
+
+---------------------
+
+43: DataLastMonth, float64
+count    5000.000000
+mean       10.701190
+std        19.799837
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        20.962500
+max       186.250000
+
+
+---------------------
+
+44: DataOverTenure, float64
+count     5000.000000
+mean       421.984610
+std       1001.003287
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%         89.962500
+max      12858.650000
+
+
+---------------------
+
+45: Multiline, object
+count     5000
+unique       2
+top         No
+freq      2558
+
+
+---------------------
+
+46: VM, object
+count     5000
+unique       2
+top         No
+freq      3485
+
+
+---------------------
+
+47: Pager, object
+count     5000
+unique       2
+top         No
+freq      3782
+
+
+---------------------
+
+48: Internet, object
+count     5000
+unique       5
+top         No
+freq      2498
+
+
+---------------------
+
+49: CallerID, object
+count     5000
+unique       2
+top         No
+freq      2624
+
+
+---------------------
+
+50: CallWait, object
+count     5000
+unique       2
+top         No
+freq      2605
+
+
+---------------------
+
+51: CallForward, object
+count     5000
+unique       2
+top         No
+freq      2597
+
+
+---------------------
+
+52: ThreeWayCalling, object
+count     5000
+unique       2
+top         No
+freq      2610
+
+
+---------------------
+
+53: EBilling, object
+count     5000
+unique       2
+top         No
+freq      3257
+
+
+---------------------
+
+54: TVWatchingHours, int64
+count    5000.000000
+mean       19.645000
+std         5.165609
+min         0.000000
+25%        17.000000
+50%        20.000000
+75%        23.000000
+max        36.000000
+
+Normality Snapshot:
+Mean: 19.645
+Median: 20.0
+Skew: -0.64471215861
+Kurtosis: 2.34842177061
+
+---------------------
+
+55: OwnsPC, object
+count     5000
+unique       2
+top        Yes
+freq      3164
+
+
+---------------------
+
+56: OwnsMobileDevice, object
+count     5000
+unique       2
+top         No
+freq      2604
+
+
+---------------------
+
+57: OwnsGameSystem, object
+count     5000
+unique       2
+top         No
+freq      2626
+
+
+---------------------
+
+58: OwnsFax, object
+count     5000
+unique       2
+top         No
+freq      4106
+
+
+---------------------
+
+59: NewsSubscriber, object
+count     5000
+unique       2
+top         No
+freq      2637
+
+
+---------------------
+
+CustomerID               object
+Region                 category
+TownSize               category
+Gender                 category
+Age                       int64
+EducationYears            int64
+JobCategory              object
+UnionMember            category
+EmploymentLength          int64
+Retired                  object
+HHIncome                  int64
+DebtToIncomeRatio       float64
+CreditDebt              float64
+OtherDebt               float64
+LoanDefault              object
+MaritalStatus            object
+HouseholdSize           float64
+NumberPets              float64
+NumberCats              float64
+NumberDogs              float64
+NumberBirds             float64
+HomeOwner               float64
+CarsOwned                 int64
+CarOwnership             object
+CarBrand                 object
+CarValue                float64
+CommuteTime              object
+PoliticalPartyMem        object
+Votes                    object
+CreditCard               object
+CardTenure                int64
+CardItemsMonthly          int64
+CardSpendMonth          float64
+ActiveLifestyle          object
+PhoneCoTenure             int64
+VoiceLastMonth          float64
+VoiceOverTenure          object
+EquipmentRental          object
+EquipmentLastMonth      float64
+EquipmentOverTenure     float64
+CallingCard              object
+WirelessData             object
+DataLastMonth           float64
+DataOverTenure          float64
+Multiline                object
+VM                       object
+Pager                    object
+Internet                 object
+CallerID                 object
+CallWait                 object
+CallForward              object
+ThreeWayCalling          object
+EBilling                 object
+TVWatchingHours           int64
+OwnsPC                   object
+OwnsMobileDevice         object
+OwnsGameSystem           object
+OwnsFax                  object
+NewsSubscriber           object
+dtype: object

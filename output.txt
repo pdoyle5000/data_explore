@@ -1,0 +1,576 @@
+CustomerID:
+
+count                5000
+unique               5000
+top       3495-VLHEGU-FUI
+freq                    1
+
+
+Region:
+
+count    5000.00000
+mean        3.00140
+std         1.42176
+min         1.00000
+25%         2.00000
+50%         3.00000
+75%         4.00000
+max         5.00000
+
+
+TownSize:
+
+count     5000
+unique       6
+top          1
+freq      1436
+
+
+Gender:
+
+count       4967
+unique         2
+top       Female
+freq        2494
+
+
+Age:
+
+count    5000.000000
+mean       47.025600
+std        17.770338
+min        18.000000
+25%        31.000000
+50%        47.000000
+75%        62.000000
+max        79.000000
+
+
+EducationYears:
+
+count    5000.000000
+mean       14.543000
+std         3.281083
+min         6.000000
+25%        12.000000
+50%        14.000000
+75%        17.000000
+max        23.000000
+
+
+JobCategory:
+
+count      4985
+unique        6
+top       Sales
+freq       1635
+
+
+UnionMember:
+
+count     5000
+unique       2
+top         No
+freq      4244
+
+
+EmploymentLength:
+
+count    5000.000000
+mean        9.730400
+std         9.690929
+min         0.000000
+25%         2.000000
+50%         7.000000
+75%        15.000000
+max        52.000000
+
+
+Retired:
+
+count     5000
+unique       2
+top         No
+freq      4262
+
+
+HHIncome:
+
+count    5.000000e+03
+mean     5.475960e+04
+std      5.537751e+04
+min      9.000000e+03
+25%      2.400000e+04
+50%      3.800000e+04
+75%      6.700000e+04
+max      1.073000e+06
+
+
+DebtToIncomeRatio:
+
+count    5000.000000
+mean        9.954160
+std         6.399783
+min         0.000000
+25%         5.100000
+50%         8.800000
+75%        13.600000
+max        43.100000
+
+
+CreditDebt:
+
+count    5000.000000
+mean        1.857326
+std         3.415732
+min         0.000000
+25%         0.385520
+50%         0.926437
+75%         2.063820
+max       109.072596
+
+
+OtherDebt:
+
+count    5000.000000
+mean        3.654460
+std         5.395172
+min         0.000000
+25%         0.980301
+50%         2.098540
+75%         4.314780
+max       141.459150
+
+
+LoanDefault:
+
+count     5000
+unique       2
+top         No
+freq      3829
+
+
+MaritalStatus:
+
+count          5000
+unique            2
+top       Unmarried
+freq           2599
+
+
+HouseholdSize:
+
+count    4992.000000
+mean        2.202324
+std         1.391912
+min         1.000000
+25%         1.000000
+50%         2.000000
+75%         3.000000
+max         9.000000
+
+
+NumberPets:
+
+count    4994.000000
+mean        3.066680
+std         3.415625
+min         0.000000
+25%         0.000000
+50%         2.000000
+75%         5.000000
+max        21.000000
+
+
+NumberCats:
+
+count    4993.000000
+mean        0.500300
+std         0.860485
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         1.000000
+max         6.000000
+
+
+NumberDogs:
+
+count    4992.000000
+mean        0.392829
+std         0.796539
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         0.000000
+max         7.000000
+
+
+NumberBirds:
+
+count    4966.000000
+mean        0.111156
+std         0.495832
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%         0.000000
+max         5.000000
+
+
+HomeOwner:
+
+count    4987.000000
+mean        0.629637
+std         0.482950
+min         0.000000
+25%         0.000000
+50%         1.000000
+75%         1.000000
+max         1.000000
+
+
+CarsOwned:
+
+count    5000.000000
+mean        2.130600
+std         1.307473
+min         0.000000
+25%         1.000000
+50%         2.000000
+75%         3.000000
+max         8.000000
+
+
+CarOwnership:
+
+count     5000
+unique       3
+top        Own
+freq      3704
+
+
+CarBrand:
+
+count         5000
+unique           3
+top       Domestic
+freq          2287
+
+
+CarValue:
+
+count     5000.000000
+mean     23232.580000
+std      21231.636701
+min      -1000.000000
+25%       9200.000000
+50%      17000.000000
+75%      31100.000000
+max      99600.000000
+
+
+CommuteTime:
+
+count     5000
+unique      42
+top         24
+freq       336
+
+
+PoliticalPartyMem:
+
+count     5000
+unique       2
+top         No
+freq      3093
+
+
+Votes:
+
+count     5000
+unique       2
+top        Yes
+freq      2590
+
+
+CreditCard:
+
+count     5000
+unique       5
+top       Disc
+freq      1344
+
+
+CardTenure:
+
+count    5000.000000
+mean       16.655800
+std        12.020958
+min         0.000000
+25%         6.000000
+50%        14.000000
+75%        26.000000
+max        40.000000
+
+
+CardItemsMonthly:
+
+count    5000.00000
+mean       10.17740
+std         3.39114
+min         0.00000
+25%         8.00000
+50%        10.00000
+75%        12.00000
+max        23.00000
+
+
+CardSpendMonth:
+
+count     5000.000000
+mean      3372.025200
+std       2451.450683
+min          0.000000
+25%       1833.775000
+50%       2763.600000
+75%       4185.375000
+max      39264.100000
+
+
+ActiveLifestyle:
+
+count     5000
+unique       2
+top         No
+freq      2670
+
+
+PhoneCoTenure:
+
+count    5000.000000
+mean       38.204800
+std        22.661888
+min         0.000000
+25%        18.000000
+50%        38.000000
+75%        59.000000
+max        72.000000
+
+
+VoiceLastMonth:
+
+count    5000.000000
+mean       40.414350
+std        38.320143
+min         2.700000
+25%        17.100000
+50%        28.650000
+75%        49.650000
+max       539.550000
+
+
+VoiceOverTenure:
+
+count     5000.00
+unique    4438.00
+top          2.05
+freq         8.00
+
+
+EquipmentRental:
+
+count     5000
+unique       2
+top         No
+freq      3296
+
+
+EquipmentLastMonth:
+
+count    5000.000000
+mean       12.991310
+std        19.212943
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        30.800000
+max       106.300000
+
+
+EquipmentOverTenure:
+
+count    5000.000000
+mean      470.176400
+std       912.220624
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%       510.162500
+max      6525.300000
+
+
+CallingCard:
+
+count     5000
+unique       2
+top        Yes
+freq      3581
+
+
+WirelessData:
+
+count     5000
+unique       2
+top         No
+freq      3656
+
+
+DataLastMonth:
+
+count    5000.000000
+mean       10.701190
+std        19.799837
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        20.962500
+max       186.250000
+
+
+DataOverTenure:
+
+count     5000.000000
+mean       421.984610
+std       1001.003287
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%         89.962500
+max      12858.650000
+
+
+Multiline:
+
+count     5000
+unique       2
+top         No
+freq      2558
+
+
+VM:
+
+count     5000
+unique       2
+top         No
+freq      3485
+
+
+Pager:
+
+count     5000
+unique       2
+top         No
+freq      3782
+
+
+Internet:
+
+count     5000
+unique       5
+top         No
+freq      2498
+
+
+CallerID:
+
+count     5000
+unique       2
+top         No
+freq      2624
+
+
+CallWait:
+
+count     5000
+unique       2
+top         No
+freq      2605
+
+
+CallForward:
+
+count     5000
+unique       2
+top         No
+freq      2597
+
+
+ThreeWayCalling:
+
+count     5000
+unique       2
+top         No
+freq      2610
+
+
+EBilling:
+
+count     5000
+unique       2
+top         No
+freq      3257
+
+
+TVWatchingHours:
+
+count    5000.000000
+mean       19.645000
+std         5.165609
+min         0.000000
+25%        17.000000
+50%        20.000000
+75%        23.000000
+max        36.000000
+
+
+OwnsPC:
+
+count     5000
+unique       2
+top        Yes
+freq      3164
+
+
+OwnsMobileDevice:
+
+count     5000
+unique       2
+top         No
+freq      2604
+
+
+OwnsGameSystem:
+
+count     5000
+unique       2
+top         No
+freq      2626
+
+
+OwnsFax:
+
+count     5000
+unique       2
+top         No
+freq      4106
+
+
+NewsSubscriber:
+
+count     5000
+unique       2
+top         No
+freq      2637
+
+
