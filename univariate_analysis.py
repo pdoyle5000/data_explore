@@ -41,11 +41,11 @@ def print_summary(db):
             chisq = categorical_independence(db, attribute)
             f.write("Categorical Breakdown:\n")
             f.write(str(tmp_df))
-            f.write("\n\nIndependence Issues:\n")
+            f.write("\n\nPossible Associations:\n")
             for k, v in chisq.items():
                 f.write("Dependent on " + k + ". P-value ->" + str(v) + '\n')
-                f.write("Cross Tab:\n")
-                f.write(str(pd.crosstab(db[attribute], db[k])) + '\n')
+                #f.write("Cross Tab:\n")
+                #f.write(str(pd.crosstab(db[attribute], db[k])) + '\n')
 
         elif str(dt) == "int64" or str(dt) == "float64":
             mean = db[attribute].mean()
@@ -108,7 +108,7 @@ def clean_attributes(db):
     # Replace all the -$1000 values in CarValue with NaN
     db['CarValue'].replace(float(-1000), np.nan, inplace=True)
     
-    # Create AvgPhoneBill variable --BROKEN!
+    # Create AvgPhoneBill variable
     db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
     
     cols_to_delete = [
