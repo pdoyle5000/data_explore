@@ -88,7 +88,7 @@ def clean_attributes(db):
 
     # Replace all null values in VoiceOverTenure with 0
     db['VoiceOverTenure'].fillna(0, inplace=True)
-    db['VoiceOverTenure'] = db['CommuteTime'].astype(np.float64)
+    db['VoiceOverTenure'] = db['VoiceOverTenure'].astype(np.float64)
 
     # Create categorical variable from HHIncome
     db['HouseholdIncome'] = hhincome_to_cat(db['HHIncome'])
@@ -108,8 +108,8 @@ def clean_attributes(db):
     # Replace all the -$1000 values in CarValue with NaN
     db['CarValue'].replace(float(-1000), np.nan, inplace=True)
     
-    # Create AvgPhoneBill variable
-    db['AvgPhoneBill'] = db['PhoneCoTenure'].divide(db['VoiceOverTenure'])
+    # Create AvgPhoneBill variable --BROKEN!
+    db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
     
     cols_to_delete = [
             'HHIncome', 
