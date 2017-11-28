@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import chi2_contingency
+import scipy.stats as stats
 
 INPUT_FILE = "CustomerData_Merrimack.xlsx"
 OUTPUT_FILE = "data_output/import_summary.txt"
@@ -22,6 +23,22 @@ FORCE_TYPES = {
         'CreditCard': 'category',
         'ActiveLifestyle': 'category',
         'EquipmentRental': 'category',
+        'CallingCard': 'category',
+        'WirelessData': 'category',
+        'Multiline': 'category',
+        'Pager': 'category',
+        'Internet': 'category',
+        'VM': 'category',
+        'CallerID': 'category',
+        'CallWait': 'category',
+        'CallForward': 'category',
+        'ThreeWayCalling': 'category',
+        'EBilling': 'category',
+        'OwnsPC': 'category',
+        'OwnsMobileDevice': 'category',
+        'OwnsGameSystem': 'category',
+        'OwnsFax': 'category',
+        'NewsSubscriber': 'category'
         }
 
 def import_original_data():
@@ -38,7 +55,7 @@ def print_summary(db):
         dt = db[attribute].dtype
         if str(dt) == "category":
             tmp_df = db.groupby(attribute)[PK].nunique()
-            chisq = categorical_independence(db, attribute)
+            chisq = categorical_association(db, attribute)
             f.write("Categorical Breakdown:\n")
             f.write(str(tmp_df))
             f.write("\n\nPossible Associations:\n")
@@ -57,12 +74,20 @@ def print_summary(db):
             f.write("Median: " + str(median) + '\n')
             f.write("Skew: " + str(skew) + '\n')
             f.write("Kurtosis: " + str(kurt) + '\n')
-            # Correlate Here!
+            f.write("\nPossible Associations:\n")
+            corvals = correlation(db, attribute)
+            for k,v in corvals.items():
+                f.write(k + ": R-Squared ->" + str(v) + '\n')
+
+            # Compare against categorical
+            anova_results = anova(db, attribute)
+            for k, v in anova_results.items():
+                f.write(k + ": ANOVA P-val ->" + str(v) + '\n')
+            
 
         f.write('\n-----------------------------------------------------\n\n')
         num_attributes += 1
 
-    f.write(str(db.dtypes))
     f.close()
 
 def clean_attributes(db):
@@ -185,7 +210,7 @@ def has_pets(db):
             haspets.append(0)
     return pd.Series(haspets, dtype='category')
 
-def categorical_independence(db, att):
+def categorical_association(db, att):
     result_dict = {}
 
     for attribute in db.select_dtypes('category'):
@@ -198,12 +223,28 @@ def categorical_independence(db, att):
 
     return result_dict
 
+def correlation(db, att):
+    result_dict = {}
+
+    for attribute in db.select_dtypes(np.number):
+        if attribute != att:
+            rsq = db[att].corr(db[attribute])
+            if rsq > 0.8:
+                result_dict[attribute] = rsq
+
+    return result_dict
+
+def anova(db, att):
+    anova_dict = {}
+    for attribute in db.select_dtypes('category'):
+        # split a the db[att] data set into every type of db[att]
+        aval = stats.f_oneway(db[att], )
+
 
 def main():
     db = import_original_data()
     clean_db = clean_attributes(db)
     print_summary(clean_db)
-
     #clean_db['HHIncome'].plot.hist(bins=25, range=[0, 100000])
     #clean_db['EmploymentLength'].plot.hist(bins=5)
     #noZeroes = [x for x in clean_db['EmploymentLength'] if x != 0]
