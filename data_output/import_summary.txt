@@ -1,7 +1,7 @@
 1: CustomerID, object
 count                5000
 unique               5000
-top       4030-WSTXBV-BTC
+top       0297-JQFCXO-IEU
 freq                    1
 
 
@@ -23,10 +23,10 @@ Region
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on TownSize. P-value ->1.753558088e-196
-Dependent on Retired. P-value ->0.0355686677362
-Dependent on MaritalStatus. P-value ->0.00237379278818
-Dependent on HomeOwner. P-value ->0.00717926939801
+TownSize: P-value (Chi-Square-Test) ->1.753558088e-196
+Retired: P-value (Chi-Square-Test) ->0.0355686677362
+MaritalStatus: P-value (Chi-Square-Test) ->0.00237379278818
+HomeOwner: P-value (Chi-Square-Test) ->0.00717926939801
 
 -----------------------------------------------------
 
@@ -47,9 +47,9 @@ NA        2
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Region. P-value ->1.753558088e-196
-Dependent on Retired. P-value ->1.86243400775e-05
-Dependent on CreditCard. P-value ->0.0321627632513
+Region: P-value (Chi-Square-Test) ->1.753558088e-196
+Retired: P-value (Chi-Square-Test) ->1.86243400775e-05
+CreditCard: P-value (Chi-Square-Test) ->0.0321627632513
 
 -----------------------------------------------------
 
@@ -67,9 +67,9 @@ NA          33
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Votes. P-value ->0.0332366695542
-Dependent on CreditCard. P-value ->1.11626655992e-06
-Dependent on InHeavyDebt. P-value ->7.50883267932e-06
+Votes: P-value (Chi-Square-Test) ->0.0332366695542
+CreditCard: P-value (Chi-Square-Test) ->1.11626655992e-06
+InHeavyDebt: P-value (Chi-Square-Test) ->7.50883267932e-06
 
 -----------------------------------------------------
 
@@ -109,14 +109,14 @@ Unknown           15
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on UnionMember. P-value ->6.94752619135e-26
-Dependent on Retired. P-value ->2.95132719262e-31
-Dependent on LoanDefault. P-value ->3.72454691631e-10
-Dependent on CarOwnership. P-value ->0.00239139260428
-Dependent on Votes. P-value ->0.0205909925554
-Dependent on EquipmentRental. P-value ->0.0163860635651
-Dependent on HouseholdIncome. P-value ->1.9551200687e-54
-Dependent on Education. P-value ->0.00189513475243
+UnionMember: P-value (Chi-Square-Test) ->6.94752619135e-26
+Retired: P-value (Chi-Square-Test) ->2.95132719262e-31
+LoanDefault: P-value (Chi-Square-Test) ->3.72454691631e-10
+CarOwnership: P-value (Chi-Square-Test) ->0.00239139260428
+Votes: P-value (Chi-Square-Test) ->0.0205909925554
+EquipmentRental: P-value (Chi-Square-Test) ->0.0163860635651
+HouseholdIncome: P-value (Chi-Square-Test) ->1.9551200687e-54
+Education: P-value (Chi-Square-Test) ->0.00189513475243
 
 -----------------------------------------------------
 
@@ -133,7 +133,7 @@ Yes     756
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->6.94752619135e-26
+JobCategory: P-value (Chi-Square-Test) ->6.94752619135e-26
 
 -----------------------------------------------------
 
@@ -168,18 +168,18 @@ Yes     738
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Region. P-value ->0.0355686677362
-Dependent on TownSize. P-value ->1.86243400775e-05
-Dependent on JobCategory. P-value ->2.95132719262e-31
-Dependent on LoanDefault. P-value ->2.97055701536e-50
-Dependent on HomeOwner. P-value ->2.5263748118e-10
-Dependent on CarOwnership. P-value ->8.91019288781e-117
-Dependent on Votes. P-value ->0.00113690367298
-Dependent on CreditCard. P-value ->0.000126161317453
-Dependent on ActiveLifestyle. P-value ->5.26993069566e-16
-Dependent on EquipmentRental. P-value ->8.61791267804e-13
-Dependent on HouseholdIncome. P-value ->2.50406863258e-258
-Dependent on Education. P-value ->1.49262021023e-13
+Region: P-value (Chi-Square-Test) ->0.0355686677362
+TownSize: P-value (Chi-Square-Test) ->1.86243400775e-05
+JobCategory: P-value (Chi-Square-Test) ->2.95132719262e-31
+LoanDefault: P-value (Chi-Square-Test) ->2.97055701536e-50
+HomeOwner: P-value (Chi-Square-Test) ->2.5263748118e-10
+CarOwnership: P-value (Chi-Square-Test) ->8.91019288781e-117
+Votes: P-value (Chi-Square-Test) ->0.00113690367298
+CreditCard: P-value (Chi-Square-Test) ->0.000126161317453
+ActiveLifestyle: P-value (Chi-Square-Test) ->5.26993069566e-16
+EquipmentRental: P-value (Chi-Square-Test) ->8.61791267804e-13
+HouseholdIncome: P-value (Chi-Square-Test) ->2.50406863258e-258
+Education: P-value (Chi-Square-Test) ->1.49262021023e-13
 
 -----------------------------------------------------
 
@@ -196,15 +196,15 @@ Yes    1171
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->3.72454691631e-10
-Dependent on Retired. P-value ->2.97055701536e-50
-Dependent on MaritalStatus. P-value ->0.00175373498814
-Dependent on CarOwnership. P-value ->4.6045017671e-08
-Dependent on ActiveLifestyle. P-value ->1.81057095871e-15
-Dependent on EquipmentRental. P-value ->1.18589177632e-10
-Dependent on HouseholdIncome. P-value ->3.25435117637e-08
-Dependent on Education. P-value ->2.24034841039e-15
-Dependent on InHeavyDebt. P-value ->2.46589039885e-64
+JobCategory: P-value (Chi-Square-Test) ->3.72454691631e-10
+Retired: P-value (Chi-Square-Test) ->2.97055701536e-50
+MaritalStatus: P-value (Chi-Square-Test) ->0.00175373498814
+CarOwnership: P-value (Chi-Square-Test) ->4.6045017671e-08
+ActiveLifestyle: P-value (Chi-Square-Test) ->1.81057095871e-15
+EquipmentRental: P-value (Chi-Square-Test) ->1.18589177632e-10
+HouseholdIncome: P-value (Chi-Square-Test) ->3.25435117637e-08
+Education: P-value (Chi-Square-Test) ->2.24034841039e-15
+InHeavyDebt: P-value (Chi-Square-Test) ->2.46589039885e-64
 
 -----------------------------------------------------
 
@@ -221,11 +221,11 @@ Unmarried    2599
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Region. P-value ->0.00237379278818
-Dependent on LoanDefault. P-value ->0.00175373498814
-Dependent on HomeOwner. P-value ->3.3330009158e-19
-Dependent on CreditCard. P-value ->0.00587807137641
-Dependent on InHeavyDebt. P-value ->0.00288287984573
+Region: P-value (Chi-Square-Test) ->0.00237379278818
+LoanDefault: P-value (Chi-Square-Test) ->0.00175373498814
+HomeOwner: P-value (Chi-Square-Test) ->3.3330009158e-19
+CreditCard: P-value (Chi-Square-Test) ->0.00587807137641
+InHeavyDebt: P-value (Chi-Square-Test) ->0.00288287984573
 
 -----------------------------------------------------
 
@@ -261,13 +261,13 @@ NA       13
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Region. P-value ->0.00717926939801
-Dependent on Retired. P-value ->2.5263748118e-10
-Dependent on MaritalStatus. P-value ->3.3330009158e-19
-Dependent on CarOwnership. P-value ->0.00508930534203
-Dependent on CreditCard. P-value ->0.000217465544454
-Dependent on HouseholdIncome. P-value ->2.19914260752e-22
-Dependent on Education. P-value ->0.0170545406197
+Region: P-value (Chi-Square-Test) ->0.00717926939801
+Retired: P-value (Chi-Square-Test) ->2.5263748118e-10
+MaritalStatus: P-value (Chi-Square-Test) ->3.3330009158e-19
+CarOwnership: P-value (Chi-Square-Test) ->0.00508930534203
+CreditCard: P-value (Chi-Square-Test) ->0.000217465544454
+HouseholdIncome: P-value (Chi-Square-Test) ->2.19914260752e-22
+Education: P-value (Chi-Square-Test) ->0.0170545406197
 
 -----------------------------------------------------
 
@@ -291,7 +291,7 @@ CarsOwned
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on CarOwnership. P-value ->0.0
+CarOwnership: P-value (Chi-Square-Test) ->0.0
 
 -----------------------------------------------------
 
@@ -309,16 +309,16 @@ Own      3704
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->0.00239139260428
-Dependent on Retired. P-value ->8.91019288781e-117
-Dependent on LoanDefault. P-value ->4.6045017671e-08
-Dependent on HomeOwner. P-value ->0.00508930534203
-Dependent on CarsOwned. P-value ->0.0
-Dependent on Votes. P-value ->2.02849132873e-05
-Dependent on CreditCard. P-value ->3.98981850132e-06
-Dependent on EquipmentRental. P-value ->0.012665152791
-Dependent on HouseholdIncome. P-value ->5.86827365596e-136
-Dependent on Education. P-value ->9.42416022921e-07
+JobCategory: P-value (Chi-Square-Test) ->0.00239139260428
+Retired: P-value (Chi-Square-Test) ->8.91019288781e-117
+LoanDefault: P-value (Chi-Square-Test) ->4.6045017671e-08
+HomeOwner: P-value (Chi-Square-Test) ->0.00508930534203
+CarsOwned: P-value (Chi-Square-Test) ->0.0
+Votes: P-value (Chi-Square-Test) ->2.02849132873e-05
+CreditCard: P-value (Chi-Square-Test) ->3.98981850132e-06
+EquipmentRental: P-value (Chi-Square-Test) ->0.012665152791
+HouseholdIncome: P-value (Chi-Square-Test) ->5.86827365596e-136
+Education: P-value (Chi-Square-Test) ->9.42416022921e-07
 
 -----------------------------------------------------
 
@@ -371,7 +371,7 @@ Yes    1907
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Votes. P-value ->2.35955959995e-11
+Votes: P-value (Chi-Square-Test) ->2.35955959995e-11
 
 -----------------------------------------------------
 
@@ -388,15 +388,15 @@ Yes    2590
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Gender. P-value ->0.0332366695542
-Dependent on JobCategory. P-value ->0.0205909925554
-Dependent on Retired. P-value ->0.00113690367298
-Dependent on CarOwnership. P-value ->2.02849132873e-05
-Dependent on PoliticalPartyMem. P-value ->2.35955959995e-11
-Dependent on CreditCard. P-value ->0.00743546230893
-Dependent on EquipmentRental. P-value ->0.00160765999211
-Dependent on HouseholdIncome. P-value ->3.14092116302e-17
-Dependent on Education. P-value ->2.69504334621e-10
+Gender: P-value (Chi-Square-Test) ->0.0332366695542
+JobCategory: P-value (Chi-Square-Test) ->0.0205909925554
+Retired: P-value (Chi-Square-Test) ->0.00113690367298
+CarOwnership: P-value (Chi-Square-Test) ->2.02849132873e-05
+PoliticalPartyMem: P-value (Chi-Square-Test) ->2.35955959995e-11
+CreditCard: P-value (Chi-Square-Test) ->0.00743546230893
+EquipmentRental: P-value (Chi-Square-Test) ->0.00160765999211
+HouseholdIncome: P-value (Chi-Square-Test) ->3.14092116302e-17
+Education: P-value (Chi-Square-Test) ->2.69504334621e-10
 
 -----------------------------------------------------
 
@@ -416,17 +416,17 @@ Visa    1247
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on TownSize. P-value ->0.0321627632513
-Dependent on Gender. P-value ->1.11626655992e-06
-Dependent on Retired. P-value ->0.000126161317453
-Dependent on MaritalStatus. P-value ->0.00587807137641
-Dependent on HomeOwner. P-value ->0.000217465544454
-Dependent on CarOwnership. P-value ->3.98981850132e-06
-Dependent on Votes. P-value ->0.00743546230893
-Dependent on ActiveLifestyle. P-value ->0.0274402544067
-Dependent on EquipmentRental. P-value ->2.13228076845e-18
-Dependent on HouseholdIncome. P-value ->2.13879600057e-34
-Dependent on Education. P-value ->2.48332479685e-81
+TownSize: P-value (Chi-Square-Test) ->0.0321627632513
+Gender: P-value (Chi-Square-Test) ->1.11626655992e-06
+Retired: P-value (Chi-Square-Test) ->0.000126161317453
+MaritalStatus: P-value (Chi-Square-Test) ->0.00587807137641
+HomeOwner: P-value (Chi-Square-Test) ->0.000217465544454
+CarOwnership: P-value (Chi-Square-Test) ->3.98981850132e-06
+Votes: P-value (Chi-Square-Test) ->0.00743546230893
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.0274402544067
+EquipmentRental: P-value (Chi-Square-Test) ->2.13228076845e-18
+HouseholdIncome: P-value (Chi-Square-Test) ->2.13879600057e-34
+Education: P-value (Chi-Square-Test) ->2.48332479685e-81
 
 -----------------------------------------------------
 
@@ -497,11 +497,11 @@ Yes    2330
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Retired. P-value ->5.26993069566e-16
-Dependent on LoanDefault. P-value ->1.81057095871e-15
-Dependent on CreditCard. P-value ->0.0274402544067
-Dependent on EquipmentRental. P-value ->0.0183355406084
-Dependent on HouseholdIncome. P-value ->7.72786864874e-08
+Retired: P-value (Chi-Square-Test) ->5.26993069566e-16
+LoanDefault: P-value (Chi-Square-Test) ->1.81057095871e-15
+CreditCard: P-value (Chi-Square-Test) ->0.0274402544067
+EquipmentRental: P-value (Chi-Square-Test) ->0.0183355406084
+HouseholdIncome: P-value (Chi-Square-Test) ->7.72786864874e-08
 
 -----------------------------------------------------
 
@@ -572,15 +572,15 @@ Yes    1704
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->0.0163860635651
-Dependent on Retired. P-value ->8.61791267804e-13
-Dependent on LoanDefault. P-value ->1.18589177632e-10
-Dependent on CarOwnership. P-value ->0.012665152791
-Dependent on Votes. P-value ->0.00160765999211
-Dependent on CreditCard. P-value ->2.13228076845e-18
-Dependent on ActiveLifestyle. P-value ->0.0183355406084
-Dependent on HouseholdIncome. P-value ->3.31932239083e-07
-Dependent on Education. P-value ->9.83039777615e-177
+JobCategory: P-value (Chi-Square-Test) ->0.0163860635651
+Retired: P-value (Chi-Square-Test) ->8.61791267804e-13
+LoanDefault: P-value (Chi-Square-Test) ->1.18589177632e-10
+CarOwnership: P-value (Chi-Square-Test) ->0.012665152791
+Votes: P-value (Chi-Square-Test) ->0.00160765999211
+CreditCard: P-value (Chi-Square-Test) ->2.13228076845e-18
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.0183355406084
+HouseholdIncome: P-value (Chi-Square-Test) ->3.31932239083e-07
+Education: P-value (Chi-Square-Test) ->9.83039777615e-177
 
 -----------------------------------------------------
 
@@ -834,16 +834,16 @@ above 200     109
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->1.9551200687e-54
-Dependent on Retired. P-value ->2.50406863258e-258
-Dependent on LoanDefault. P-value ->3.25435117637e-08
-Dependent on HomeOwner. P-value ->2.19914260752e-22
-Dependent on CarOwnership. P-value ->5.86827365596e-136
-Dependent on Votes. P-value ->3.14092116302e-17
-Dependent on CreditCard. P-value ->2.13879600057e-34
-Dependent on ActiveLifestyle. P-value ->7.72786864874e-08
-Dependent on EquipmentRental. P-value ->3.31932239083e-07
-Dependent on Education. P-value ->1.07328643175e-34
+JobCategory: P-value (Chi-Square-Test) ->1.9551200687e-54
+Retired: P-value (Chi-Square-Test) ->2.50406863258e-258
+LoanDefault: P-value (Chi-Square-Test) ->3.25435117637e-08
+HomeOwner: P-value (Chi-Square-Test) ->2.19914260752e-22
+CarOwnership: P-value (Chi-Square-Test) ->5.86827365596e-136
+Votes: P-value (Chi-Square-Test) ->3.14092116302e-17
+CreditCard: P-value (Chi-Square-Test) ->2.13879600057e-34
+ActiveLifestyle: P-value (Chi-Square-Test) ->7.72786864874e-08
+EquipmentRental: P-value (Chi-Square-Test) ->3.31932239083e-07
+Education: P-value (Chi-Square-Test) ->1.07328643175e-34
 
 -----------------------------------------------------
 
@@ -861,15 +861,15 @@ Education
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on JobCategory. P-value ->0.00189513475243
-Dependent on Retired. P-value ->1.49262021023e-13
-Dependent on LoanDefault. P-value ->2.24034841039e-15
-Dependent on HomeOwner. P-value ->0.0170545406197
-Dependent on CarOwnership. P-value ->9.42416022921e-07
-Dependent on Votes. P-value ->2.69504334621e-10
-Dependent on CreditCard. P-value ->2.48332479685e-81
-Dependent on EquipmentRental. P-value ->9.83039777615e-177
-Dependent on HouseholdIncome. P-value ->1.07328643175e-34
+JobCategory: P-value (Chi-Square-Test) ->0.00189513475243
+Retired: P-value (Chi-Square-Test) ->1.49262021023e-13
+LoanDefault: P-value (Chi-Square-Test) ->2.24034841039e-15
+HomeOwner: P-value (Chi-Square-Test) ->0.0170545406197
+CarOwnership: P-value (Chi-Square-Test) ->9.42416022921e-07
+Votes: P-value (Chi-Square-Test) ->2.69504334621e-10
+CreditCard: P-value (Chi-Square-Test) ->2.48332479685e-81
+EquipmentRental: P-value (Chi-Square-Test) ->9.83039777615e-177
+HouseholdIncome: P-value (Chi-Square-Test) ->1.07328643175e-34
 
 -----------------------------------------------------
 
@@ -886,9 +886,9 @@ InHeavyDebt
 Name: CustomerID, dtype: int64
 
 Possible Associations:
-Dependent on Gender. P-value ->7.50883267932e-06
-Dependent on LoanDefault. P-value ->2.46589039885e-64
-Dependent on MaritalStatus. P-value ->0.00288287984573
+Gender: P-value (Chi-Square-Test) ->7.50883267932e-06
+LoanDefault: P-value (Chi-Square-Test) ->2.46589039885e-64
+MaritalStatus: P-value (Chi-Square-Test) ->0.00288287984573
 
 -----------------------------------------------------
 

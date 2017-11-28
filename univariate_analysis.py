@@ -43,7 +43,7 @@ def print_summary(db):
             f.write(str(tmp_df))
             f.write("\n\nPossible Associations:\n")
             for k, v in chisq.items():
-                f.write("Dependent on " + k + ". P-value ->" + str(v) + '\n')
+                f.write(k + ": P-value (Chi-Square-Test) ->" + str(v) + '\n')
                 #f.write("Cross Tab:\n")
                 #f.write(str(pd.crosstab(db[attribute], db[k])) + '\n')
 
@@ -110,6 +110,9 @@ def clean_attributes(db):
     
     # Create AvgPhoneBill variable
     db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
+
+    # TODO:  compare categorical against numerical
+    #        compare numerical against numerical
     
     cols_to_delete = [
             'HHIncome', 
