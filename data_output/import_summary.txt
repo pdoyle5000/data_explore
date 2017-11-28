@@ -1,7 +1,7 @@
 1: CustomerID, object
 count                5000
 unique               5000
-top       5060-SERQNE-ND1
+top       6115-KSXRSH-38S
 freq                    1
 
 
@@ -23,6 +23,24 @@ Region
 Name: CustomerID, dtype: int64
 
 Independence Issues:
+Dependent on TownSize. P-value ->1.753558088e-196
+Cross Tab:
+TownSize  1.0  2.0  3.0  4.0  5.0  NA
+Region                               
+1         531  240  116   85   36   1
+2         356  230  191  154   64   0
+3         265  233  217  169  119   0
+4         192  199  198  218  159   0
+5          92  146  185  231  372   1
+Dependent on Retired. P-value ->0.0355686677362
+Cross Tab:
+Retired   No  Yes
+Region           
+1        831  178
+2        845  150
+3        858  145
+4        835  131
+5        893  134
 Dependent on MaritalStatus. P-value ->0.00237379278818
 Cross Tab:
 MaritalStatus  Married  Unmarried
@@ -41,41 +59,23 @@ Region
 3          342  658   3
 4          342  620   4
 5          361  665   1
-Dependent on TownSize. P-value ->1.753558088e-196
-Cross Tab:
-TownSize    1    2    3    4    5  #NULL!
-Region                                   
-1         531  240  116   85   36       1
-2         356  230  191  154   64       0
-3         265  233  217  169  119       0
-4         192  199  198  218  159       0
-5          92  146  185  231  372       1
-Dependent on Retired. P-value ->0.0355686677362
-Cross Tab:
-Retired   No  Yes
-Region           
-1        831  178
-2        845  150
-3        858  145
-4        835  131
-5        893  134
 
 -----------------------------------------------------
 
 3: TownSize, category
-count     5000
-unique       6
-top          1
-freq      1436
+count     5000.0
+unique       6.0
+top          1.0
+freq      1436.0
 
 Categorical Breakdown:
 TownSize
-1         1436
-2         1048
-3          907
-4          857
-5          750
-#NULL!       2
+1.0    1436
+2.0    1048
+3.0     907
+4.0     857
+5.0     750
+NA        2
 Name: CustomerID, dtype: int64
 
 Independence Issues:
@@ -83,22 +83,32 @@ Dependent on Region. P-value ->1.753558088e-196
 Cross Tab:
 Region      1    2    3    4    5
 TownSize                         
-1         531  356  265  192   92
-2         240  230  233  199  146
-3         116  191  217  198  185
-4          85  154  169  218  231
-5          36   64  119  159  372
-#NULL!      1    0    0    0    1
+1.0       531  356  265  192   92
+2.0       240  230  233  199  146
+3.0       116  191  217  198  185
+4.0        85  154  169  218  231
+5.0        36   64  119  159  372
+NA          1    0    0    0    1
 Dependent on Retired. P-value ->1.86243400775e-05
 Cross Tab:
 Retired     No  Yes
 TownSize           
-1         1181  255
-2          875  173
-3          787  120
-4          765   92
-5          653   97
-#NULL!       1    1
+1.0       1181  255
+2.0        875  173
+3.0        787  120
+4.0        765   92
+5.0        653   97
+NA           1    1
+Dependent on CreditCard. P-value ->0.0321627632513
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+TownSize                                
+1.0          291   390   349    44   362
+2.0          215   264   249    60   260
+3.0          165   232   230    41   239
+4.0          172   239   185    41   220
+5.0          143   218   187    36   166
+NA             0     1     0     1     0
 
 -----------------------------------------------------
 
@@ -116,6 +126,20 @@ NA          33
 Name: CustomerID, dtype: int64
 
 Independence Issues:
+Dependent on Votes. P-value ->0.0332366695542
+Cross Tab:
+Votes     No   Yes
+Gender            
+Female  1248  1246
+Male    1146  1327
+NA        16    17
+Dependent on CreditCard. P-value ->1.11626655992e-06
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+Gender                                  
+Female       415   663   622   130   664
+Male         567   674   567    92   573
+NA             4     7    11     1    10
 Dependent on InHeavyDebt. P-value ->7.50883267932e-06
 Cross Tab:
 InHeavyDebt     0    1
@@ -162,50 +186,6 @@ Unknown           15
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->3.72454691631e-10
-Cross Tab:
-LoanDefault     No  Yes
-JobCategory            
-Agriculture    181   31
-Crafts         367   85
-Labor          568  118
-Professional  1032  348
-Sales         1175  460
-Service        494  126
-Unknown         12    3
-Dependent on HouseholdIncome. P-value ->1.9551200687e-54
-Cross Tab:
-HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
-JobCategory                                                       
-Agriculture           36        71        59         38          8
-Crafts                83       146       101        103         19
-Labor                121       202       166        165         32
-Professional         171       419       498        273         19
-Sales                319       730       457        120          9
-Service               93       175       206        124         22
-Unknown                3         3         6          3          0
-Dependent on CarOwnership. P-value ->0.00239139260428
-Cross Tab:
-CarOwnership   -1  Lease   Own
-JobCategory                   
-Agriculture    20     40   152
-Crafts         59     74   319
-Labor          58    105   523
-Professional  151    187  1042
-Sales         148    306  1181
-Service        61     86   473
-Unknown         0      1    14
-Dependent on Education. P-value ->0.00189513475243
-Cross Tab:
-Education       0    1    2
-JobCategory                
-Agriculture    42  113   57
-Crafts         87  242  123
-Labor         151  361  174
-Professional  240  681  459
-Sales         288  850  497
-Service       135  332  153
-Unknown         3   10    2
 Dependent on UnionMember. P-value ->6.94752619135e-26
 Cross Tab:
 UnionMember     No  Yes
@@ -228,6 +208,72 @@ Professional  1263  117
 Sales         1435  200
 Service        518  102
 Unknown         13    2
+Dependent on LoanDefault. P-value ->3.72454691631e-10
+Cross Tab:
+LoanDefault     No  Yes
+JobCategory            
+Agriculture    181   31
+Crafts         367   85
+Labor          568  118
+Professional  1032  348
+Sales         1175  460
+Service        494  126
+Unknown         12    3
+Dependent on CarOwnership. P-value ->0.00239139260428
+Cross Tab:
+CarOwnership   -1  Lease   Own
+JobCategory                   
+Agriculture    20     40   152
+Crafts         59     74   319
+Labor          58    105   523
+Professional  151    187  1042
+Sales         148    306  1181
+Service        61     86   473
+Unknown         0      1    14
+Dependent on Votes. P-value ->0.0205909925554
+Cross Tab:
+Votes          No  Yes
+JobCategory           
+Agriculture   103  109
+Crafts        201  251
+Labor         326  360
+Professional  660  720
+Sales         839  796
+Service       277  343
+Unknown         4   11
+Dependent on EquipmentRental. P-value ->0.0163860635651
+Cross Tab:
+EquipmentRental    No  Yes
+JobCategory               
+Agriculture       142   70
+Crafts            318  134
+Labor             472  214
+Professional      875  505
+Sales            1050  585
+Service           429  191
+Unknown            10    5
+Dependent on HouseholdIncome. P-value ->1.9551200687e-54
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+JobCategory                                                       
+Agriculture           36        71        59         38          8
+Crafts                83       146       101        103         19
+Labor                121       202       166        165         32
+Professional         171       419       498        273         19
+Sales                319       730       457        120          9
+Service               93       175       206        124         22
+Unknown                3         3         6          3          0
+Dependent on Education. P-value ->0.00189513475243
+Cross Tab:
+Education       0    1    2
+JobCategory                
+Agriculture    42  113   57
+Crafts         87  242  123
+Labor         151  361  174
+Professional  240  681  459
+Sales         288  850  497
+Service       135  332  153
+Unknown         3   10    2
 
 -----------------------------------------------------
 
@@ -284,54 +330,78 @@ Yes     738
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->2.97055701536e-50
-Cross Tab:
-LoanDefault    No   Yes
-Retired                
-No           3105  1157
-Yes           724    14
-Dependent on JobCategory. P-value ->2.95132719262e-31
-Cross Tab:
-JobCategory  Agriculture  Crafts  Labor  Professional  Sales  Service  Unknown
-Retired                                                                       
-No                   176     362    495          1263   1435      518       13
-Yes                   36      90    191           117    200      102        2
-Dependent on TownSize. P-value ->1.86243400775e-05
-Cross Tab:
-TownSize     1    2    3    4    5  #NULL!
-Retired                                   
-No        1181  875  787  765  653       1
-Yes        255  173  120   92   97       1
-Dependent on CarOwnership. P-value ->8.91019288781e-117
-Cross Tab:
-CarOwnership   -1  Lease   Own
-Retired                       
-No            429    470  3363
-Yes            68    329   341
-Dependent on Education. P-value ->1.49262021023e-13
-Cross Tab:
-Education    0     1     2
-Retired                   
-No         732  2240  1290
-Yes        214   349   175
-Dependent on HouseholdIncome. P-value ->2.50406863258e-258
-Cross Tab:
-HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
-Retired                                                           
-No                   387      1551      1419        797        108
-Yes                  439       195        74         29          1
 Dependent on Region. P-value ->0.0355686677362
 Cross Tab:
 Region     1    2    3    4    5
 Retired                         
 No       831  845  858  835  893
 Yes      178  150  145  131  134
+Dependent on TownSize. P-value ->1.86243400775e-05
+Cross Tab:
+TownSize   1.0  2.0  3.0  4.0  5.0  NA
+Retired                               
+No        1181  875  787  765  653   1
+Yes        255  173  120   92   97   1
+Dependent on JobCategory. P-value ->2.95132719262e-31
+Cross Tab:
+JobCategory  Agriculture  Crafts  Labor  Professional  Sales  Service  Unknown
+Retired                                                                       
+No                   176     362    495          1263   1435      518       13
+Yes                   36      90    191           117    200      102        2
+Dependent on LoanDefault. P-value ->2.97055701536e-50
+Cross Tab:
+LoanDefault    No   Yes
+Retired                
+No           3105  1157
+Yes           724    14
 Dependent on HomeOwner. P-value ->2.5263748118e-10
 Cross Tab:
 HomeOwner   0.0   1.0  NA
 Retired                  
 No         1494  2757  11
 Yes         353   383   2
+Dependent on CarOwnership. P-value ->8.91019288781e-117
+Cross Tab:
+CarOwnership   -1  Lease   Own
+Retired                       
+No            429    470  3363
+Yes            68    329   341
+Dependent on Votes. P-value ->0.00113690367298
+Cross Tab:
+Votes      No   Yes
+Retired            
+No       2013  2249
+Yes       397   341
+Dependent on CreditCard. P-value ->0.000126161317453
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+Retired                                 
+No           854  1189  1004   182  1033
+Yes          132   155   196    41   214
+Dependent on ActiveLifestyle. P-value ->5.26993069566e-16
+Cross Tab:
+ActiveLifestyle    No   Yes
+Retired                    
+No               2174  2088
+Yes               496   242
+Dependent on EquipmentRental. P-value ->8.61791267804e-13
+Cross Tab:
+EquipmentRental    No   Yes
+Retired                    
+No               2724  1538
+Yes               572   166
+Dependent on HouseholdIncome. P-value ->2.50406863258e-258
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+Retired                                                           
+No                   387      1551      1419        797        108
+Yes                  439       195        74         29          1
+Dependent on Education. P-value ->1.49262021023e-13
+Cross Tab:
+Education    0     1     2
+Retired                   
+No         732  2240  1290
+Yes        214   349   175
 
 -----------------------------------------------------
 
@@ -348,12 +418,6 @@ Yes    1171
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on MaritalStatus. P-value ->0.00175373498814
-Cross Tab:
-MaritalStatus  Married  Unmarried
-LoanDefault                      
-No                1886       1943
-Yes                515        656
 Dependent on JobCategory. P-value ->3.72454691631e-10
 Cross Tab:
 JobCategory  Agriculture  Crafts  Labor  Professional  Sales  Service  Unknown
@@ -366,24 +430,42 @@ Retired        No  Yes
 LoanDefault           
 No           3105  724
 Yes          1157   14
+Dependent on MaritalStatus. P-value ->0.00175373498814
+Cross Tab:
+MaritalStatus  Married  Unmarried
+LoanDefault                      
+No                1886       1943
+Yes                515        656
 Dependent on CarOwnership. P-value ->4.6045017671e-08
 Cross Tab:
 CarOwnership   -1  Lease   Own
 LoanDefault                   
 No            400    667  2762
 Yes            97    132   942
-Dependent on Education. P-value ->2.24034841039e-15
+Dependent on ActiveLifestyle. P-value ->1.81057095871e-15
 Cross Tab:
-Education      0     1     2
-LoanDefault                 
-No           813  1968  1048
-Yes          133   621   417
+ActiveLifestyle    No   Yes
+LoanDefault                
+No               2164  1665
+Yes               506   665
+Dependent on EquipmentRental. P-value ->1.18589177632e-10
+Cross Tab:
+EquipmentRental    No   Yes
+LoanDefault                
+No               2616  1213
+Yes               680   491
 Dependent on HouseholdIncome. P-value ->3.25435117637e-08
 Cross Tab:
 HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
 LoanDefault                                                       
 No                   625      1271      1192        670         71
 Yes                  201       475       301        156         38
+Dependent on Education. P-value ->2.24034841039e-15
+Cross Tab:
+Education      0     1     2
+LoanDefault                 
+No           813  1968  1048
+Yes          133   621   417
 Dependent on InHeavyDebt. P-value ->2.46589039885e-64
 Cross Tab:
 InHeavyDebt     0    1
@@ -406,24 +488,30 @@ Unmarried    2599
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->0.00175373498814
-Cross Tab:
-LoanDefault      No  Yes
-MaritalStatus           
-Married        1886  515
-Unmarried      1943  656
 Dependent on Region. P-value ->0.00237379278818
 Cross Tab:
 Region           1    2    3    4    5
 MaritalStatus                         
 Married        449  452  485  476  539
 Unmarried      560  543  518  490  488
+Dependent on LoanDefault. P-value ->0.00175373498814
+Cross Tab:
+LoanDefault      No  Yes
+MaritalStatus           
+Married        1886  515
+Unmarried      1943  656
 Dependent on HomeOwner. P-value ->3.3330009158e-19
 Cross Tab:
 HomeOwner       0.0   1.0  NA
 MaritalStatus                
 Married         730  1663   8
 Unmarried      1117  1477   5
+Dependent on CreditCard. P-value ->0.00587807137641
+Cross Tab:
+CreditCard     AMEX  Disc  Mast  Othe  Visa
+MaritalStatus                              
+Married         505   674   539    94   589
+Unmarried       481   670   661   129   658
 Dependent on InHeavyDebt. P-value ->0.00288287984573
 Cross Tab:
 InHeavyDebt       0    1
@@ -465,34 +553,6 @@ NA       13
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on MaritalStatus. P-value ->3.3330009158e-19
-Cross Tab:
-MaritalStatus  Married  Unmarried
-HomeOwner                        
-0.0                730       1117
-1.0               1663       1477
-NA                   8          5
-Dependent on HouseholdIncome. P-value ->2.19914260752e-22
-Cross Tab:
-HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
-HomeOwner                                                         
-0.0                  402       679       538        210         18
-1.0                  422      1061       953        613         91
-NA                     2         6         2          3          0
-Dependent on CarOwnership. P-value ->0.00508930534203
-Cross Tab:
-CarOwnership   -1  Lease   Own
-HomeOwner                     
-0.0           175    343  1329
-1.0           321    454  2365
-NA              1      2    10
-Dependent on Education. P-value ->0.0170545406197
-Cross Tab:
-Education    0     1    2
-HomeOwner                
-0.0        385   965  497
-1.0        558  1617  965
-NA           3     7    3
 Dependent on Region. P-value ->0.00717926939801
 Cross Tab:
 Region       1    2    3    4    5
@@ -507,6 +567,41 @@ HomeOwner
 0.0        1494  353
 1.0        2757  383
 NA           11    2
+Dependent on MaritalStatus. P-value ->3.3330009158e-19
+Cross Tab:
+MaritalStatus  Married  Unmarried
+HomeOwner                        
+0.0                730       1117
+1.0               1663       1477
+NA                   8          5
+Dependent on CarOwnership. P-value ->0.00508930534203
+Cross Tab:
+CarOwnership   -1  Lease   Own
+HomeOwner                     
+0.0           175    343  1329
+1.0           321    454  2365
+NA              1      2    10
+Dependent on CreditCard. P-value ->0.000217465544454
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+HomeOwner                               
+0.0          341   440   470    99   497
+1.0          643   901   724   123   749
+NA             2     3     6     1     1
+Dependent on HouseholdIncome. P-value ->2.19914260752e-22
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+HomeOwner                                                         
+0.0                  402       679       538        210         18
+1.0                  422      1061       953        613         91
+NA                     2         6         2          3          0
+Dependent on Education. P-value ->0.0170545406197
+Cross Tab:
+Education    0     1    2
+HomeOwner                
+0.0        385   965  497
+1.0        558  1617  965
+NA           3     7    3
 
 -----------------------------------------------------
 
@@ -560,48 +655,6 @@ Own      3704
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->4.6045017671e-08
-Cross Tab:
-LoanDefault     No  Yes
-CarOwnership           
--1             400   97
-Lease          667  132
-Own           2762  942
-Dependent on CarsOwned. P-value ->0.0
-Cross Tab:
-CarsOwned       0    1     2    3    4    5   6   7  8
-CarOwnership                                          
--1            497    0     0    0    0    0   0   0  0
-Lease           0  217   307  173   75   16  10   1  0
-Own             0  902  1300  909  406  133  41  12  1
-Dependent on Retired. P-value ->8.91019288781e-117
-Cross Tab:
-Retired         No  Yes
-CarOwnership           
--1             429   68
-Lease          470  329
-Own           3363  341
-Dependent on Education. P-value ->9.42416022921e-07
-Cross Tab:
-Education       0     1     2
-CarOwnership                 
--1             96   243   158
-Lease         198   420   181
-Own           652  1926  1126
-Dependent on HouseholdIncome. P-value ->5.86827365596e-136
-Cross Tab:
-HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
-CarOwnership                                                      
--1                    68       195       151         74          9
-Lease                352       305       120         22          0
-Own                  406      1246      1222        730        100
-Dependent on HomeOwner. P-value ->0.00508930534203
-Cross Tab:
-HomeOwner      0.0   1.0  NA
-CarOwnership                
--1             175   321   1
-Lease          343   454   2
-Own           1329  2365  10
 Dependent on JobCategory. P-value ->0.00239139260428
 Cross Tab:
 JobCategory   Agriculture  Crafts  Labor  Professional  Sales  Service  \
@@ -615,6 +668,69 @@ CarOwnership
 -1                  0  
 Lease               1  
 Own                14  
+Dependent on Retired. P-value ->8.91019288781e-117
+Cross Tab:
+Retired         No  Yes
+CarOwnership           
+-1             429   68
+Lease          470  329
+Own           3363  341
+Dependent on LoanDefault. P-value ->4.6045017671e-08
+Cross Tab:
+LoanDefault     No  Yes
+CarOwnership           
+-1             400   97
+Lease          667  132
+Own           2762  942
+Dependent on HomeOwner. P-value ->0.00508930534203
+Cross Tab:
+HomeOwner      0.0   1.0  NA
+CarOwnership                
+-1             175   321   1
+Lease          343   454   2
+Own           1329  2365  10
+Dependent on CarsOwned. P-value ->0.0
+Cross Tab:
+CarsOwned       0    1     2    3    4    5   6   7  8
+CarOwnership                                          
+-1            497    0     0    0    0    0   0   0  0
+Lease           0  217   307  173   75   16  10   1  0
+Own             0  902  1300  909  406  133  41  12  1
+Dependent on Votes. P-value ->2.02849132873e-05
+Cross Tab:
+Votes           No   Yes
+CarOwnership            
+-1             251   246
+Lease          441   358
+Own           1718  1986
+Dependent on CreditCard. P-value ->3.98981850132e-06
+Cross Tab:
+CreditCard    AMEX  Disc  Mast  Othe  Visa
+CarOwnership                              
+-1             119   120   114    21   123
+Lease          133   175   196    49   246
+Own            734  1049   890   153   878
+Dependent on EquipmentRental. P-value ->0.012665152791
+Cross Tab:
+EquipmentRental    No   Yes
+CarOwnership               
+-1                323   174
+Lease             563   236
+Own              2410  1294
+Dependent on HouseholdIncome. P-value ->5.86827365596e-136
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+CarOwnership                                                      
+-1                    68       195       151         74          9
+Lease                352       305       120         22          0
+Own                  406      1246      1222        730        100
+Dependent on Education. P-value ->9.42416022921e-07
+Cross Tab:
+Education       0     1     2
+CarOwnership                 
+-1             96   243   158
+Lease         198   420   181
+Own           652  1926  1126
 
 -----------------------------------------------------
 
@@ -636,39 +752,231 @@ Kurtosis: 1.97286437561
 
 -----------------------------------------------------
 
-17: CommuteTime, object
-count     5000
-unique      42
-top         24
-freq       336
+17: CommuteTime, int64
+count    5000.000000
+mean       25.335400
+std         5.899785
+min         0.000000
+25%        21.000000
+50%        25.000000
+75%        29.000000
+max        48.000000
 
+Normality Snapshot:
+Mean: 25.3354
+Median: 25.0
+Skew: 0.260553108942
+Kurtosis: 0.228184235951
 
 -----------------------------------------------------
 
-18: PoliticalPartyMem, object
+18: PoliticalPartyMem, category
 count     5000
 unique       2
 top         No
 freq      3093
 
+Categorical Breakdown:
+PoliticalPartyMem
+No     3093
+Yes    1907
+Name: CustomerID, dtype: int64
+
+Independence Issues:
+Dependent on Votes. P-value ->2.35955959995e-11
+Cross Tab:
+Votes                No   Yes
+PoliticalPartyMem            
+No                 1606  1487
+Yes                 804  1103
 
 -----------------------------------------------------
 
-19: Votes, object
+19: Votes, category
 count     5000
 unique       2
 top        Yes
 freq      2590
 
+Categorical Breakdown:
+Votes
+No     2410
+Yes    2590
+Name: CustomerID, dtype: int64
+
+Independence Issues:
+Dependent on Gender. P-value ->0.0332366695542
+Cross Tab:
+Gender  Female  Male  NA
+Votes                   
+No        1248  1146  16
+Yes       1246  1327  17
+Dependent on JobCategory. P-value ->0.0205909925554
+Cross Tab:
+JobCategory  Agriculture  Crafts  Labor  Professional  Sales  Service  Unknown
+Votes                                                                         
+No                   103     201    326           660    839      277        4
+Yes                  109     251    360           720    796      343       11
+Dependent on Retired. P-value ->0.00113690367298
+Cross Tab:
+Retired    No  Yes
+Votes             
+No       2013  397
+Yes      2249  341
+Dependent on CarOwnership. P-value ->2.02849132873e-05
+Cross Tab:
+CarOwnership   -1  Lease   Own
+Votes                         
+No            251    441  1718
+Yes           246    358  1986
+Dependent on PoliticalPartyMem. P-value ->2.35955959995e-11
+Cross Tab:
+PoliticalPartyMem    No   Yes
+Votes                        
+No                 1606   804
+Yes                1487  1103
+Dependent on CreditCard. P-value ->0.00743546230893
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+Votes                                   
+No           457   606   595   122   630
+Yes          529   738   605   101   617
+Dependent on EquipmentRental. P-value ->0.00160765999211
+Cross Tab:
+EquipmentRental    No  Yes
+Votes                     
+No               1642  768
+Yes              1654  936
+Dependent on HouseholdIncome. P-value ->3.14092116302e-17
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+Votes                                                             
+No                   457       914       698        308         33
+Yes                  369       832       795        518         76
+Dependent on Education. P-value ->2.69504334621e-10
+Cross Tab:
+Education    0     1    2
+Votes                    
+No         511  1294  605
+Yes        435  1295  860
 
 -----------------------------------------------------
 
-20: CreditCard, object
+20: CreditCard, category
 count     5000
 unique       5
 top       Disc
 freq      1344
 
+Categorical Breakdown:
+CreditCard
+AMEX     986
+Disc    1344
+Mast    1200
+Othe     223
+Visa    1247
+Name: CustomerID, dtype: int64
+
+Independence Issues:
+Dependent on TownSize. P-value ->0.0321627632513
+Cross Tab:
+TownSize    1.0  2.0  3.0  4.0  5.0  NA
+CreditCard                             
+AMEX        291  215  165  172  143   0
+Disc        390  264  232  239  218   1
+Mast        349  249  230  185  187   0
+Othe         44   60   41   41   36   1
+Visa        362  260  239  220  166   0
+Dependent on Gender. P-value ->1.11626655992e-06
+Cross Tab:
+Gender      Female  Male  NA
+CreditCard                  
+AMEX           415   567   4
+Disc           663   674   7
+Mast           622   567  11
+Othe           130    92   1
+Visa           664   573  10
+Dependent on Retired. P-value ->0.000126161317453
+Cross Tab:
+Retired       No  Yes
+CreditCard           
+AMEX         854  132
+Disc        1189  155
+Mast        1004  196
+Othe         182   41
+Visa        1033  214
+Dependent on MaritalStatus. P-value ->0.00587807137641
+Cross Tab:
+MaritalStatus  Married  Unmarried
+CreditCard                       
+AMEX               505        481
+Disc               674        670
+Mast               539        661
+Othe                94        129
+Visa               589        658
+Dependent on HomeOwner. P-value ->0.000217465544454
+Cross Tab:
+HomeOwner   0.0  1.0  NA
+CreditCard              
+AMEX        341  643   2
+Disc        440  901   3
+Mast        470  724   6
+Othe         99  123   1
+Visa        497  749   1
+Dependent on CarOwnership. P-value ->3.98981850132e-06
+Cross Tab:
+CarOwnership   -1  Lease   Own
+CreditCard                    
+AMEX          119    133   734
+Disc          120    175  1049
+Mast          114    196   890
+Othe           21     49   153
+Visa          123    246   878
+Dependent on Votes. P-value ->0.00743546230893
+Cross Tab:
+Votes        No  Yes
+CreditCard          
+AMEX        457  529
+Disc        606  738
+Mast        595  605
+Othe        122  101
+Visa        630  617
+Dependent on ActiveLifestyle. P-value ->0.0274402544067
+Cross Tab:
+ActiveLifestyle   No  Yes
+CreditCard               
+AMEX             547  439
+Disc             742  602
+Mast             597  603
+Othe             112  111
+Visa             672  575
+Dependent on EquipmentRental. P-value ->2.13228076845e-18
+Cross Tab:
+EquipmentRental   No  Yes
+CreditCard               
+AMEX             601  385
+Disc             786  558
+Mast             867  333
+Othe             176   47
+Visa             866  381
+Dependent on HouseholdIncome. P-value ->2.13879600057e-34
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+CreditCard                                                        
+AMEX                 140       324       296        197         29
+Disc                 158       390       428        318         50
+Mast                 230       445       361        143         21
+Othe                  55        98        58         12          0
+Visa                 243       489       350        156          9
+Dependent on Education. P-value ->2.48332479685e-81
+Cross Tab:
+Education     0    1    2
+CreditCard               
+AMEX        123  483  380
+Disc        133  658  553
+Mast        278  684  238
+Othe        104   97   22
+Visa        308  667  272
 
 -----------------------------------------------------
 
@@ -726,12 +1034,49 @@ Kurtosis: 21.4395966598
 
 -----------------------------------------------------
 
-24: ActiveLifestyle, object
+24: ActiveLifestyle, category
 count     5000
 unique       2
 top         No
 freq      2670
 
+Categorical Breakdown:
+ActiveLifestyle
+No     2670
+Yes    2330
+Name: CustomerID, dtype: int64
+
+Independence Issues:
+Dependent on Retired. P-value ->5.26993069566e-16
+Cross Tab:
+Retired            No  Yes
+ActiveLifestyle           
+No               2174  496
+Yes              2088  242
+Dependent on LoanDefault. P-value ->1.81057095871e-15
+Cross Tab:
+LoanDefault        No  Yes
+ActiveLifestyle           
+No               2164  506
+Yes              1665  665
+Dependent on CreditCard. P-value ->0.0274402544067
+Cross Tab:
+CreditCard       AMEX  Disc  Mast  Othe  Visa
+ActiveLifestyle                              
+No                547   742   597   112   672
+Yes               439   602   603   111   575
+Dependent on EquipmentRental. P-value ->0.0183355406084
+Cross Tab:
+EquipmentRental    No  Yes
+ActiveLifestyle           
+No               1800  870
+Yes              1496  834
+Dependent on HouseholdIncome. P-value ->7.72786864874e-08
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+ActiveLifestyle                                                   
+No                   447       844       812        498         69
+Yes                  379       902       681        328         40
 
 -----------------------------------------------------
 
@@ -771,21 +1116,96 @@ Kurtosis: 18.5033897103
 
 -----------------------------------------------------
 
-27: VoiceOverTenure, object
-count     5000.00
-unique    4438.00
-top          2.05
-freq         8.00
+27: VoiceOverTenure, float64
+count    5000.000000
+mean       25.335400
+std         5.899785
+min         0.000000
+25%        21.000000
+50%        25.000000
+75%        29.000000
+max        48.000000
 
+Normality Snapshot:
+Mean: 25.3354
+Median: 25.0
+Skew: 0.260553108942
+Kurtosis: 0.228184235951
 
 -----------------------------------------------------
 
-28: EquipmentRental, object
+28: EquipmentRental, category
 count     5000
 unique       2
 top         No
 freq      3296
 
+Categorical Breakdown:
+EquipmentRental
+No     3296
+Yes    1704
+Name: CustomerID, dtype: int64
+
+Independence Issues:
+Dependent on JobCategory. P-value ->0.0163860635651
+Cross Tab:
+JobCategory      Agriculture  Crafts  Labor  Professional  Sales  Service  \
+EquipmentRental                                                             
+No                       142     318    472           875   1050      429   
+Yes                       70     134    214           505    585      191   
+
+JobCategory      Unknown  
+EquipmentRental           
+No                    10  
+Yes                    5  
+Dependent on Retired. P-value ->8.61791267804e-13
+Cross Tab:
+Retired            No  Yes
+EquipmentRental           
+No               2724  572
+Yes              1538  166
+Dependent on LoanDefault. P-value ->1.18589177632e-10
+Cross Tab:
+LoanDefault        No  Yes
+EquipmentRental           
+No               2616  680
+Yes              1213  491
+Dependent on CarOwnership. P-value ->0.012665152791
+Cross Tab:
+CarOwnership      -1  Lease   Own
+EquipmentRental                  
+No               323    563  2410
+Yes              174    236  1294
+Dependent on Votes. P-value ->0.00160765999211
+Cross Tab:
+Votes              No   Yes
+EquipmentRental            
+No               1642  1654
+Yes               768   936
+Dependent on CreditCard. P-value ->2.13228076845e-18
+Cross Tab:
+CreditCard       AMEX  Disc  Mast  Othe  Visa
+EquipmentRental                              
+No                601   786   867   176   866
+Yes               385   558   333    47   381
+Dependent on ActiveLifestyle. P-value ->0.0183355406084
+Cross Tab:
+ActiveLifestyle    No   Yes
+EquipmentRental            
+No               1800  1496
+Yes               870   834
+Dependent on HouseholdIncome. P-value ->3.31932239083e-07
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+EquipmentRental                                                   
+No                   607      1156       971        497         65
+Yes                  219       590       522        329         44
+Dependent on Education. P-value ->9.83039777615e-177
+Cross Tab:
+Education          0     1    2
+EquipmentRental                
+No               886  1833  577
+Yes               60   756  888
 
 -----------------------------------------------------
 
@@ -1039,15 +1459,6 @@ above 200     109
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->3.25435117637e-08
-Cross Tab:
-LoanDefault        No  Yes
-HouseholdIncome           
-0 to 20           625  201
-20 to 39         1271  475
-40 to 79         1192  301
-80 to 200         670  156
-above 200          71   38
 Dependent on JobCategory. P-value ->1.9551200687e-54
 Cross Tab:
 JobCategory      Agriculture  Crafts  Labor  Professional  Sales  Service  \
@@ -1074,24 +1485,15 @@ HouseholdIncome
 40 to 79         1419   74
 80 to 200         797   29
 above 200         108    1
-Dependent on CarOwnership. P-value ->5.86827365596e-136
+Dependent on LoanDefault. P-value ->3.25435117637e-08
 Cross Tab:
-CarOwnership      -1  Lease   Own
-HouseholdIncome                  
-0 to 20           68    352   406
-20 to 39         195    305  1246
-40 to 79         151    120  1222
-80 to 200         74     22   730
-above 200          9      0   100
-Dependent on Education. P-value ->1.07328643175e-34
-Cross Tab:
-Education          0    1    2
-HouseholdIncome               
-0 to 20          213  454  159
-20 to 39         372  957  417
-40 to 79         243  764  486
-80 to 200        109  365  352
-above 200          9   49   51
+LoanDefault        No  Yes
+HouseholdIncome           
+0 to 20           625  201
+20 to 39         1271  475
+40 to 79         1192  301
+80 to 200         670  156
+above 200          71   38
 Dependent on HomeOwner. P-value ->2.19914260752e-22
 Cross Tab:
 HomeOwner        0.0   1.0  NA
@@ -1101,6 +1503,60 @@ HouseholdIncome
 40 to 79         538   953   2
 80 to 200        210   613   3
 above 200         18    91   0
+Dependent on CarOwnership. P-value ->5.86827365596e-136
+Cross Tab:
+CarOwnership      -1  Lease   Own
+HouseholdIncome                  
+0 to 20           68    352   406
+20 to 39         195    305  1246
+40 to 79         151    120  1222
+80 to 200         74     22   730
+above 200          9      0   100
+Dependent on Votes. P-value ->3.14092116302e-17
+Cross Tab:
+Votes             No  Yes
+HouseholdIncome          
+0 to 20          457  369
+20 to 39         914  832
+40 to 79         698  795
+80 to 200        308  518
+above 200         33   76
+Dependent on CreditCard. P-value ->2.13879600057e-34
+Cross Tab:
+CreditCard       AMEX  Disc  Mast  Othe  Visa
+HouseholdIncome                              
+0 to 20           140   158   230    55   243
+20 to 39          324   390   445    98   489
+40 to 79          296   428   361    58   350
+80 to 200         197   318   143    12   156
+above 200          29    50    21     0     9
+Dependent on ActiveLifestyle. P-value ->7.72786864874e-08
+Cross Tab:
+ActiveLifestyle   No  Yes
+HouseholdIncome          
+0 to 20          447  379
+20 to 39         844  902
+40 to 79         812  681
+80 to 200        498  328
+above 200         69   40
+Dependent on EquipmentRental. P-value ->3.31932239083e-07
+Cross Tab:
+EquipmentRental    No  Yes
+HouseholdIncome           
+0 to 20           607  219
+20 to 39         1156  590
+40 to 79          971  522
+80 to 200         497  329
+above 200          65   44
+Dependent on Education. P-value ->1.07328643175e-34
+Cross Tab:
+Education          0    1    2
+HouseholdIncome               
+0 to 20          213  454  159
+20 to 39         372  957  417
+40 to 79         243  764  486
+80 to 200        109  365  352
+above 200          9   49   51
 
 -----------------------------------------------------
 
@@ -1118,13 +1574,6 @@ Education
 Name: CustomerID, dtype: int64
 
 Independence Issues:
-Dependent on LoanDefault. P-value ->2.24034841039e-15
-Cross Tab:
-LoanDefault    No  Yes
-Education             
-0             813  133
-1            1968  621
-2            1048  417
 Dependent on JobCategory. P-value ->0.00189513475243
 Cross Tab:
 JobCategory  Agriculture  Crafts  Labor  Professional  Sales  Service  Unknown
@@ -1139,20 +1588,13 @@ Education
 0           732  214
 1          2240  349
 2          1290  175
-Dependent on CarOwnership. P-value ->9.42416022921e-07
+Dependent on LoanDefault. P-value ->2.24034841039e-15
 Cross Tab:
-CarOwnership   -1  Lease   Own
-Education                     
-0              96    198   652
-1             243    420  1926
-2             158    181  1126
-Dependent on HouseholdIncome. P-value ->1.07328643175e-34
-Cross Tab:
-HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
-Education                                                         
-0                    213       372       243        109          9
-1                    454       957       764        365         49
-2                    159       417       486        352         51
+LoanDefault    No  Yes
+Education             
+0             813  133
+1            1968  621
+2            1048  417
 Dependent on HomeOwner. P-value ->0.0170545406197
 Cross Tab:
 HomeOwner  0.0   1.0  NA
@@ -1160,6 +1602,41 @@ Education
 0          385   558   3
 1          965  1617   7
 2          497   965   3
+Dependent on CarOwnership. P-value ->9.42416022921e-07
+Cross Tab:
+CarOwnership   -1  Lease   Own
+Education                     
+0              96    198   652
+1             243    420  1926
+2             158    181  1126
+Dependent on Votes. P-value ->2.69504334621e-10
+Cross Tab:
+Votes        No   Yes
+Education            
+0           511   435
+1          1294  1295
+2           605   860
+Dependent on CreditCard. P-value ->2.48332479685e-81
+Cross Tab:
+CreditCard  AMEX  Disc  Mast  Othe  Visa
+Education                               
+0            123   133   278   104   308
+1            483   658   684    97   667
+2            380   553   238    22   272
+Dependent on EquipmentRental. P-value ->9.83039777615e-177
+Cross Tab:
+EquipmentRental    No  Yes
+Education                 
+0                 886   60
+1                1833  756
+2                 577  888
+Dependent on HouseholdIncome. P-value ->1.07328643175e-34
+Cross Tab:
+HouseholdIncome  0 to 20  20 to 39  40 to 79  80 to 200  above 200
+Education                                                         
+0                    213       372       243        109          9
+1                    454       957       764        365         49
+2                    159       417       486        352         51
 
 -----------------------------------------------------
 
@@ -1176,6 +1653,12 @@ InHeavyDebt
 Name: CustomerID, dtype: int64
 
 Independence Issues:
+Dependent on Gender. P-value ->7.50883267932e-06
+Cross Tab:
+Gender       Female  Male  NA
+InHeavyDebt                  
+0              2016  2021  16
+1               478   452  17
 Dependent on LoanDefault. P-value ->2.46589039885e-64
 Cross Tab:
 LoanDefault    No  Yes
@@ -1188,12 +1671,6 @@ MaritalStatus  Married  Unmarried
 InHeavyDebt                      
 0                 1988       2065
 1                  413        534
-Dependent on Gender. P-value ->7.50883267932e-06
-Cross Tab:
-Gender       Female  Male  NA
-InHeavyDebt                  
-0              2016  2021  16
-1               478   452  17
 
 -----------------------------------------------------
 
@@ -1213,6 +1690,24 @@ Independence Issues:
 
 -----------------------------------------------------
 
+54: AvgPhoneBill, float64
+count    5000.000000
+mean             inf
+std              NaN
+min         0.000000
+25%         0.695350
+50%         1.513900
+75%         2.333333
+max              inf
+
+Normality Snapshot:
+Mean: inf
+Median: 1.513899613899614
+Skew: nan
+Kurtosis: nan
+
+-----------------------------------------------------
+
 CustomerID               object
 Region                 category
 TownSize               category
@@ -1229,18 +1724,18 @@ HomeOwner              category
 CarsOwned              category
 CarOwnership           category
 CarValue                float64
-CommuteTime              object
-PoliticalPartyMem        object
-Votes                    object
-CreditCard               object
+CommuteTime               int64
+PoliticalPartyMem      category
+Votes                  category
+CreditCard             category
 CardTenure                int64
 CardItemsMonthly          int64
 CardSpendMonth          float64
-ActiveLifestyle          object
+ActiveLifestyle        category
 PhoneCoTenure             int64
 VoiceLastMonth          float64
-VoiceOverTenure          object
-EquipmentRental          object
+VoiceOverTenure         float64
+EquipmentRental        category
 EquipmentLastMonth      float64
 EquipmentOverTenure     float64
 CallingCard              object
@@ -1266,4 +1761,5 @@ HouseholdIncome        category
 Education              category
 InHeavyDebt            category
 HasPets                category
+AvgPhoneBill            float64
 dtype: object

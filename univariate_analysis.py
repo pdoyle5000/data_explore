@@ -57,6 +57,7 @@ def print_summary(db):
             f.write("Median: " + str(median) + '\n')
             f.write("Skew: " + str(skew) + '\n')
             f.write("Kurtosis: " + str(kurt) + '\n')
+            # Correlate Here!
 
         f.write('\n-----------------------------------------------------\n\n')
         num_attributes += 1
@@ -82,13 +83,12 @@ def clean_attributes(db):
     db['JobCategory'] = db['JobCategory'].astype('category')
 
     # Replace all the null values in CommuteTime with 0
-    # NOTE! REPLACE #NULL! with nothing in xlsx, we handle it better.
-    #db['CommuteTime'].fillna(0, inplace=True)
-    #db['CommuteTime'] = db['CommuteTime'].astype(np.int64)
+    db['CommuteTime'].fillna(0, inplace=True)
+    db['CommuteTime'] = db['CommuteTime'].astype(np.int64)
 
     # Replace all null values in VoiceOverTenure with 0
-    #db['VoiceOverTenure'].fillna(0, inplace=True)
-    #db['VoiceOverTenure'] = db['CommuteTime'].astype(np.float64)
+    db['VoiceOverTenure'].fillna(0, inplace=True)
+    db['VoiceOverTenure'] = db['CommuteTime'].astype(np.float64)
 
     # Create categorical variable from HHIncome
     db['HouseholdIncome'] = hhincome_to_cat(db['HHIncome'])
@@ -109,7 +109,7 @@ def clean_attributes(db):
     db['CarValue'].replace(float(-1000), np.nan, inplace=True)
     
     # Create AvgPhoneBill variable
-    db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
+    db['AvgPhoneBill'] = db['PhoneCoTenure'].divide(db['VoiceOverTenure'])
     
     cols_to_delete = [
             'HHIncome', 
@@ -189,7 +189,7 @@ def categorical_independence(db, att):
         if attribute != att:
             xtab = pd.crosstab(db[att], db[attribute])
             chisq, p, _, _ = chi2_contingency(xtab)
-            # only show me p values that indicate dependence.
+            # only show me p values that indicate association.
             if p < 0.05:
                 result_dict[attribute] = p
 
