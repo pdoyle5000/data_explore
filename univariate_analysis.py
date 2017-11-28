@@ -16,7 +16,12 @@ FORCE_TYPES = {
         'MaritalStatus': 'category',
         'CarsOwned': 'category',
         'CarOwnership': 'category',
-        'CarBrand': 'category'
+        'CarBrand': 'category',
+        'PoliticalPartyMem': 'category',
+        'Votes': 'category',
+        'CreditCard': 'category',
+        'ActiveLifestyle': 'category',
+        'EquipmentRental': 'category',
         }
 
 def import_original_data():
@@ -76,6 +81,15 @@ def clean_attributes(db):
     db['JobCategory'].fillna("Unknown", inplace=True)
     db['JobCategory'] = db['JobCategory'].astype('category')
 
+    # Replace all the null values in CommuteTime with 0
+    # NOTE! REPLACE #NULL! with nothing in xlsx, we handle it better.
+    #db['CommuteTime'].fillna(0, inplace=True)
+    #db['CommuteTime'] = db['CommuteTime'].astype(np.int64)
+
+    # Replace all null values in VoiceOverTenure with 0
+    #db['VoiceOverTenure'].fillna(0, inplace=True)
+    #db['VoiceOverTenure'] = db['CommuteTime'].astype(np.float64)
+
     # Create categorical variable from HHIncome
     db['HouseholdIncome'] = hhincome_to_cat(db['HHIncome'])
 
@@ -90,6 +104,13 @@ def clean_attributes(db):
 
     # Create categorical variable HasPets
     db['HasPets'] = has_pets(db)
+
+    # Replace all the -$1000 values in CarValue with NaN
+    db['CarValue'].replace(float(-1000), np.nan, inplace=True)
+    
+    # Create AvgPhoneBill variable
+    db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
+    
     cols_to_delete = [
             'HHIncome', 
             'EducationYears', 
@@ -161,7 +182,6 @@ def has_pets(db):
             haspets.append(0)
     return pd.Series(haspets, dtype='category')
 
-
 def categorical_independence(db, att):
     result_dict = {}
 
@@ -189,6 +209,7 @@ def main():
     #print(pd.crosstab(clean_db['HouseholdIncome'],clean_db['JobCategory']))
     #print(pd.crosstab(clean_db['MaritalStatus'],clean_db['HouseholdSize']))
     #plt.show()
+
 
 if __name__ == "__main__":
     main()
