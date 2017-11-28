@@ -1,7 +1,7 @@
 1: CustomerID, object
 count                5000
 unique               5000
-top       5967-QLYOLM-8QN
+top       4030-WSTXBV-BTC
 freq                    1
 
 
@@ -22,7 +22,7 @@ Region
 5    1027
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on TownSize. P-value ->1.753558088e-196
 Dependent on Retired. P-value ->0.0355686677362
 Dependent on MaritalStatus. P-value ->0.00237379278818
@@ -46,7 +46,7 @@ TownSize
 NA        2
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Region. P-value ->1.753558088e-196
 Dependent on Retired. P-value ->1.86243400775e-05
 Dependent on CreditCard. P-value ->0.0321627632513
@@ -66,7 +66,7 @@ Male      2473
 NA          33
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Votes. P-value ->0.0332366695542
 Dependent on CreditCard. P-value ->1.11626655992e-06
 Dependent on InHeavyDebt. P-value ->7.50883267932e-06
@@ -108,7 +108,7 @@ Service          620
 Unknown           15
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on UnionMember. P-value ->6.94752619135e-26
 Dependent on Retired. P-value ->2.95132719262e-31
 Dependent on LoanDefault. P-value ->3.72454691631e-10
@@ -132,7 +132,7 @@ No     4244
 Yes     756
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->6.94752619135e-26
 
 -----------------------------------------------------
@@ -167,7 +167,7 @@ No     4262
 Yes     738
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Region. P-value ->0.0355686677362
 Dependent on TownSize. P-value ->1.86243400775e-05
 Dependent on JobCategory. P-value ->2.95132719262e-31
@@ -195,7 +195,7 @@ No     3829
 Yes    1171
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->3.72454691631e-10
 Dependent on Retired. P-value ->2.97055701536e-50
 Dependent on MaritalStatus. P-value ->0.00175373498814
@@ -220,7 +220,7 @@ Married      2401
 Unmarried    2599
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Region. P-value ->0.00237379278818
 Dependent on LoanDefault. P-value ->0.00175373498814
 Dependent on HomeOwner. P-value ->3.3330009158e-19
@@ -260,7 +260,7 @@ HomeOwner
 NA       13
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Region. P-value ->0.00717926939801
 Dependent on Retired. P-value ->2.5263748118e-10
 Dependent on MaritalStatus. P-value ->3.3330009158e-19
@@ -290,7 +290,7 @@ CarsOwned
 8       1
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on CarOwnership. P-value ->0.0
 
 -----------------------------------------------------
@@ -308,7 +308,7 @@ Lease     799
 Own      3704
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->0.00239139260428
 Dependent on Retired. P-value ->8.91019288781e-117
 Dependent on LoanDefault. P-value ->4.6045017671e-08
@@ -370,7 +370,7 @@ No     3093
 Yes    1907
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Votes. P-value ->2.35955959995e-11
 
 -----------------------------------------------------
@@ -387,7 +387,7 @@ No     2410
 Yes    2590
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Gender. P-value ->0.0332366695542
 Dependent on JobCategory. P-value ->0.0205909925554
 Dependent on Retired. P-value ->0.00113690367298
@@ -415,7 +415,7 @@ Othe     223
 Visa    1247
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on TownSize. P-value ->0.0321627632513
 Dependent on Gender. P-value ->1.11626655992e-06
 Dependent on Retired. P-value ->0.000126161317453
@@ -496,7 +496,7 @@ No     2670
 Yes    2330
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Retired. P-value ->5.26993069566e-16
 Dependent on LoanDefault. P-value ->1.81057095871e-15
 Dependent on CreditCard. P-value ->0.0274402544067
@@ -571,7 +571,7 @@ No     3296
 Yes    1704
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->0.0163860635651
 Dependent on Retired. P-value ->8.61791267804e-13
 Dependent on LoanDefault. P-value ->1.18589177632e-10
@@ -833,7 +833,7 @@ HouseholdIncome
 above 200     109
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->1.9551200687e-54
 Dependent on Retired. P-value ->2.50406863258e-258
 Dependent on LoanDefault. P-value ->3.25435117637e-08
@@ -860,7 +860,7 @@ Education
 2    1465
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on JobCategory. P-value ->0.00189513475243
 Dependent on Retired. P-value ->1.49262021023e-13
 Dependent on LoanDefault. P-value ->2.24034841039e-15
@@ -885,7 +885,7 @@ InHeavyDebt
 1     947
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 Dependent on Gender. P-value ->7.50883267932e-06
 Dependent on LoanDefault. P-value ->2.46589039885e-64
 Dependent on MaritalStatus. P-value ->0.00288287984573
@@ -904,7 +904,7 @@ HasPets
 1    3469
 Name: CustomerID, dtype: int64
 
-Independence Issues:
+Possible Associations:
 
 -----------------------------------------------------
 
