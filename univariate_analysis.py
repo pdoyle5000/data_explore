@@ -7,7 +7,8 @@ from scipy.stats import chi2_contingency
 import scipy.stats as stats
 
 INPUT_FILE = "CustomerData_Merrimack.xlsx"
-OUTPUT_FILE = "data_output/import_summary.txt"
+OUTPUT_FILE = "data_output/summary.txt"
+OUTPUT_CSV = "data_output/final.csv"
 PK = "CustomerID"
 FORCE_TYPES = {
         'UnionMember': 'category',
@@ -242,6 +243,7 @@ def main():
     db = import_original_data()
     clean_db = clean_attributes(db)
     print_summary(clean_db)
+    clean_db.to_csv(OUTPUT_CSV)
 
 if __name__ == "__main__":
     main()

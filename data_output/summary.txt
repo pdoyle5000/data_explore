@@ -1,0 +1,1897 @@
+1: CustomerID, object
+count                5000
+unique               5000
+top       2322-VRHDCW-RXP
+freq                    1
+
+
+-----------------------------------------------------
+
+2: Region, category
+count     5000
+unique       5
+top          5
+freq      1027
+
+Categorical Breakdown:
+Region
+1    1009
+2     995
+3    1003
+4     966
+5    1027
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Retired: P-value (Chi-Square-Test) ->0.0355686677362
+MaritalStatus: P-value (Chi-Square-Test) ->0.00237379278818
+TownSize: P-value (Chi-Square-Test) ->1.753558088e-196
+CallingCard: P-value (Chi-Square-Test) ->0.00256319769207
+HomeOwner: P-value (Chi-Square-Test) ->0.00717926939801
+OwnsFax: P-value (Chi-Square-Test) ->0.00193101479012
+
+-----------------------------------------------------
+
+3: TownSize, category
+count     5000.0
+unique       6.0
+top          1.0
+freq      1436.0
+
+Categorical Breakdown:
+TownSize
+1.0    1436
+2.0    1048
+3.0     907
+4.0     857
+5.0     750
+NA        2
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Region: P-value (Chi-Square-Test) ->1.753558088e-196
+Retired: P-value (Chi-Square-Test) ->1.86243400775e-05
+NewsSubscriber: P-value (Chi-Square-Test) ->0.0218740784818
+CreditCard: P-value (Chi-Square-Test) ->0.0321627632513
+
+-----------------------------------------------------
+
+4: Gender, category
+count       5000
+unique         3
+top       Female
+freq        2494
+
+Categorical Breakdown:
+Gender
+Female    2494
+Male      2473
+NA          33
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+CallerID: P-value (Chi-Square-Test) ->0.0174469389027
+Votes: P-value (Chi-Square-Test) ->0.0332366695542
+InHeavyDebt: P-value (Chi-Square-Test) ->7.50883267932e-06
+CreditCard: P-value (Chi-Square-Test) ->1.11626655992e-06
+
+-----------------------------------------------------
+
+5: Age, int64
+count    5000.000000
+mean       47.025600
+std        17.770338
+min        18.000000
+25%        31.000000
+50%        47.000000
+75%        62.000000
+max        79.000000
+
+Normality Snapshot:
+Mean: 47.0256
+Median: 47.0
+Skew: 0.0907600870482
+Kurtosis: -1.18702999556
+
+Possible Associations:
+LoanDefault: P-value (ANOVA) ->1.43616240609e-185
+Pager: P-value (ANOVA) ->1.33459545634e-07
+HouseholdIncome: P-value (ANOVA) ->9.54189561846e-87
+CallingCard: P-value (ANOVA) ->3.095505453e-95
+OwnsPC: P-value (ANOVA) ->2.95032169578e-21
+JobCategory: P-value (ANOVA) ->0.0039311125812
+NewsSubscriber: P-value (ANOVA) ->1.35113011135e-157
+EquipmentRental: P-value (ANOVA) ->8.53094109121e-24
+OwnsMobileDevice: P-value (ANOVA) ->1.27624671047e-54
+Retired: P-value (ANOVA) ->0.0
+WirelessData: P-value (ANOVA) ->1.08037988705e-08
+Internet: P-value (ANOVA) ->2.82175159665e-18
+CarOwnership: P-value (ANOVA) ->4.41368760231e-27
+Multiline: P-value (ANOVA) ->2.06139379758e-65
+TownSize: P-value (ANOVA) ->5.2192762689e-06
+OwnsFax: P-value (ANOVA) ->0.00291270566715
+Education: P-value (ANOVA) ->8.22259149495e-22
+ActiveLifestyle: P-value (ANOVA) ->6.78942054994e-66
+EBilling: P-value (ANOVA) ->1.60226526515e-17
+VM: P-value (ANOVA) ->3.5757777456e-08
+OwnsGameSystem: P-value (ANOVA) ->8.00407709711e-64
+
+-----------------------------------------------------
+
+6: JobCategory, category
+count      5000
+unique        7
+top       Sales
+freq       1635
+
+Categorical Breakdown:
+JobCategory
+Agriculture      212
+Crafts           452
+Labor            686
+Professional    1380
+Sales           1635
+Service          620
+Unknown           15
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.0308571425729
+LoanDefault: P-value (Chi-Square-Test) ->3.72454691631e-10
+EBilling: P-value (Chi-Square-Test) ->0.0144694683018
+CallWait: P-value (Chi-Square-Test) ->0.0151649208101
+OwnsGameSystem: P-value (Chi-Square-Test) ->0.00141333261674
+OwnsPC: P-value (Chi-Square-Test) ->0.0235160066238
+CallerID: P-value (Chi-Square-Test) ->0.0217825695159
+HouseholdIncome: P-value (Chi-Square-Test) ->1.9551200687e-54
+Votes: P-value (Chi-Square-Test) ->0.0205909925554
+EquipmentRental: P-value (Chi-Square-Test) ->0.0163860635651
+Retired: P-value (Chi-Square-Test) ->2.95132719262e-31
+CallingCard: P-value (Chi-Square-Test) ->2.45655068618e-14
+Internet: P-value (Chi-Square-Test) ->0.00123190209696
+CarOwnership: P-value (Chi-Square-Test) ->0.00239139260428
+Multiline: P-value (Chi-Square-Test) ->3.78400774108e-09
+NewsSubscriber: P-value (Chi-Square-Test) ->1.40333363675e-14
+Education: P-value (Chi-Square-Test) ->0.00189513475243
+CallForward: P-value (Chi-Square-Test) ->0.00241412064844
+UnionMember: P-value (Chi-Square-Test) ->6.94752619135e-26
+
+-----------------------------------------------------
+
+7: UnionMember, category
+count     5000
+unique       2
+top         No
+freq      4244
+
+Categorical Breakdown:
+UnionMember
+No     4244
+Yes     756
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+WirelessData: P-value (Chi-Square-Test) ->0.0305700632346
+CallerID: P-value (Chi-Square-Test) ->0.013503213131
+Multiline: P-value (Chi-Square-Test) ->0.0108201365395
+JobCategory: P-value (Chi-Square-Test) ->6.94752619135e-26
+Pager: P-value (Chi-Square-Test) ->0.0154265251222
+VM: P-value (Chi-Square-Test) ->0.0184511021679
+
+-----------------------------------------------------
+
+8: EmploymentLength, int64
+count    5000.000000
+mean        9.730400
+std         9.690929
+min         0.000000
+25%         2.000000
+50%         7.000000
+75%        15.000000
+max        52.000000
+
+Normality Snapshot:
+Mean: 9.7304
+Median: 7.0
+Skew: 1.25191770218
+Kurtosis: 1.05286542766
+
+Possible Associations:
+LoanDefault: P-value (ANOVA) ->5.39457765294e-125
+CallWait: P-value (ANOVA) ->0.00933686815736
+HouseholdIncome: P-value (ANOVA) ->2.90457792621e-159
+OwnsPC: P-value (ANOVA) ->1.65039111883e-30
+CallForward: P-value (ANOVA) ->0.038399708387
+ActiveLifestyle: P-value (ANOVA) ->5.76000479606e-33
+OwnsMobileDevice: P-value (ANOVA) ->1.99371337421e-45
+CallingCard: P-value (ANOVA) ->5.97393043958e-98
+InHeavyDebt: P-value (ANOVA) ->0.0430093592582
+ThreeWayCalling: P-value (ANOVA) ->0.0437036243162
+Multiline: P-value (ANOVA) ->1.1087107191e-56
+TownSize: P-value (ANOVA) ->5.6006469535e-05
+NewsSubscriber: P-value (ANOVA) ->2.15052442545e-159
+OwnsFax: P-value (ANOVA) ->0.00448744464508
+EBilling: P-value (ANOVA) ->3.63472966578e-27
+WirelessData: P-value (ANOVA) ->9.9462551089e-09
+Pager: P-value (ANOVA) ->7.14330696407e-10
+UnionMember: P-value (ANOVA) ->0.0137349412352
+EquipmentRental: P-value (ANOVA) ->3.1395088607e-35
+VM: P-value (ANOVA) ->1.12822622171e-08
+Retired: P-value (ANOVA) ->9.03769582655e-319
+OwnsGameSystem: P-value (ANOVA) ->4.67070666913e-55
+Internet: P-value (ANOVA) ->4.38111765529e-28
+CarOwnership: P-value (ANOVA) ->2.89207346718e-05
+Education: P-value (ANOVA) ->1.59368123993e-50
+JobCategory: P-value (ANOVA) ->1.44267168586e-321
+
+-----------------------------------------------------
+
+9: Retired, category
+count     5000
+unique       2
+top         No
+freq      4262
+
+Categorical Breakdown:
+Retired
+No     4262
+Yes     738
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->2.97055701536e-50
+CallWait: P-value (Chi-Square-Test) ->7.96533128254e-10
+CreditCard: P-value (Chi-Square-Test) ->0.000126161317453
+OwnsPC: P-value (Chi-Square-Test) ->4.23143684846e-10
+CallForward: P-value (Chi-Square-Test) ->1.34345255888e-08
+NewsSubscriber: P-value (Chi-Square-Test) ->2.49728347084e-51
+ActiveLifestyle: P-value (Chi-Square-Test) ->5.26993069566e-16
+OwnsMobileDevice: P-value (Chi-Square-Test) ->8.79084847994e-21
+WirelessData: P-value (Chi-Square-Test) ->5.10224804001e-20
+ThreeWayCalling: P-value (Chi-Square-Test) ->4.18741148171e-10
+Multiline: P-value (Chi-Square-Test) ->8.74243891724e-24
+TownSize: P-value (Chi-Square-Test) ->1.86243400775e-05
+HomeOwner: P-value (Chi-Square-Test) ->2.5263748118e-10
+OwnsFax: P-value (Chi-Square-Test) ->7.90785463784e-07
+EBilling: P-value (Chi-Square-Test) ->3.07223714167e-06
+Education: P-value (Chi-Square-Test) ->1.49262021023e-13
+CallingCard: P-value (Chi-Square-Test) ->1.10817120266e-29
+Pager: P-value (Chi-Square-Test) ->5.06526577047e-17
+HouseholdIncome: P-value (Chi-Square-Test) ->2.50406863258e-258
+Votes: P-value (Chi-Square-Test) ->0.00113690367298
+EquipmentRental: P-value (Chi-Square-Test) ->8.61791267804e-13
+VM: P-value (Chi-Square-Test) ->2.92923081637e-13
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.12083213012e-26
+Internet: P-value (Chi-Square-Test) ->6.1607313632e-08
+CarOwnership: P-value (Chi-Square-Test) ->8.91019288781e-117
+Region: P-value (Chi-Square-Test) ->0.0355686677362
+JobCategory: P-value (Chi-Square-Test) ->2.95132719262e-31
+CallerID: P-value (Chi-Square-Test) ->1.1755866069e-09
+
+-----------------------------------------------------
+
+10: LoanDefault, category
+count     5000
+unique       2
+top         No
+freq      3829
+
+Categorical Breakdown:
+LoanDefault
+No     3829
+Yes    1171
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Education: P-value (Chi-Square-Test) ->2.24034841039e-15
+EBilling: P-value (Chi-Square-Test) ->1.58149361559e-10
+HouseholdIncome: P-value (Chi-Square-Test) ->3.25435117637e-08
+WirelessData: P-value (Chi-Square-Test) ->0.000241687131983
+OwnsPC: P-value (Chi-Square-Test) ->5.70785628218e-06
+Pager: P-value (Chi-Square-Test) ->0.000174623537135
+NewsSubscriber: P-value (Chi-Square-Test) ->7.25154227123e-36
+InHeavyDebt: P-value (Chi-Square-Test) ->2.46589039885e-64
+EquipmentRental: P-value (Chi-Square-Test) ->1.18589177632e-10
+VM: P-value (Chi-Square-Test) ->3.80240707532e-05
+Retired: P-value (Chi-Square-Test) ->2.97055701536e-50
+MaritalStatus: P-value (Chi-Square-Test) ->0.00175373498814
+Internet: P-value (Chi-Square-Test) ->1.77936924503e-06
+CarOwnership: P-value (Chi-Square-Test) ->4.6045017671e-08
+Multiline: P-value (Chi-Square-Test) ->4.35593128903e-10
+ActiveLifestyle: P-value (Chi-Square-Test) ->1.81057095871e-15
+OwnsFax: P-value (Chi-Square-Test) ->0.0228011831432
+CallingCard: P-value (Chi-Square-Test) ->2.83251539814e-19
+OwnsMobileDevice: P-value (Chi-Square-Test) ->1.4821276937e-15
+JobCategory: P-value (Chi-Square-Test) ->3.72454691631e-10
+OwnsGameSystem: P-value (Chi-Square-Test) ->8.34684325103e-17
+
+-----------------------------------------------------
+
+11: MaritalStatus, category
+count          5000
+unique            2
+top       Unmarried
+freq           2599
+
+Categorical Breakdown:
+MaritalStatus
+Married      2401
+Unmarried    2599
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->0.00175373498814
+CreditCard: P-value (Chi-Square-Test) ->0.00587807137641
+OwnsPC: P-value (Chi-Square-Test) ->0.013983684664
+CallerID: P-value (Chi-Square-Test) ->0.0249932735939
+InHeavyDebt: P-value (Chi-Square-Test) ->0.00288287984573
+HomeOwner: P-value (Chi-Square-Test) ->3.3330009158e-19
+Internet: P-value (Chi-Square-Test) ->0.0166487188343
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.00566378167507
+Multiline: P-value (Chi-Square-Test) ->1.06864687021e-07
+NewsSubscriber: P-value (Chi-Square-Test) ->2.835068107e-13
+Region: P-value (Chi-Square-Test) ->0.00237379278818
+CallingCard: P-value (Chi-Square-Test) ->4.50363716214e-11
+
+-----------------------------------------------------
+
+12: HouseholdSize, int64
+count    5000.000000
+mean        2.201400
+std         1.391124
+min         1.000000
+25%         1.000000
+50%         2.000000
+75%         3.000000
+max         9.000000
+
+Normality Snapshot:
+Mean: 2.2014
+Median: 2.0
+Skew: 1.23180602972
+Kurtosis: 1.02363458108
+
+Possible Associations:
+ThreeWayCalling: P-value (ANOVA) ->0.00782407105245
+LoanDefault: P-value (ANOVA) ->3.28568730766e-18
+Education: P-value (ANOVA) ->0.000521291748821
+CallingCard: P-value (ANOVA) ->0.0336223347783
+Pager: P-value (ANOVA) ->0.0249048658493
+NewsSubscriber: P-value (ANOVA) ->0.000289517453714
+Votes: P-value (ANOVA) ->0.0332712570653
+ActiveLifestyle: P-value (ANOVA) ->8.26395308244e-08
+OwnsMobileDevice: P-value (ANOVA) ->0.00219510327505
+Retired: P-value (ANOVA) ->1.8142717703e-36
+MaritalStatus: P-value (ANOVA) ->0.0
+HouseholdIncome: P-value (ANOVA) ->1.00128280219e-07
+CarOwnership: P-value (ANOVA) ->0.00266720866419
+Multiline: P-value (ANOVA) ->0.00132364606083
+TownSize: P-value (ANOVA) ->0.0242418400837
+HomeOwner: P-value (ANOVA) ->1.27637224347e-17
+Region: P-value (ANOVA) ->0.00710433625044
+VM: P-value (ANOVA) ->0.016998015681
+OwnsGameSystem: P-value (ANOVA) ->3.58006577243e-05
+CallerID: P-value (ANOVA) ->0.0472151888311
+
+-----------------------------------------------------
+
+13: HomeOwner, category
+count     5000.0
+unique       3.0
+top          1.0
+freq      3140.0
+
+Categorical Breakdown:
+HomeOwner
+0.0    1847
+1.0    3140
+NA       13
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.000103514968991
+Education: P-value (Chi-Square-Test) ->0.0170545406197
+CallWait: P-value (Chi-Square-Test) ->8.02138734091e-05
+WirelessData: P-value (Chi-Square-Test) ->4.27103521092e-05
+OwnsPC: P-value (Chi-Square-Test) ->0.0152763858462
+Pager: P-value (Chi-Square-Test) ->0.00116670622054
+CreditCard: P-value (Chi-Square-Test) ->0.000217465544454
+OwnsMobileDevice: P-value (Chi-Square-Test) ->0.0350532236648
+Retired: P-value (Chi-Square-Test) ->2.5263748118e-10
+MaritalStatus: P-value (Chi-Square-Test) ->3.3330009158e-19
+HouseholdIncome: P-value (Chi-Square-Test) ->2.19914260752e-22
+CarOwnership: P-value (Chi-Square-Test) ->0.00508930534203
+Multiline: P-value (Chi-Square-Test) ->4.07215866334e-05
+NewsSubscriber: P-value (Chi-Square-Test) ->0.00027389801936
+Region: P-value (Chi-Square-Test) ->0.00717926939801
+CallForward: P-value (Chi-Square-Test) ->8.5742219751e-05
+OwnsFax: P-value (Chi-Square-Test) ->8.98270021313e-06
+CallingCard: P-value (Chi-Square-Test) ->4.45349965851e-06
+VM: P-value (Chi-Square-Test) ->0.000341137116182
+OwnsGameSystem: P-value (Chi-Square-Test) ->0.0283032608637
+CallerID: P-value (Chi-Square-Test) ->0.00195587587251
+
+-----------------------------------------------------
+
+14: CarsOwned, category
+count     5000
+unique       9
+top          2
+freq      1607
+
+Categorical Breakdown:
+CarsOwned
+0     497
+1    1119
+2    1607
+3    1082
+4     481
+5     149
+6      51
+7      13
+8       1
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+OwnsGameSystem: P-value (Chi-Square-Test) ->0.0421939023184
+Internet: P-value (Chi-Square-Test) ->0.0022462030475
+CarOwnership: P-value (Chi-Square-Test) ->0.0
+VM: P-value (Chi-Square-Test) ->0.00641076490669
+
+-----------------------------------------------------
+
+15: CarOwnership, category
+count     5000
+unique       3
+top        Own
+freq      3704
+
+Categorical Breakdown:
+CarOwnership
+-1        497
+Lease     799
+Own      3704
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->4.6045017671e-08
+CallWait: P-value (Chi-Square-Test) ->0.000124463161361
+Education: P-value (Chi-Square-Test) ->9.42416022921e-07
+CreditCard: P-value (Chi-Square-Test) ->3.98981850132e-06
+Pager: P-value (Chi-Square-Test) ->9.03498312834e-07
+HouseholdIncome: P-value (Chi-Square-Test) ->5.86827365596e-136
+Votes: P-value (Chi-Square-Test) ->2.02849132873e-05
+EquipmentRental: P-value (Chi-Square-Test) ->0.012665152791
+VM: P-value (Chi-Square-Test) ->1.28212627649e-08
+Retired: P-value (Chi-Square-Test) ->8.91019288781e-117
+WirelessData: P-value (Chi-Square-Test) ->1.23498699069e-07
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.000176832916272
+OwnsMobileDevice: P-value (Chi-Square-Test) ->3.86005402804e-05
+OwnsFax: P-value (Chi-Square-Test) ->0.000685525695912
+HomeOwner: P-value (Chi-Square-Test) ->0.00508930534203
+CallForward: P-value (Chi-Square-Test) ->6.68777462751e-05
+CarsOwned: P-value (Chi-Square-Test) ->0.0
+JobCategory: P-value (Chi-Square-Test) ->0.00239139260428
+OwnsGameSystem: P-value (Chi-Square-Test) ->4.08537122888e-05
+CallerID: P-value (Chi-Square-Test) ->6.75915381522e-05
+
+-----------------------------------------------------
+
+16: CarValue, float64
+count     4503.000000
+mean     25907.150788
+std      20701.826642
+min       2200.000000
+25%      11400.000000
+50%      18800.000000
+75%      33400.000000
+max      99600.000000
+
+Normality Snapshot:
+Mean: 25907.1507884
+Median: 18800.0
+Skew: 1.55296390811
+Kurtosis: 1.97286437561
+
+Possible Associations:
+
+-----------------------------------------------------
+
+17: CommuteTime, int64
+count    5000.000000
+mean       25.335400
+std         5.899785
+min         0.000000
+25%        21.000000
+50%        25.000000
+75%        29.000000
+max        48.000000
+
+Normality Snapshot:
+Mean: 25.3354
+Median: 25.0
+Skew: 0.260553108942
+Kurtosis: 0.228184235951
+
+Possible Associations:
+LoanDefault: P-value (ANOVA) ->0.0267790113923
+ThreeWayCalling: P-value (ANOVA) ->0.0180687036325
+PoliticalPartyMem: P-value (ANOVA) ->0.0374563115022
+TownSize: P-value (ANOVA) ->1.97381821234e-298
+CallingCard: P-value (ANOVA) ->0.0427448028441
+Region: P-value (ANOVA) ->6.23406354851e-42
+Education: P-value (ANOVA) ->0.021178980994
+OwnsFax: P-value (ANOVA) ->0.0190169538698
+
+-----------------------------------------------------
+
+18: PoliticalPartyMem, category
+count     5000
+unique       2
+top         No
+freq      3093
+
+Categorical Breakdown:
+PoliticalPartyMem
+No     3093
+Yes    1907
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Votes: P-value (Chi-Square-Test) ->2.35955959995e-11
+
+-----------------------------------------------------
+
+19: Votes, category
+count     5000
+unique       2
+top        Yes
+freq      2590
+
+Categorical Breakdown:
+Votes
+No     2410
+Yes    2590
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+EBilling: P-value (Chi-Square-Test) ->0.00216762267564
+CreditCard: P-value (Chi-Square-Test) ->0.00743546230893
+OwnsPC: P-value (Chi-Square-Test) ->0.000301820739334
+JobCategory: P-value (Chi-Square-Test) ->0.0205909925554
+HouseholdIncome: P-value (Chi-Square-Test) ->3.14092116302e-17
+EquipmentRental: P-value (Chi-Square-Test) ->0.00160765999211
+OwnsFax: P-value (Chi-Square-Test) ->0.000262903599321
+Retired: P-value (Chi-Square-Test) ->0.00113690367298
+WirelessData: P-value (Chi-Square-Test) ->0.0144616018024
+Internet: P-value (Chi-Square-Test) ->0.000569059768476
+CarOwnership: P-value (Chi-Square-Test) ->2.02849132873e-05
+PoliticalPartyMem: P-value (Chi-Square-Test) ->2.35955959995e-11
+Education: P-value (Chi-Square-Test) ->2.69504334621e-10
+Multiline: P-value (Chi-Square-Test) ->0.00292925322948
+Gender: P-value (Chi-Square-Test) ->0.0332366695542
+Pager: P-value (Chi-Square-Test) ->0.00329174550806
+OwnsGameSystem: P-value (Chi-Square-Test) ->0.00948650893556
+
+-----------------------------------------------------
+
+20: CreditCard, category
+count     5000
+unique       5
+top       Disc
+freq      1344
+
+Categorical Breakdown:
+CreditCard
+AMEX     986
+Disc    1344
+Mast    1200
+Othe     223
+Visa    1247
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Education: P-value (Chi-Square-Test) ->2.48332479685e-81
+CallWait: P-value (Chi-Square-Test) ->0.0357550638892
+HouseholdIncome: P-value (Chi-Square-Test) ->2.13879600057e-34
+OwnsPC: P-value (Chi-Square-Test) ->1.60891006019e-27
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.0274402544067
+OwnsMobileDevice: P-value (Chi-Square-Test) ->9.53699498801e-09
+WirelessData: P-value (Chi-Square-Test) ->2.55019979973e-17
+CarOwnership: P-value (Chi-Square-Test) ->3.98981850132e-06
+Multiline: P-value (Chi-Square-Test) ->1.92251027244e-13
+TownSize: P-value (Chi-Square-Test) ->0.0321627632513
+Gender: P-value (Chi-Square-Test) ->1.11626655992e-06
+EBilling: P-value (Chi-Square-Test) ->2.62423109045e-13
+MaritalStatus: P-value (Chi-Square-Test) ->0.00587807137641
+Pager: P-value (Chi-Square-Test) ->7.35128420475e-14
+Votes: P-value (Chi-Square-Test) ->0.00743546230893
+EquipmentRental: P-value (Chi-Square-Test) ->2.13228076845e-18
+OwnsFax: P-value (Chi-Square-Test) ->2.63091102118e-08
+Retired: P-value (Chi-Square-Test) ->0.000126161317453
+OwnsGameSystem: P-value (Chi-Square-Test) ->8.5038026767e-11
+Internet: P-value (Chi-Square-Test) ->5.81277425412e-21
+HomeOwner: P-value (Chi-Square-Test) ->0.000217465544454
+CallingCard: P-value (Chi-Square-Test) ->0.0179185029519
+VM: P-value (Chi-Square-Test) ->2.60844462608e-11
+CallerID: P-value (Chi-Square-Test) ->0.0073176194255
+
+-----------------------------------------------------
+
+21: CardTenure, int64
+count    5000.000000
+mean       16.655800
+std        12.020958
+min         0.000000
+25%         6.000000
+50%        14.000000
+75%        26.000000
+max        40.000000
+
+Normality Snapshot:
+Mean: 16.6558
+Median: 14.0
+Skew: 0.429360580299
+Kurtosis: -1.05611212589
+
+Possible Associations:
+PhoneCoTenure: R-Squared (Correlation) ->0.908754809015
+LoanDefault: P-value (ANOVA) ->8.34743005264e-130
+CreditCard: P-value (ANOVA) ->0.00504523795048
+OwnsPC: P-value (ANOVA) ->7.08734641911e-16
+ActiveLifestyle: P-value (ANOVA) ->3.63960300663e-39
+OwnsMobileDevice: P-value (ANOVA) ->1.72419494221e-37
+WirelessData: P-value (ANOVA) ->8.09629559881e-05
+CarOwnership: P-value (ANOVA) ->7.0321796818e-06
+Multiline: P-value (ANOVA) ->1.38873776077e-218
+TownSize: P-value (ANOVA) ->0.0379566173068
+NewsSubscriber: P-value (ANOVA) ->0.0
+HasPets: P-value (ANOVA) ->0.023710960556
+EBilling: P-value (ANOVA) ->3.72366885799e-14
+Education: P-value (ANOVA) ->3.24564509312e-15
+MaritalStatus: P-value (ANOVA) ->2.60201022641e-20
+Pager: P-value (ANOVA) ->2.02519115464e-06
+HouseholdIncome: P-value (ANOVA) ->2.1711677887e-101
+EquipmentRental: P-value (ANOVA) ->7.03527972706e-17
+OwnsFax: P-value (ANOVA) ->0.0219340328648
+Retired: P-value (ANOVA) ->8.94135912923e-200
+OwnsGameSystem: P-value (ANOVA) ->1.38969028975e-35
+Internet: P-value (ANOVA) ->8.41055037806e-15
+HomeOwner: P-value (ANOVA) ->4.77314108338e-08
+VM: P-value (ANOVA) ->0.000291166799962
+CallingCard: P-value (ANOVA) ->3.88932403524e-234
+JobCategory: P-value (ANOVA) ->1.42198880944e-38
+
+-----------------------------------------------------
+
+22: CardItemsMonthly, int64
+count    5000.00000
+mean       10.17740
+std         3.39114
+min         0.00000
+25%         8.00000
+50%        10.00000
+75%        12.00000
+max        23.00000
+
+Normality Snapshot:
+Mean: 10.1774
+Median: 10.0
+Skew: 0.198594077296
+Kurtosis: 0.158161210614
+
+Possible Associations:
+Retired: P-value (ANOVA) ->3.29112573422e-05
+OwnsGameSystem: P-value (ANOVA) ->0.0425363081432
+Internet: P-value (ANOVA) ->0.00648251588623
+HouseholdIncome: P-value (ANOVA) ->2.22409004701e-06
+Education: P-value (ANOVA) ->0.0404968124318
+CreditCard: P-value (ANOVA) ->0.00189900096155
+
+-----------------------------------------------------
+
+23: CardSpendMonth, float64
+count     5000.000000
+mean      3372.025200
+std       2451.450683
+min          0.000000
+25%       1833.775000
+50%       2763.600000
+75%       4185.375000
+max      39264.100000
+
+Normality Snapshot:
+Mean: 3372.0252
+Median: 2763.5999999999995
+Skew: 3.05123665059
+Kurtosis: 21.4395966598
+
+Possible Associations:
+Education: P-value (ANOVA) ->1.64430708898e-10
+CallWait: P-value (ANOVA) ->0.000102580423536
+CreditCard: P-value (ANOVA) ->2.07723228555e-124
+OwnsPC: P-value (ANOVA) ->0.000178569274054
+CallForward: P-value (ANOVA) ->5.40262264343e-05
+WirelessData: P-value (ANOVA) ->1.9044164786e-06
+ThreeWayCalling: P-value (ANOVA) ->1.07541670953e-05
+Multiline: P-value (ANOVA) ->0.000446274591693
+NewsSubscriber: P-value (ANOVA) ->0.0363001334993
+HasPets: P-value (ANOVA) ->0.0454312685037
+OwnsFax: P-value (ANOVA) ->2.54608721069e-05
+Gender: P-value (ANOVA) ->4.30269595445e-06
+EBilling: P-value (ANOVA) ->0.0384002063746
+CallingCard: P-value (ANOVA) ->0.0485034427711
+Pager: P-value (ANOVA) ->2.14419653335e-05
+HouseholdIncome: P-value (ANOVA) ->6.42678500338e-141
+Votes: P-value (ANOVA) ->1.32141256344e-05
+EquipmentRental: P-value (ANOVA) ->0.000285804128584
+VM: P-value (ANOVA) ->0.0389870732834
+Retired: P-value (ANOVA) ->2.6134887937e-26
+OwnsGameSystem: P-value (ANOVA) ->0.0466212087305
+Internet: P-value (ANOVA) ->1.35112887869e-07
+CarOwnership: P-value (ANOVA) ->1.73912999212e-18
+HomeOwner: P-value (ANOVA) ->1.68924479048e-06
+JobCategory: P-value (ANOVA) ->6.0819710395e-06
+CallerID: P-value (ANOVA) ->0.000129796626542
+
+-----------------------------------------------------
+
+24: ActiveLifestyle, category
+count     5000
+unique       2
+top         No
+freq      2670
+
+Categorical Breakdown:
+ActiveLifestyle
+No     2670
+Yes    2330
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+Retired: P-value (Chi-Square-Test) ->5.26993069566e-16
+LoanDefault: P-value (Chi-Square-Test) ->1.81057095871e-15
+HouseholdIncome: P-value (Chi-Square-Test) ->7.72786864874e-08
+OwnsGameSystem: P-value (Chi-Square-Test) ->0.000774342522532
+Multiline: P-value (Chi-Square-Test) ->1.86559196681e-05
+CallingCard: P-value (Chi-Square-Test) ->3.0964720273e-09
+OwnsPC: P-value (Chi-Square-Test) ->0.00953634740805
+NewsSubscriber: P-value (Chi-Square-Test) ->1.58151329603e-10
+CreditCard: P-value (Chi-Square-Test) ->0.0274402544067
+EquipmentRental: P-value (Chi-Square-Test) ->0.0183355406084
+OwnsMobileDevice: P-value (Chi-Square-Test) ->0.000437458854269
+
+-----------------------------------------------------
+
+25: PhoneCoTenure, int64
+count    5000.000000
+mean       38.204800
+std        22.661888
+min         0.000000
+25%        18.000000
+50%        38.000000
+75%        59.000000
+max        72.000000
+
+Normality Snapshot:
+Mean: 38.2048
+Median: 38.0
+Skew: -0.0363453834774
+Kurtosis: -1.330461631
+
+Possible Associations:
+CardTenure: R-Squared (Correlation) ->0.908754809015
+LoanDefault: P-value (ANOVA) ->1.31443844451e-101
+CreditCard: P-value (ANOVA) ->0.0145533771176
+OwnsPC: P-value (ANOVA) ->1.36604290035e-13
+ActiveLifestyle: P-value (ANOVA) ->2.98380935199e-30
+OwnsMobileDevice: P-value (ANOVA) ->2.62452703833e-26
+MaritalStatus: P-value (ANOVA) ->1.10293576043e-33
+CarOwnership: P-value (ANOVA) ->0.000973497122717
+Multiline: P-value (ANOVA) ->2.30955792369e-244
+NewsSubscriber: P-value (ANOVA) ->0.0
+HasPets: P-value (ANOVA) ->0.0344813109378
+EBilling: P-value (ANOVA) ->1.61033090949e-11
+Education: P-value (ANOVA) ->6.67892832919e-14
+WirelessData: P-value (ANOVA) ->0.000382190521886
+Pager: P-value (ANOVA) ->1.55772790953e-05
+HouseholdIncome: P-value (ANOVA) ->2.09885695613e-72
+EquipmentRental: P-value (ANOVA) ->2.62273018634e-13
+OwnsFax: P-value (ANOVA) ->0.0148149526146
+Retired: P-value (ANOVA) ->3.05163523595e-141
+OwnsGameSystem: P-value (ANOVA) ->1.18038901673e-27
+Internet: P-value (ANOVA) ->8.92154740022e-12
+HomeOwner: P-value (ANOVA) ->2.12211970325e-08
+VM: P-value (ANOVA) ->0.0034314086746
+CallingCard: P-value (ANOVA) ->2.04352839721e-273
+JobCategory: P-value (ANOVA) ->1.71459828443e-39
+
+-----------------------------------------------------
+
+26: VoiceLastMonth, float64
+count    5000.000000
+mean       40.414350
+std        38.320143
+min         2.700000
+25%        17.100000
+50%        28.650000
+75%        49.650000
+max       539.550000
+
+Normality Snapshot:
+Mean: 40.41435
+Median: 28.650000000000002
+Skew: 3.27192272286
+Kurtosis: 18.5033897103
+
+Possible Associations:
+AvgPhoneBill: R-Squared (Correlation) ->0.997760932645
+VoiceOverTenure: R-Squared (Correlation) ->0.985679024468
+LoanDefault: P-value (ANOVA) ->1.89127786882e-39
+CreditCard: P-value (ANOVA) ->0.0344868958928
+OwnsPC: P-value (ANOVA) ->1.52695298698e-05
+ActiveLifestyle: P-value (ANOVA) ->1.18984874595e-14
+OwnsMobileDevice: P-value (ANOVA) ->7.19729199415e-16
+MaritalStatus: P-value (ANOVA) ->6.5440117133e-25
+CarOwnership: P-value (ANOVA) ->0.0251723637569
+Multiline: P-value (ANOVA) ->1.08631170259e-153
+NewsSubscriber: P-value (ANOVA) ->4.56114212461e-248
+EBilling: P-value (ANOVA) ->4.32834477839e-07
+Education: P-value (ANOVA) ->6.26041980139e-09
+WirelessData: P-value (ANOVA) ->0.00139498030671
+Pager: P-value (ANOVA) ->3.07600177299e-06
+HouseholdIncome: P-value (ANOVA) ->6.95260843724e-48
+EquipmentRental: P-value (ANOVA) ->4.26757901447e-09
+OwnsFax: P-value (ANOVA) ->0.0181768878996
+Retired: P-value (ANOVA) ->1.75814377829e-100
+OwnsGameSystem: P-value (ANOVA) ->4.63748581231e-17
+Internet: P-value (ANOVA) ->6.49347209148e-05
+HomeOwner: P-value (ANOVA) ->1.26973340136e-05
+VM: P-value (ANOVA) ->0.00174881506713
+CallingCard: P-value (ANOVA) ->1.36721734165e-120
+JobCategory: P-value (ANOVA) ->1.03836708178e-35
+
+-----------------------------------------------------
+
+27: VoiceOverTenure, float64
+count     5000.000000
+mean       708.446430
+std        979.151092
+min          0.000000
+25%        103.862500
+50%        349.650000
+75%        913.512500
+max      13046.500000
+
+Normality Snapshot:
+Mean: 708.44643
+Median: 349.65
+Skew: 3.21624779914
+Kurtosis: 16.9872671864
+
+Possible Associations:
+AvgPhoneBill: R-Squared (Correlation) ->0.986070538018
+VoiceLastMonth: R-Squared (Correlation) ->0.985679024468
+LoanDefault: P-value (ANOVA) ->2.61430257805e-47
+HouseholdIncome: P-value (ANOVA) ->5.41484654331e-51
+OwnsPC: P-value (ANOVA) ->1.30473128699e-06
+ActiveLifestyle: P-value (ANOVA) ->4.31545054567e-16
+OwnsMobileDevice: P-value (ANOVA) ->2.21218879025e-17
+MaritalStatus: P-value (ANOVA) ->4.46977644109e-25
+CarOwnership: P-value (ANOVA) ->0.0055656174627
+Multiline: P-value (ANOVA) ->2.71801727119e-160
+NewsSubscriber: P-value (ANOVA) ->3.77161143517e-271
+EBilling: P-value (ANOVA) ->4.09368147274e-08
+Education: P-value (ANOVA) ->1.19817463516e-10
+WirelessData: P-value (ANOVA) ->0.000262089409625
+Pager: P-value (ANOVA) ->8.43496183262e-07
+EquipmentRental: P-value (ANOVA) ->2.83411822159e-10
+OwnsFax: P-value (ANOVA) ->0.00506782148655
+Retired: P-value (ANOVA) ->5.24797305155e-117
+OwnsGameSystem: P-value (ANOVA) ->1.58547331057e-19
+Internet: P-value (ANOVA) ->4.78705566277e-06
+HomeOwner: P-value (ANOVA) ->6.95484407887e-06
+VM: P-value (ANOVA) ->0.000828091443293
+CallingCard: P-value (ANOVA) ->9.6951226986e-132
+JobCategory: P-value (ANOVA) ->3.48717883376e-39
+
+-----------------------------------------------------
+
+28: EquipmentRental, category
+count     5000
+unique       2
+top         No
+freq      3296
+
+Categorical Breakdown:
+EquipmentRental
+No     3296
+Yes    1704
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->1.18589177632e-10
+Pager: P-value (Chi-Square-Test) ->1.78565492609e-170
+Education: P-value (Chi-Square-Test) ->9.83039777615e-177
+HouseholdIncome: P-value (Chi-Square-Test) ->3.31932239083e-07
+CreditCard: P-value (Chi-Square-Test) ->2.13228076845e-18
+OwnsPC: P-value (Chi-Square-Test) ->2.44567786612e-243
+JobCategory: P-value (Chi-Square-Test) ->0.0163860635651
+NewsSubscriber: P-value (Chi-Square-Test) ->7.45646927175e-07
+Votes: P-value (Chi-Square-Test) ->0.00160765999211
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.0183355406084
+OwnsMobileDevice: P-value (Chi-Square-Test) ->2.08905389461e-217
+Retired: P-value (Chi-Square-Test) ->8.61791267804e-13
+WirelessData: P-value (Chi-Square-Test) ->1.53227675959e-184
+Internet: P-value (Chi-Square-Test) ->0.0
+CarOwnership: P-value (Chi-Square-Test) ->0.012665152791
+Multiline: P-value (Chi-Square-Test) ->4.31708165185e-89
+OwnsFax: P-value (Chi-Square-Test) ->2.6389884153e-114
+CallingCard: P-value (Chi-Square-Test) ->0.0145901264493
+EBilling: P-value (Chi-Square-Test) ->0.0
+VM: P-value (Chi-Square-Test) ->1.20266189191e-164
+OwnsGameSystem: P-value (Chi-Square-Test) ->4.45607251523e-209
+
+-----------------------------------------------------
+
+29: EquipmentLastMonth, float64
+count    5000.000000
+mean       12.991310
+std        19.212943
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        30.800000
+max       106.300000
+
+Normality Snapshot:
+Mean: 12.99131
+Median: 0.0
+Skew: 1.08174753439
+Kurtosis: -0.115125547621
+
+Possible Associations:
+EquipmentOverTenure: R-Squared (Correlation) ->0.828972078049
+LoanDefault: P-value (ANOVA) ->4.85131578135e-07
+CallWait: P-value (ANOVA) ->1.52478011887e-14
+CreditCard: P-value (ANOVA) ->4.61695904283e-21
+OwnsPC: P-value (ANOVA) ->1.3782218562e-250
+CallForward: P-value (ANOVA) ->1.73374664425e-15
+OwnsMobileDevice: P-value (ANOVA) ->4.20373528746e-238
+WirelessData: P-value (ANOVA) ->0.0
+ThreeWayCalling: P-value (ANOVA) ->3.88983630506e-15
+Multiline: P-value (ANOVA) ->6.10580618817e-124
+EBilling: P-value (ANOVA) ->0.0
+Education: P-value (ANOVA) ->4.5446757505e-202
+CallingCard: P-value (ANOVA) ->0.000192838426193
+Pager: P-value (ANOVA) ->4.44782597669e-319
+HouseholdIncome: P-value (ANOVA) ->6.56967864419e-16
+Votes: P-value (ANOVA) ->0.00213859488641
+EquipmentRental: P-value (ANOVA) ->0.0
+OwnsFax: P-value (ANOVA) ->7.46729306894e-230
+Retired: P-value (ANOVA) ->2.44500795212e-10
+OwnsGameSystem: P-value (ANOVA) ->3.45552407992e-229
+Internet: P-value (ANOVA) ->0.0
+CarOwnership: P-value (ANOVA) ->0.00268990530149
+HomeOwner: P-value (ANOVA) ->0.00515724505358
+VM: P-value (ANOVA) ->2.53332069443e-294
+CallerID: P-value (ANOVA) ->3.08770247762e-19
+
+-----------------------------------------------------
+
+30: EquipmentOverTenure, float64
+count    5000.000000
+mean      470.176400
+std       912.220624
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%       510.162500
+max      6525.300000
+
+Normality Snapshot:
+Mean: 470.1764
+Median: 0.0
+Skew: 2.21494878037
+Kurtosis: 4.78626030252
+
+Possible Associations:
+EquipmentLastMonth: R-Squared (Correlation) ->0.828972078049
+LoanDefault: P-value (ANOVA) ->0.0193109796267
+CallWait: P-value (ANOVA) ->1.66064478209e-10
+CreditCard: P-value (ANOVA) ->2.48843804632e-13
+OwnsPC: P-value (ANOVA) ->5.2933882503e-133
+CallForward: P-value (ANOVA) ->4.81693245896e-09
+NewsSubscriber: P-value (ANOVA) ->1.54289363095e-28
+ActiveLifestyle: P-value (ANOVA) ->0.0134973743362
+OwnsMobileDevice: P-value (ANOVA) ->1.89011075595e-118
+WirelessData: P-value (ANOVA) ->5.98651923621e-188
+ThreeWayCalling: P-value (ANOVA) ->2.79530351787e-08
+Multiline: P-value (ANOVA) ->3.29708359071e-165
+HomeOwner: P-value (ANOVA) ->0.00150040544009
+EBilling: P-value (ANOVA) ->5.67219143389e-205
+Education: P-value (ANOVA) ->2.2005949069e-110
+MaritalStatus: P-value (ANOVA) ->3.19574193545e-05
+Pager: P-value (ANOVA) ->8.79303727369e-167
+HouseholdIncome: P-value (ANOVA) ->6.97839158718e-30
+Votes: P-value (ANOVA) ->0.0115545726369
+EquipmentRental: P-value (ANOVA) ->0.0
+OwnsFax: P-value (ANOVA) ->8.25584661448e-124
+OwnsGameSystem: P-value (ANOVA) ->3.2230104442e-114
+Internet: P-value (ANOVA) ->6.92233503493e-244
+CarOwnership: P-value (ANOVA) ->0.040629649165
+CallingCard: P-value (ANOVA) ->1.34095134861e-30
+VM: P-value (ANOVA) ->2.66806182241e-159
+CallerID: P-value (ANOVA) ->6.53515955415e-12
+
+-----------------------------------------------------
+
+31: CallingCard, category
+count     5000
+unique       2
+top        Yes
+freq      3581
+
+Categorical Breakdown:
+CallingCard
+No     1419
+Yes    3581
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->2.83251539814e-19
+CallWait: P-value (Chi-Square-Test) ->6.252049047e-128
+Region: P-value (Chi-Square-Test) ->0.00256319769207
+CreditCard: P-value (Chi-Square-Test) ->0.0179185029519
+OwnsPC: P-value (Chi-Square-Test) ->0.000626032259001
+CallForward: P-value (Chi-Square-Test) ->8.98918601217e-118
+ActiveLifestyle: P-value (Chi-Square-Test) ->3.0964720273e-09
+OwnsMobileDevice: P-value (Chi-Square-Test) ->9.52328677342e-06
+WirelessData: P-value (Chi-Square-Test) ->4.03395261778e-39
+ThreeWayCalling: P-value (Chi-Square-Test) ->7.77524269695e-122
+Multiline: P-value (Chi-Square-Test) ->2.86116508854e-55
+NewsSubscriber: P-value (Chi-Square-Test) ->2.89025381192e-104
+OwnsFax: P-value (Chi-Square-Test) ->3.63714827999e-32
+EBilling: P-value (Chi-Square-Test) ->0.000140543409867
+Education: P-value (Chi-Square-Test) ->0.00211784431176
+MaritalStatus: P-value (Chi-Square-Test) ->4.50363716214e-11
+Pager: P-value (Chi-Square-Test) ->1.6811507999e-35
+HouseholdIncome: P-value (Chi-Square-Test) ->1.40204878004e-27
+EquipmentRental: P-value (Chi-Square-Test) ->0.0145901264493
+VM: P-value (Chi-Square-Test) ->3.30878207055e-40
+Retired: P-value (Chi-Square-Test) ->1.10817120266e-29
+OwnsGameSystem: P-value (Chi-Square-Test) ->7.52289414189e-07
+Internet: P-value (Chi-Square-Test) ->0.0013511880436
+HomeOwner: P-value (Chi-Square-Test) ->4.45349965851e-06
+JobCategory: P-value (Chi-Square-Test) ->2.45655068618e-14
+CallerID: P-value (Chi-Square-Test) ->1.21347496529e-110
+
+-----------------------------------------------------
+
+32: WirelessData, category
+count     5000
+unique       2
+top         No
+freq      3656
+
+Categorical Breakdown:
+WirelessData
+No     3656
+Yes    1344
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->0.000241687131983
+CallWait: P-value (Chi-Square-Test) ->5.59853701574e-162
+CreditCard: P-value (Chi-Square-Test) ->2.55019979973e-17
+OwnsPC: P-value (Chi-Square-Test) ->1.32491124606e-129
+CallForward: P-value (Chi-Square-Test) ->1.40979793036e-162
+OwnsMobileDevice: P-value (Chi-Square-Test) ->5.1979711405e-100
+CallingCard: P-value (Chi-Square-Test) ->4.03395261778e-39
+ThreeWayCalling: P-value (Chi-Square-Test) ->3.71837544685e-151
+Multiline: P-value (Chi-Square-Test) ->1.4613857652e-52
+OwnsFax: P-value (Chi-Square-Test) ->0.0
+EBilling: P-value (Chi-Square-Test) ->6.26401214207e-158
+Education: P-value (Chi-Square-Test) ->2.60792550964e-99
+Pager: P-value (Chi-Square-Test) ->0.0
+HouseholdIncome: P-value (Chi-Square-Test) ->6.39849779328e-31
+Votes: P-value (Chi-Square-Test) ->0.0144616018024
+EquipmentRental: P-value (Chi-Square-Test) ->1.53227675959e-184
+UnionMember: P-value (Chi-Square-Test) ->0.0305700632346
+Retired: P-value (Chi-Square-Test) ->5.10224804001e-20
+OwnsGameSystem: P-value (Chi-Square-Test) ->4.96092730039e-106
+Internet: P-value (Chi-Square-Test) ->9.95935865407e-192
+CarOwnership: P-value (Chi-Square-Test) ->1.23498699069e-07
+HomeOwner: P-value (Chi-Square-Test) ->4.27103521092e-05
+VM: P-value (Chi-Square-Test) ->0.0
+CallerID: P-value (Chi-Square-Test) ->1.85178913505e-174
+
+-----------------------------------------------------
+
+33: DataLastMonth, float64
+count    5000.000000
+mean       10.701190
+std        19.799837
+min         0.000000
+25%         0.000000
+50%         0.000000
+75%        20.962500
+max       186.250000
+
+Normality Snapshot:
+Mean: 10.70119
+Median: 0.0
+Skew: 1.9980129836
+Kurtosis: 4.78378691313
+
+Possible Associations:
+DataOverTenure: R-Squared (Correlation) ->0.878590405863
+Education: P-value (ANOVA) ->1.46252616306e-111
+CallWait: P-value (ANOVA) ->2.46950990245e-178
+CreditCard: P-value (ANOVA) ->4.93815414922e-18
+OwnsPC: P-value (ANOVA) ->1.89205148499e-118
+CallForward: P-value (ANOVA) ->6.68214414709e-174
+OwnsMobileDevice: P-value (ANOVA) ->3.15429394087e-98
+WirelessData: P-value (ANOVA) ->0.0
+HouseholdIncome: P-value (ANOVA) ->1.42075581547e-50
+ThreeWayCalling: P-value (ANOVA) ->8.43456845522e-165
+Multiline: P-value (ANOVA) ->2.90605827576e-85
+NewsSubscriber: P-value (ANOVA) ->0.0358249356694
+OwnsFax: P-value (ANOVA) ->0.0
+EBilling: P-value (ANOVA) ->2.37042950841e-169
+CallingCard: P-value (ANOVA) ->3.66786776041e-52
+Pager: P-value (ANOVA) ->0.0
+UnionMember: P-value (ANOVA) ->0.048300125063
+Votes: P-value (ANOVA) ->0.0024218016495
+EquipmentRental: P-value (ANOVA) ->4.95734474092e-202
+VM: P-value (ANOVA) ->0.0
+Retired: P-value (ANOVA) ->2.96956653849e-12
+OwnsGameSystem: P-value (ANOVA) ->5.59473060917e-103
+Internet: P-value (ANOVA) ->3.08951773778e-222
+CarOwnership: P-value (ANOVA) ->3.59088105989e-08
+HomeOwner: P-value (ANOVA) ->7.31909161211e-07
+JobCategory: P-value (ANOVA) ->0.0311818676944
+CallerID: P-value (ANOVA) ->4.72776061215e-188
+
+-----------------------------------------------------
+
+34: DataOverTenure, float64
+count     5000.000000
+mean       421.984610
+std       1001.003287
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%         89.962500
+max      12858.650000
+
+Normality Snapshot:
+Mean: 421.98461
+Median: 0.0
+Skew: 3.30420316978
+Kurtosis: 15.4643640711
+
+Possible Associations:
+DataLastMonth: R-Squared (Correlation) ->0.878590405863
+LoanDefault: P-value (ANOVA) ->0.00208505698777
+CallWait: P-value (ANOVA) ->2.25572654245e-112
+CreditCard: P-value (ANOVA) ->9.46260936192e-11
+OwnsPC: P-value (ANOVA) ->6.39551638634e-63
+CallForward: P-value (ANOVA) ->4.24874011409e-105
+NewsSubscriber: P-value (ANOVA) ->5.43532989989e-29
+ActiveLifestyle: P-value (ANOVA) ->0.000176357245034
+OwnsMobileDevice: P-value (ANOVA) ->3.96933400526e-45
+WirelessData: P-value (ANOVA) ->0.0
+ThreeWayCalling: P-value (ANOVA) ->7.5275417458e-99
+Multiline: P-value (ANOVA) ->7.72168741833e-103
+HomeOwner: P-value (ANOVA) ->7.1891626784e-07
+OwnsFax: P-value (ANOVA) ->1.4461586315e-256
+EBilling: P-value (ANOVA) ->4.0610180517e-85
+Education: P-value (ANOVA) ->1.307974925e-61
+MaritalStatus: P-value (ANOVA) ->1.71000748382e-05
+Pager: P-value (ANOVA) ->0.0
+HouseholdIncome: P-value (ANOVA) ->4.95209773758e-64
+Votes: P-value (ANOVA) ->0.00658995993528
+EquipmentRental: P-value (ANOVA) ->1.47950427046e-103
+VM: P-value (ANOVA) ->3.12538853339e-304
+Retired: P-value (ANOVA) ->0.0295517240101
+OwnsGameSystem: P-value (ANOVA) ->1.13511291652e-47
+Internet: P-value (ANOVA) ->3.10901521307e-113
+CarOwnership: P-value (ANOVA) ->5.4701052075e-06
+CallingCard: P-value (ANOVA) ->1.42450129741e-48
+JobCategory: P-value (ANOVA) ->4.34626547411e-05
+CallerID: P-value (ANOVA) ->4.10475617834e-113
+
+-----------------------------------------------------
+
+35: Multiline, category
+count     5000
+unique       2
+top         No
+freq      2558
+
+Categorical Breakdown:
+Multiline
+No     2558
+Yes    2442
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->4.35593128903e-10
+CreditCard: P-value (Chi-Square-Test) ->1.92251027244e-13
+OwnsPC: P-value (Chi-Square-Test) ->6.14774507866e-76
+ActiveLifestyle: P-value (Chi-Square-Test) ->1.86559196681e-05
+OwnsMobileDevice: P-value (Chi-Square-Test) ->3.22214589816e-44
+WirelessData: P-value (Chi-Square-Test) ->1.4613857652e-52
+HouseholdIncome: P-value (Chi-Square-Test) ->3.40745047472e-28
+NewsSubscriber: P-value (Chi-Square-Test) ->1.03304060133e-91
+OwnsFax: P-value (Chi-Square-Test) ->8.03369431137e-40
+EBilling: P-value (Chi-Square-Test) ->1.42435406576e-84
+Education: P-value (Chi-Square-Test) ->2.99754034926e-58
+MaritalStatus: P-value (Chi-Square-Test) ->1.06864687021e-07
+Pager: P-value (Chi-Square-Test) ->4.49673970335e-47
+UnionMember: P-value (Chi-Square-Test) ->0.0108201365395
+Votes: P-value (Chi-Square-Test) ->0.00292925322948
+InHeavyDebt: P-value (Chi-Square-Test) ->0.00308293229374
+EquipmentRental: P-value (Chi-Square-Test) ->4.31708165185e-89
+VM: P-value (Chi-Square-Test) ->8.83557468307e-56
+Retired: P-value (Chi-Square-Test) ->8.74243891724e-24
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.30192391721e-46
+Internet: P-value (Chi-Square-Test) ->5.22405976513e-100
+CallingCard: P-value (Chi-Square-Test) ->2.86116508854e-55
+HomeOwner: P-value (Chi-Square-Test) ->4.07215866334e-05
+JobCategory: P-value (Chi-Square-Test) ->3.78400774108e-09
+
+-----------------------------------------------------
+
+36: VM, category
+count     5000
+unique       2
+top         No
+freq      3485
+
+Categorical Breakdown:
+VM
+No     3485
+Yes    1515
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->3.80240707532e-05
+CallWait: P-value (Chi-Square-Test) ->3.68566034249e-148
+CreditCard: P-value (Chi-Square-Test) ->2.60844462608e-11
+OwnsPC: P-value (Chi-Square-Test) ->4.87017339565e-118
+CallForward: P-value (Chi-Square-Test) ->1.39978144469e-160
+OwnsMobileDevice: P-value (Chi-Square-Test) ->2.9911300521e-98
+WirelessData: P-value (Chi-Square-Test) ->0.0
+ThreeWayCalling: P-value (Chi-Square-Test) ->2.71107089237e-156
+Multiline: P-value (Chi-Square-Test) ->8.83557468307e-56
+NewsSubscriber: P-value (Chi-Square-Test) ->0.0452189988499
+CarsOwned: P-value (Chi-Square-Test) ->0.00641076490669
+EBilling: P-value (Chi-Square-Test) ->1.03443916876e-136
+Education: P-value (Chi-Square-Test) ->4.53619603912e-105
+CallingCard: P-value (Chi-Square-Test) ->3.30878207055e-40
+Pager: P-value (Chi-Square-Test) ->0.0
+HouseholdIncome: P-value (Chi-Square-Test) ->7.54205873623e-20
+EquipmentRental: P-value (Chi-Square-Test) ->1.20266189191e-164
+OwnsFax: P-value (Chi-Square-Test) ->4.56889136356e-262
+Retired: P-value (Chi-Square-Test) ->2.92923081637e-13
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.47203530495e-108
+Internet: P-value (Chi-Square-Test) ->2.17469130573e-160
+CarOwnership: P-value (Chi-Square-Test) ->1.28212627649e-08
+HomeOwner: P-value (Chi-Square-Test) ->0.000341137116182
+UnionMember: P-value (Chi-Square-Test) ->0.0184511021679
+CallerID: P-value (Chi-Square-Test) ->6.26061565203e-169
+
+-----------------------------------------------------
+
+37: Pager, category
+count     5000
+unique       2
+top         No
+freq      3782
+
+Categorical Breakdown:
+Pager
+No     3782
+Yes    1218
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->0.000174623537135
+CallWait: P-value (Chi-Square-Test) ->6.04669360513e-146
+CreditCard: P-value (Chi-Square-Test) ->7.35128420475e-14
+OwnsPC: P-value (Chi-Square-Test) ->8.3691103181e-112
+CallForward: P-value (Chi-Square-Test) ->1.16180189422e-138
+OwnsMobileDevice: P-value (Chi-Square-Test) ->1.84970984161e-86
+WirelessData: P-value (Chi-Square-Test) ->0.0
+ThreeWayCalling: P-value (Chi-Square-Test) ->9.83219835966e-142
+Multiline: P-value (Chi-Square-Test) ->4.49673970335e-47
+NewsSubscriber: P-value (Chi-Square-Test) ->0.00809692025244
+OwnsFax: P-value (Chi-Square-Test) ->2.26205934539e-311
+EBilling: P-value (Chi-Square-Test) ->1.11823698864e-125
+Education: P-value (Chi-Square-Test) ->1.99866841617e-90
+CallingCard: P-value (Chi-Square-Test) ->1.6811507999e-35
+CallerID: P-value (Chi-Square-Test) ->1.383299808e-158
+HouseholdIncome: P-value (Chi-Square-Test) ->7.91602744352e-25
+Votes: P-value (Chi-Square-Test) ->0.00329174550806
+EquipmentRental: P-value (Chi-Square-Test) ->1.78565492609e-170
+UnionMember: P-value (Chi-Square-Test) ->0.0154265251222
+Retired: P-value (Chi-Square-Test) ->5.06526577047e-17
+OwnsGameSystem: P-value (Chi-Square-Test) ->3.03940078963e-97
+Internet: P-value (Chi-Square-Test) ->5.1849627569e-169
+CarOwnership: P-value (Chi-Square-Test) ->9.03498312834e-07
+HomeOwner: P-value (Chi-Square-Test) ->0.00116670622054
+VM: P-value (Chi-Square-Test) ->0.0
+
+-----------------------------------------------------
+
+38: Internet, category
+count     5000
+unique       5
+top         No
+freq      2498
+
+Categorical Breakdown:
+Internet
+2       545
+3       598
+4       585
+No     2498
+Yes     774
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->1.77936924503e-06
+Pager: P-value (Chi-Square-Test) ->5.1849627569e-169
+Education: P-value (Chi-Square-Test) ->1.02526043006e-203
+CreditCard: P-value (Chi-Square-Test) ->5.81277425412e-21
+OwnsPC: P-value (Chi-Square-Test) ->0.0
+JobCategory: P-value (Chi-Square-Test) ->0.00123190209696
+NewsSubscriber: P-value (Chi-Square-Test) ->1.05563105182e-05
+Votes: P-value (Chi-Square-Test) ->0.000569059768476
+EquipmentRental: P-value (Chi-Square-Test) ->0.0
+OwnsMobileDevice: P-value (Chi-Square-Test) ->2.91103240652e-215
+Retired: P-value (Chi-Square-Test) ->6.1607313632e-08
+WirelessData: P-value (Chi-Square-Test) ->9.95935865407e-192
+HouseholdIncome: P-value (Chi-Square-Test) ->0.000190193833323
+EBilling: P-value (Chi-Square-Test) ->0.0
+Multiline: P-value (Chi-Square-Test) ->5.22405976513e-100
+MaritalStatus: P-value (Chi-Square-Test) ->0.0166487188343
+OwnsFax: P-value (Chi-Square-Test) ->4.00253870535e-118
+CallingCard: P-value (Chi-Square-Test) ->0.0013511880436
+CarsOwned: P-value (Chi-Square-Test) ->0.0022462030475
+VM: P-value (Chi-Square-Test) ->2.17469130573e-160
+OwnsGameSystem: P-value (Chi-Square-Test) ->2.28450651375e-242
+
+-----------------------------------------------------
+
+39: CallerID, category
+count     5000
+unique       2
+top         No
+freq      2624
+
+Categorical Breakdown:
+CallerID
+No     2624
+Yes    2376
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.0
+Education: P-value (Chi-Square-Test) ->0.00281157820011
+WirelessData: P-value (Chi-Square-Test) ->1.85178913505e-174
+Pager: P-value (Chi-Square-Test) ->1.383299808e-158
+CallWait: P-value (Chi-Square-Test) ->0.0
+CallingCard: P-value (Chi-Square-Test) ->1.21347496529e-110
+JobCategory: P-value (Chi-Square-Test) ->0.0217825695159
+CreditCard: P-value (Chi-Square-Test) ->0.0073176194255
+UnionMember: P-value (Chi-Square-Test) ->0.013503213131
+Retired: P-value (Chi-Square-Test) ->1.1755866069e-09
+MaritalStatus: P-value (Chi-Square-Test) ->0.0249932735939
+HouseholdIncome: P-value (Chi-Square-Test) ->7.66283481287e-23
+CarOwnership: P-value (Chi-Square-Test) ->6.75915381522e-05
+OwnsFax: P-value (Chi-Square-Test) ->4.14112845809e-110
+HomeOwner: P-value (Chi-Square-Test) ->0.00195587587251
+CallForward: P-value (Chi-Square-Test) ->0.0
+OwnsMobileDevice: P-value (Chi-Square-Test) ->0.0315845903735
+Gender: P-value (Chi-Square-Test) ->0.0174469389027
+VM: P-value (Chi-Square-Test) ->6.26061565203e-169
+
+-----------------------------------------------------
+
+40: CallWait, category
+count     5000
+unique       2
+top         No
+freq      2605
+
+Categorical Breakdown:
+CallWait
+No     2605
+Yes    2395
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.0
+Education: P-value (Chi-Square-Test) ->0.00236917615448
+WirelessData: P-value (Chi-Square-Test) ->5.59853701574e-162
+Pager: P-value (Chi-Square-Test) ->6.04669360513e-146
+CreditCard: P-value (Chi-Square-Test) ->0.0357550638892
+VM: P-value (Chi-Square-Test) ->3.68566034249e-148
+Retired: P-value (Chi-Square-Test) ->7.96533128254e-10
+CallingCard: P-value (Chi-Square-Test) ->6.252049047e-128
+HouseholdIncome: P-value (Chi-Square-Test) ->3.77532351269e-30
+CarOwnership: P-value (Chi-Square-Test) ->0.000124463161361
+HomeOwner: P-value (Chi-Square-Test) ->8.02138734091e-05
+CallForward: P-value (Chi-Square-Test) ->0.0
+OwnsFax: P-value (Chi-Square-Test) ->6.5384515046e-96
+JobCategory: P-value (Chi-Square-Test) ->0.0151649208101
+CallerID: P-value (Chi-Square-Test) ->0.0
+
+-----------------------------------------------------
+
+41: CallForward, category
+count     5000
+unique       2
+top         No
+freq      2597
+
+Categorical Breakdown:
+CallForward
+No     2597
+Yes    2403
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.0
+Education: P-value (Chi-Square-Test) ->0.0349131010771
+CallWait: P-value (Chi-Square-Test) ->0.0
+WirelessData: P-value (Chi-Square-Test) ->1.40979793036e-162
+Pager: P-value (Chi-Square-Test) ->1.16180189422e-138
+HouseholdIncome: P-value (Chi-Square-Test) ->2.23628746451e-24
+VM: P-value (Chi-Square-Test) ->1.39978144469e-160
+Retired: P-value (Chi-Square-Test) ->1.34345255888e-08
+CallingCard: P-value (Chi-Square-Test) ->8.98918601217e-118
+CarOwnership: P-value (Chi-Square-Test) ->6.68777462751e-05
+HomeOwner: P-value (Chi-Square-Test) ->8.5742219751e-05
+OwnsFax: P-value (Chi-Square-Test) ->5.18579655652e-101
+JobCategory: P-value (Chi-Square-Test) ->0.00241412064844
+CallerID: P-value (Chi-Square-Test) ->0.0
+
+-----------------------------------------------------
+
+42: ThreeWayCalling, category
+count     5000
+unique       2
+top         No
+freq      2610
+
+Categorical Breakdown:
+ThreeWayCalling
+No     2610
+Yes    2390
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+HomeOwner: P-value (Chi-Square-Test) ->0.000103514968991
+EBilling: P-value (Chi-Square-Test) ->0.0455575109541
+CallWait: P-value (Chi-Square-Test) ->0.0
+Education: P-value (Chi-Square-Test) ->0.00246347316743
+WirelessData: P-value (Chi-Square-Test) ->3.71837544685e-151
+Pager: P-value (Chi-Square-Test) ->9.83219835966e-142
+HouseholdIncome: P-value (Chi-Square-Test) ->2.32481648348e-30
+VM: P-value (Chi-Square-Test) ->2.71107089237e-156
+Retired: P-value (Chi-Square-Test) ->4.18741148171e-10
+MaritalStatus: P-value (Chi-Square-Test) ->0.00566378167507
+CarOwnership: P-value (Chi-Square-Test) ->0.000176832916272
+CallingCard: P-value (Chi-Square-Test) ->7.77524269695e-122
+CallForward: P-value (Chi-Square-Test) ->0.0
+OwnsFax: P-value (Chi-Square-Test) ->2.81395617933e-101
+JobCategory: P-value (Chi-Square-Test) ->0.0308571425729
+CallerID: P-value (Chi-Square-Test) ->0.0
+
+-----------------------------------------------------
+
+43: EBilling, category
+count     5000
+unique       2
+top         No
+freq      3257
+
+Categorical Breakdown:
+EBilling
+No     3257
+Yes    1743
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->1.58149361559e-10
+Education: P-value (Chi-Square-Test) ->1.21236905324e-161
+HouseholdIncome: P-value (Chi-Square-Test) ->0.000340032688004
+CreditCard: P-value (Chi-Square-Test) ->2.62423109045e-13
+OwnsPC: P-value (Chi-Square-Test) ->6.15379661943e-242
+Pager: P-value (Chi-Square-Test) ->1.11823698864e-125
+NewsSubscriber: P-value (Chi-Square-Test) ->1.84298343671e-06
+Votes: P-value (Chi-Square-Test) ->0.00216762267564
+EquipmentRental: P-value (Chi-Square-Test) ->0.0
+VM: P-value (Chi-Square-Test) ->1.03443916876e-136
+Retired: P-value (Chi-Square-Test) ->3.07223714167e-06
+WirelessData: P-value (Chi-Square-Test) ->6.26401214207e-158
+Internet: P-value (Chi-Square-Test) ->0.0
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.0455575109541
+Multiline: P-value (Chi-Square-Test) ->1.42435406576e-84
+OwnsFax: P-value (Chi-Square-Test) ->1.36023423995e-95
+CallingCard: P-value (Chi-Square-Test) ->0.000140543409867
+OwnsMobileDevice: P-value (Chi-Square-Test) ->2.93297290774e-190
+JobCategory: P-value (Chi-Square-Test) ->0.0144694683018
+OwnsGameSystem: P-value (Chi-Square-Test) ->3.06349699166e-211
+
+-----------------------------------------------------
+
+44: TVWatchingHours, int64
+count    5000.000000
+mean       19.645000
+std         5.165609
+min         0.000000
+25%        17.000000
+50%        20.000000
+75%        23.000000
+max        36.000000
+
+Normality Snapshot:
+Mean: 19.645
+Median: 20.0
+Skew: -0.64471215861
+Kurtosis: 2.34842177061
+
+Possible Associations:
+Retired: P-value (ANOVA) ->2.94580317231e-13
+MaritalStatus: P-value (ANOVA) ->0.0139998670891
+CarOwnership: P-value (ANOVA) ->0.00222263945008
+TownSize: P-value (ANOVA) ->0.0337526467818
+HouseholdIncome: P-value (ANOVA) ->6.60220981198e-15
+
+-----------------------------------------------------
+
+45: OwnsPC, category
+count     5000
+unique       2
+top        Yes
+freq      3164
+
+Categorical Breakdown:
+OwnsPC
+No     1836
+Yes    3164
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->5.70785628218e-06
+HouseholdIncome: P-value (Chi-Square-Test) ->0.000885331782551
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.00953634740805
+OwnsMobileDevice: P-value (Chi-Square-Test) ->6.81518290465e-173
+WirelessData: P-value (Chi-Square-Test) ->1.32491124606e-129
+InHeavyDebt: P-value (Chi-Square-Test) ->0.0414024816022
+Multiline: P-value (Chi-Square-Test) ->6.14774507866e-76
+NewsSubscriber: P-value (Chi-Square-Test) ->1.44321898698e-05
+EBilling: P-value (Chi-Square-Test) ->6.15379661943e-242
+Education: P-value (Chi-Square-Test) ->4.301641556e-175
+MaritalStatus: P-value (Chi-Square-Test) ->0.013983684664
+Pager: P-value (Chi-Square-Test) ->8.3691103181e-112
+CreditCard: P-value (Chi-Square-Test) ->1.60891006019e-27
+Votes: P-value (Chi-Square-Test) ->0.000301820739334
+EquipmentRental: P-value (Chi-Square-Test) ->2.44567786612e-243
+OwnsFax: P-value (Chi-Square-Test) ->2.24533344135e-66
+Retired: P-value (Chi-Square-Test) ->4.23143684846e-10
+OwnsGameSystem: P-value (Chi-Square-Test) ->7.33390076583e-193
+Internet: P-value (Chi-Square-Test) ->0.0
+CallingCard: P-value (Chi-Square-Test) ->0.000626032259001
+HomeOwner: P-value (Chi-Square-Test) ->0.0152763858462
+VM: P-value (Chi-Square-Test) ->4.87017339565e-118
+JobCategory: P-value (Chi-Square-Test) ->0.0235160066238
+
+-----------------------------------------------------
+
+46: OwnsMobileDevice, category
+count     5000
+unique       2
+top         No
+freq      2604
+
+Categorical Breakdown:
+OwnsMobileDevice
+No     2604
+Yes    2396
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->1.4821276937e-15
+EBilling: P-value (Chi-Square-Test) ->2.93297290774e-190
+Education: P-value (Chi-Square-Test) ->1.77272085288e-126
+CreditCard: P-value (Chi-Square-Test) ->9.53699498801e-09
+OwnsPC: P-value (Chi-Square-Test) ->6.81518290465e-173
+Pager: P-value (Chi-Square-Test) ->1.84970984161e-86
+HouseholdIncome: P-value (Chi-Square-Test) ->4.16348778297e-07
+EquipmentRental: P-value (Chi-Square-Test) ->2.08905389461e-217
+OwnsFax: P-value (Chi-Square-Test) ->3.58023501011e-63
+Retired: P-value (Chi-Square-Test) ->8.79084847994e-21
+WirelessData: P-value (Chi-Square-Test) ->5.1979711405e-100
+Internet: P-value (Chi-Square-Test) ->2.91103240652e-215
+CarOwnership: P-value (Chi-Square-Test) ->3.86005402804e-05
+Multiline: P-value (Chi-Square-Test) ->3.22214589816e-44
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.000437458854269
+NewsSubscriber: P-value (Chi-Square-Test) ->2.17755342479e-12
+HomeOwner: P-value (Chi-Square-Test) ->0.0350532236648
+CallingCard: P-value (Chi-Square-Test) ->9.52328677342e-06
+VM: P-value (Chi-Square-Test) ->2.9911300521e-98
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.79674479773e-150
+CallerID: P-value (Chi-Square-Test) ->0.0315845903735
+
+-----------------------------------------------------
+
+47: OwnsGameSystem, category
+count     5000
+unique       2
+top         No
+freq      2626
+
+Categorical Breakdown:
+OwnsGameSystem
+No     2626
+Yes    2374
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->8.34684325103e-17
+CreditCard: P-value (Chi-Square-Test) ->8.5038026767e-11
+OwnsPC: P-value (Chi-Square-Test) ->7.33390076583e-193
+ActiveLifestyle: P-value (Chi-Square-Test) ->0.000774342522532
+OwnsMobileDevice: P-value (Chi-Square-Test) ->1.79674479773e-150
+WirelessData: P-value (Chi-Square-Test) ->4.96092730039e-106
+CarOwnership: P-value (Chi-Square-Test) ->4.08537122888e-05
+Multiline: P-value (Chi-Square-Test) ->1.30192391721e-46
+NewsSubscriber: P-value (Chi-Square-Test) ->2.57827486172e-10
+CarsOwned: P-value (Chi-Square-Test) ->0.0421939023184
+EBilling: P-value (Chi-Square-Test) ->3.06349699166e-211
+Education: P-value (Chi-Square-Test) ->1.41905813908e-126
+CallingCard: P-value (Chi-Square-Test) ->7.52289414189e-07
+Pager: P-value (Chi-Square-Test) ->3.03940078963e-97
+HouseholdIncome: P-value (Chi-Square-Test) ->3.14788854523e-06
+Votes: P-value (Chi-Square-Test) ->0.00948650893556
+EquipmentRental: P-value (Chi-Square-Test) ->4.45607251523e-209
+OwnsFax: P-value (Chi-Square-Test) ->1.84247905229e-59
+Retired: P-value (Chi-Square-Test) ->1.12083213012e-26
+Internet: P-value (Chi-Square-Test) ->2.28450651375e-242
+HomeOwner: P-value (Chi-Square-Test) ->0.0283032608637
+VM: P-value (Chi-Square-Test) ->1.47203530495e-108
+JobCategory: P-value (Chi-Square-Test) ->0.00141333261674
+
+-----------------------------------------------------
+
+48: OwnsFax, category
+count     5000
+unique       2
+top         No
+freq      4106
+
+Categorical Breakdown:
+OwnsFax
+No     4106
+Yes     894
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->0.0228011831432
+CallWait: P-value (Chi-Square-Test) ->6.5384515046e-96
+CreditCard: P-value (Chi-Square-Test) ->2.63091102118e-08
+OwnsPC: P-value (Chi-Square-Test) ->2.24533344135e-66
+CallForward: P-value (Chi-Square-Test) ->5.18579655652e-101
+OwnsMobileDevice: P-value (Chi-Square-Test) ->3.58023501011e-63
+WirelessData: P-value (Chi-Square-Test) ->0.0
+ThreeWayCalling: P-value (Chi-Square-Test) ->2.81395617933e-101
+Multiline: P-value (Chi-Square-Test) ->8.03369431137e-40
+HomeOwner: P-value (Chi-Square-Test) ->8.98270021313e-06
+HasPets: P-value (Chi-Square-Test) ->0.0432517143286
+EBilling: P-value (Chi-Square-Test) ->1.36023423995e-95
+Education: P-value (Chi-Square-Test) ->2.901159792e-68
+CallingCard: P-value (Chi-Square-Test) ->3.63714827999e-32
+Pager: P-value (Chi-Square-Test) ->2.26205934539e-311
+HouseholdIncome: P-value (Chi-Square-Test) ->1.67969882512e-24
+Votes: P-value (Chi-Square-Test) ->0.000262903599321
+EquipmentRental: P-value (Chi-Square-Test) ->2.6389884153e-114
+Retired: P-value (Chi-Square-Test) ->7.90785463784e-07
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.84247905229e-59
+Internet: P-value (Chi-Square-Test) ->4.00253870535e-118
+CarOwnership: P-value (Chi-Square-Test) ->0.000685525695912
+Region: P-value (Chi-Square-Test) ->0.00193101479012
+VM: P-value (Chi-Square-Test) ->4.56889136356e-262
+CallerID: P-value (Chi-Square-Test) ->4.14112845809e-110
+
+-----------------------------------------------------
+
+49: NewsSubscriber, category
+count     5000
+unique       2
+top         No
+freq      2637
+
+Categorical Breakdown:
+NewsSubscriber
+No     2637
+Yes    2363
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->7.25154227123e-36
+Pager: P-value (Chi-Square-Test) ->0.00809692025244
+Education: P-value (Chi-Square-Test) ->1.69005281981e-07
+CallingCard: P-value (Chi-Square-Test) ->2.89025381192e-104
+OwnsPC: P-value (Chi-Square-Test) ->1.44321898698e-05
+JobCategory: P-value (Chi-Square-Test) ->1.40333363675e-14
+HouseholdIncome: P-value (Chi-Square-Test) ->1.30762788059e-24
+EquipmentRental: P-value (Chi-Square-Test) ->7.45646927175e-07
+OwnsMobileDevice: P-value (Chi-Square-Test) ->2.17755342479e-12
+Retired: P-value (Chi-Square-Test) ->2.49728347084e-51
+MaritalStatus: P-value (Chi-Square-Test) ->2.835068107e-13
+Internet: P-value (Chi-Square-Test) ->1.05563105182e-05
+EBilling: P-value (Chi-Square-Test) ->1.84298343671e-06
+Multiline: P-value (Chi-Square-Test) ->1.03304060133e-91
+TownSize: P-value (Chi-Square-Test) ->0.0218740784818
+HomeOwner: P-value (Chi-Square-Test) ->0.00027389801936
+HasPets: P-value (Chi-Square-Test) ->0.0422323412157
+ActiveLifestyle: P-value (Chi-Square-Test) ->1.58151329603e-10
+VM: P-value (Chi-Square-Test) ->0.0452189988499
+OwnsGameSystem: P-value (Chi-Square-Test) ->2.57827486172e-10
+
+-----------------------------------------------------
+
+50: HouseholdIncome, category
+count         5000
+unique           5
+top       20 to 39
+freq          1746
+
+Categorical Breakdown:
+HouseholdIncome
+0 to 20       826
+20 to 39     1746
+40 to 79     1493
+80 to 200     826
+above 200     109
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->3.25435117637e-08
+CallWait: P-value (Chi-Square-Test) ->3.77532351269e-30
+CreditCard: P-value (Chi-Square-Test) ->2.13879600057e-34
+OwnsPC: P-value (Chi-Square-Test) ->0.000885331782551
+CallForward: P-value (Chi-Square-Test) ->2.23628746451e-24
+ActiveLifestyle: P-value (Chi-Square-Test) ->7.72786864874e-08
+OwnsMobileDevice: P-value (Chi-Square-Test) ->4.16348778297e-07
+WirelessData: P-value (Chi-Square-Test) ->6.39849779328e-31
+ThreeWayCalling: P-value (Chi-Square-Test) ->2.32481648348e-30
+Multiline: P-value (Chi-Square-Test) ->3.40745047472e-28
+NewsSubscriber: P-value (Chi-Square-Test) ->1.30762788059e-24
+OwnsFax: P-value (Chi-Square-Test) ->1.67969882512e-24
+EBilling: P-value (Chi-Square-Test) ->0.000340032688004
+Education: P-value (Chi-Square-Test) ->1.07328643175e-34
+CallingCard: P-value (Chi-Square-Test) ->1.40204878004e-27
+Pager: P-value (Chi-Square-Test) ->7.91602744352e-25
+Votes: P-value (Chi-Square-Test) ->3.14092116302e-17
+EquipmentRental: P-value (Chi-Square-Test) ->3.31932239083e-07
+VM: P-value (Chi-Square-Test) ->7.54205873623e-20
+Retired: P-value (Chi-Square-Test) ->2.50406863258e-258
+OwnsGameSystem: P-value (Chi-Square-Test) ->3.14788854523e-06
+Internet: P-value (Chi-Square-Test) ->0.000190193833323
+CarOwnership: P-value (Chi-Square-Test) ->5.86827365596e-136
+HomeOwner: P-value (Chi-Square-Test) ->2.19914260752e-22
+JobCategory: P-value (Chi-Square-Test) ->1.9551200687e-54
+CallerID: P-value (Chi-Square-Test) ->7.66283481287e-23
+
+-----------------------------------------------------
+
+51: Education, category
+count     5000
+unique       3
+top          1
+freq      2589
+
+Categorical Breakdown:
+Education
+0     946
+1    2589
+2    1465
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+LoanDefault: P-value (Chi-Square-Test) ->2.24034841039e-15
+CallWait: P-value (Chi-Square-Test) ->0.00236917615448
+CreditCard: P-value (Chi-Square-Test) ->2.48332479685e-81
+OwnsPC: P-value (Chi-Square-Test) ->4.301641556e-175
+CallForward: P-value (Chi-Square-Test) ->0.0349131010771
+OwnsMobileDevice: P-value (Chi-Square-Test) ->1.77272085288e-126
+WirelessData: P-value (Chi-Square-Test) ->2.60792550964e-99
+ThreeWayCalling: P-value (Chi-Square-Test) ->0.00246347316743
+Multiline: P-value (Chi-Square-Test) ->2.99754034926e-58
+NewsSubscriber: P-value (Chi-Square-Test) ->1.69005281981e-07
+OwnsFax: P-value (Chi-Square-Test) ->2.901159792e-68
+EBilling: P-value (Chi-Square-Test) ->1.21236905324e-161
+CallingCard: P-value (Chi-Square-Test) ->0.00211784431176
+Pager: P-value (Chi-Square-Test) ->1.99866841617e-90
+HouseholdIncome: P-value (Chi-Square-Test) ->1.07328643175e-34
+Votes: P-value (Chi-Square-Test) ->2.69504334621e-10
+EquipmentRental: P-value (Chi-Square-Test) ->9.83039777615e-177
+VM: P-value (Chi-Square-Test) ->4.53619603912e-105
+Retired: P-value (Chi-Square-Test) ->1.49262021023e-13
+OwnsGameSystem: P-value (Chi-Square-Test) ->1.41905813908e-126
+Internet: P-value (Chi-Square-Test) ->1.02526043006e-203
+CarOwnership: P-value (Chi-Square-Test) ->9.42416022921e-07
+HomeOwner: P-value (Chi-Square-Test) ->0.0170545406197
+JobCategory: P-value (Chi-Square-Test) ->0.00189513475243
+CallerID: P-value (Chi-Square-Test) ->0.00281157820011
+
+-----------------------------------------------------
+
+52: InHeavyDebt, category
+count     5000
+unique       2
+top          0
+freq      4053
+
+Categorical Breakdown:
+InHeavyDebt
+0    4053
+1     947
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+OwnsPC: P-value (Chi-Square-Test) ->0.0414024816022
+LoanDefault: P-value (Chi-Square-Test) ->2.46589039885e-64
+Multiline: P-value (Chi-Square-Test) ->0.00308293229374
+Gender: P-value (Chi-Square-Test) ->7.50883267932e-06
+MaritalStatus: P-value (Chi-Square-Test) ->0.00288287984573
+
+-----------------------------------------------------
+
+53: HasPets, category
+count     5000
+unique       2
+top          1
+freq      3469
+
+Categorical Breakdown:
+HasPets
+0    1531
+1    3469
+Name: CustomerID, dtype: int64
+
+Possible Associations:
+OwnsFax: P-value (Chi-Square-Test) ->0.0432517143286
+NewsSubscriber: P-value (Chi-Square-Test) ->0.0422323412157
+
+-----------------------------------------------------
+
+54: AvgPhoneBill, float64
+count    4997.000000
+mean       13.458152
+std        12.796867
+min         0.500000
+25%         5.770588
+50%         9.644444
+75%        16.481452
+max       181.201389
+
+Normality Snapshot:
+Mean: 13.4581523087
+Median: 9.644444444444444
+Skew: 3.27243071537
+Kurtosis: 18.6891383379
+
+Possible Associations:
+VoiceLastMonth: R-Squared (Correlation) ->0.997760932645
+VoiceOverTenure: R-Squared (Correlation) ->0.986070538018
+
+-----------------------------------------------------
+
