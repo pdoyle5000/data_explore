@@ -7,8 +7,8 @@ from scipy.stats import chi2_contingency
 import scipy.stats as stats
 
 INPUT_FILE = "CustomerData_Merrimack.xlsx"
-OUTPUT_FILE = "data_output/summary.txt"
-OUTPUT_CSV = "data_output/final.csv"
+OUTPUT_FILE = "summary.txt"
+OUTPUT_CSV = "final_data.csv"
 PK = "CustomerID"
 FORCE_TYPES = {
         'UnionMember': 'category',
@@ -129,8 +129,14 @@ def clean_attributes(db):
     # Create categorical variable HasPets
     db['HasPets'] = has_pets(db)
 
+    # Create a new attribute TotalSpent
+    db['TotalOverTenure'] = db['VoiceOverTenure'] + db['EquipmentOverTenure'] + db['VoiceOverTenure']
+
     # Convert EquipmentLastMonth to categorical
-    db['EquipmentLastMonth'] = equip_month_to_cat(db['EquipmentLastMonth'])
+    db['EquipmentLastMonth'] = equip_to_cat(db['EquipmentLastMonth'])
+
+    # Convert EquipmentOverTenure to categorical
+    db['EquipmentOverTeunre'] = equip_to_cat(db['EquipmentOverTenure'])
 
     # Replace all the -$1000 values in CarValue with NaN
     db['CarValue'].replace(float(-1000), np.nan, inplace=True)
@@ -188,7 +194,7 @@ def debt_ratio_categorical(debt):
             d.append(1)
     return pd.Series(d, dtype='category')
 
-def equip_month_to_cat(equip):
+def equip_to_cat(equip):
     eq = []
     for val in equip:
         if val != 0:
