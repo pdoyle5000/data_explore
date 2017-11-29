@@ -61,8 +61,6 @@ def print_summary(db):
             f.write("\n\nPossible Associations:\n")
             for k, v in chisq.items():
                 f.write(k + ": P-value (Chi-Square-Test) ->" + str(v) + '\n')
-                #f.write("Cross Tab:\n")
-                #f.write(str(pd.crosstab(db[attribute], db[k])) + '\n')
 
         elif str(dt) == "int64" or str(dt) == "float64":
             mean = db[attribute].mean()
@@ -77,12 +75,12 @@ def print_summary(db):
             f.write("\nPossible Associations:\n")
             corvals = correlation(db, attribute)
             for k,v in corvals.items():
-                f.write(k + ": R-Squared ->" + str(v) + '\n')
+                f.write(k + ": R-Squared (Correlation) ->" + str(v) + '\n')
 
             # Compare against categorical
             anova_results = anova(db, attribute)
             for k, v in anova_results.items():
-                f.write(k + ": ANOVA P-val ->" + str(v) + '\n')
+                f.write(k + ": P-value (ANOVA) ->" + str(v) + '\n')
             
 
         f.write('\n-----------------------------------------------------\n\n')
@@ -136,9 +134,6 @@ def clean_attributes(db):
     # Create AvgPhoneBill variable
     db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
 
-    # TODO:  compare categorical against numerical
-    #        compare numerical against numerical
-    
     cols_to_delete = [
             'HHIncome', 
             'EducationYears', 
@@ -224,36 +219,29 @@ def categorical_association(db, att):
     return result_dict
 
 def correlation(db, att):
-    result_dict = {}
+    corr_dict = {}
 
     for attribute in db.select_dtypes(np.number):
         if attribute != att:
             rsq = db[att].corr(db[attribute])
             if rsq > 0.8:
-                result_dict[attribute] = rsq
+                corr_dict[attribute] = rsq
 
-    return result_dict
+    return corr_dict
 
 def anova(db, att):
     anova_dict = {}
     for attribute in db.select_dtypes('category'):
-        # split a the db[att] data set into every type of db[att]
-        aval = stats.f_oneway(db[att], )
-
+        grouped_data = db.groupby(attribute)[att].apply(list)
+        _, anova_val = stats.f_oneway(*grouped_data)
+        if anova_val < 0.05:
+            anova_dict[attribute] = anova_val
+    return anova_dict
 
 def main():
     db = import_original_data()
     clean_db = clean_attributes(db)
     print_summary(clean_db)
-    #clean_db['HHIncome'].plot.hist(bins=25, range=[0, 100000])
-    #clean_db['EmploymentLength'].plot.hist(bins=5)
-    #noZeroes = [x for x in clean_db['EmploymentLength'] if x != 0]
-    #logLength = pd.Series(np.log(noZeroes))
-    #logLength.plot.hist(bins=10)
-    #print(pd.crosstab(clean_db['HouseholdIncome'],clean_db['JobCategory']))
-    #print(pd.crosstab(clean_db['MaritalStatus'],clean_db['HouseholdSize']))
-    #plt.show()
-
 
 if __name__ == "__main__":
     main()
