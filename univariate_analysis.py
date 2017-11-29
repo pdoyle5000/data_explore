@@ -129,6 +129,9 @@ def clean_attributes(db):
     # Create categorical variable HasPets
     db['HasPets'] = has_pets(db)
 
+    # Convert EquipmentLastMonth to categorical
+    db['EquipmentLastMonth'] = equip_month_to_cat(db['EquipmentLastMonth'])
+
     # Replace all the -$1000 values in CarValue with NaN
     db['CarValue'].replace(float(-1000), np.nan, inplace=True)
     
@@ -184,6 +187,15 @@ def debt_ratio_categorical(debt):
         else:
             d.append(1)
     return pd.Series(d, dtype='category')
+
+def equip_month_to_cat(equip):
+    eq = []
+    for val in equip:
+        if val != 0:
+            eq.append(1)
+        else:
+            eq.append(0)
+    return pd.Series(eq, dtype='category')
 
 def fill_null_household_size(db):
     new_sizes = []
