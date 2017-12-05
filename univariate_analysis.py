@@ -261,7 +261,7 @@ def main():
     db = import_original_data()
     clean_db = clean_attributes(db)
     print_summary(clean_db)
-    clean_db.to_csv(OUTPUT_CSV)
+    clean_db.to_csv(OUTPUT_CSV, index=False)
 
 if __name__ == "__main__":
     main()
