@@ -31,67 +31,66 @@ def import_data():
     return cluster_df
 
 def kmeans_cluster_graphs(df):
-	headers = list(df)
-	kmeans_results = {}
-	for num_clusters in range(2, 7):
-		title = str(num_clusters) + "KmeansClusters"
-		kmodel = KMeans(
-			n_clusters=num_clusters,
-			n_init=100,
-			max_iter=500)
-		kcluster = kmodel.fit(df)
-		fig = plt.figure(num_clusters - 1)
-		ax = plt.axes(projection='3d')
-		ax.scatter3D(
-			df[df.columns[0]],
-			df[df.columns[1]],
-			df[df.columns[2]],
-			c=colormap[kcluster.labels_])
-		kmeans_results[title] = kcluster
-		ax.set_xlabel(headers[0])
-		ax.set_ylabel(headers[1])
-		ax.set_zlabel(headers[2])
-		plt.title(title)
-		fig.show()
-	return kmeans_results
+    headers = list(df)
+    kmeans_results = {}
+    for num_clusters in range(2, 7):
+        title = str(num_clusters) + "KmeansClusters"
+        kmodel = KMeans(n_clusters=num_clusters,
+                        n_init=100,
+                        max_iter=500)
+        kcluster = kmodel.fit(df)
+        fig = plt.figure(num_clusters - 1)
+        ax = plt.axes(projection='3d')
+        ax.scatter3D(
+            df[df.columns[0]],
+            df[df.columns[1]],
+            df[df.columns[2]],
+        c=colormap[kcluster.labels_])
+        kmeans_results[title] = kcluster
+        ax.set_xlabel(headers[0])
+        ax.set_ylabel(headers[1])
+        ax.set_zlabel(headers[2])
+        plt.title(title)
+    #fig.show()
+    return kmeans_results
 
 def ward_cluster_graphs(df):
-	headers = list(df)
-	ward_results = {}
-	for num_clusters in range(2, 7):
-		title = str(num_clusters) + "WardHierarchical"
-		wmodel = AgglomerativeClustering(
-			n_clusters=num_clusters,
-			linkage='ward').fit(df)
-		wfig = plt.figure(num_clusters - 1)
-		ax = plt.axes(projection='3d')
-		ax.scatter3D(
-			df[df.columns[0]],
-			df[df.columns[1]],
-			df[df.columns[2]],
-			c=colormap[wmodel.labels_])
-		ward_results[title] = wmodel
-		ax.set_xlabel(headers[0])
-		ax.set_ylabel(headers[1])
-		ax.set_zlabel(headers[2])
-		plt.title(title)
-		wfig.show()
-	return ward_results
+    headers = list(df)
+    ward_results = {}
+    for num_clusters in range(2, 7):
+        title = str(num_clusters) + "WardHierarchical"
+        wmodel = AgglomerativeClustering(
+            n_clusters=num_clusters,
+            linkage='ward').fit(df)
+        wfig = plt.figure(num_clusters - 1)
+        ax = plt.axes(projection='3d')
+        ax.scatter3D(df[df.columns[0]],
+                     df[df.columns[1]],
+                     df[df.columns[2]],
+                    c=colormap[wmodel.labels_])
+        ward_results[title] = wmodel
+        ax.set_xlabel(headers[0])
+        ax.set_ylabel(headers[1])
+        ax.set_zlabel(headers[2])
+        plt.title(title)
+        #wfig.show()
+    return ward_results
 
 def k_means_analysis(df):
-	results = kmeans_cluster_graphs(df)
-
-	#print cluster centers for each N
-	# Do the math to convert them back to not-logarithm
-	# Perform ANOVA on clusters vs data
-	for result in results:
-		print(results[result].cluster_centers_)
-	input()
+    results = kmeans_cluster_graphs(df)
+    #print cluster centers for each N
+    # Do the math to convert them back to not-logarithm
+    # Perform ANOVA on clusters vs data
+    i = 2
+    for result in results:
+        print(result + " centers\n")
+        print(results[result].cluster_centers_)
+        i = i+1
+    #input()
 
 def ward_analysis(df):
-	results = ward_cluster_graphs(df)
-
-	input()
+    results = ward_cluster_graphs(df)
+    input()
 
 def main():
     cluster_df = import_data()
