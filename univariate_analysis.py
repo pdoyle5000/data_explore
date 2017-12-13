@@ -139,10 +139,25 @@ def clean_attributes(db):
     db['EquipmentOverTeunre'] = equip_to_cat(db['EquipmentOverTenure'])
 
     # Replace all the -$1000 values in CarValue with NaN
-    db['CarValue'].replace(float(-1000), np.nan, inplace=True)
+    db['CarValue'].replace(float(-1000), 0, inplace=True)
+
+    # Convert -1 in car ownership to NoCar
+    db['CarOwnership'].replace("-1", "NoCar", inplace=True)
     
     # Create AvgPhoneBill variable
     db['AvgPhoneBill'] = db['VoiceOverTenure'].divide(db['PhoneCoTenure'])
+    db['AvgPhoneBill'].replace(np.nan, db['VoiceOverTenure'], inplace=True)
+
+    # Create TotalAvgBill variable
+    db['TotalAvgBill'] = db['TotalOverTenure'].divide(db['PhoneCoTenure'])
+    db['TotalAvgBill'].replace(np.nan, db['TotalOverTenure'], inplace=True)
+    
+    # Take the log of the avgBill + 1
+    db['LogAvgTotal'] = np.log(db['TotalAvgBill'] + 1)
+    
+    # Create LogEmploymentLength variable
+    db['EmploymentLength'] = db['EmploymentLength'] + 1
+    db['LogEmployment'] = np.log(db['EmploymentLength'])
 
     cols_to_delete = [
             'HHIncome', 
