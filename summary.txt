@@ -1,7 +1,7 @@
 1: CustomerID, object
 count                5000
 unique               5000
-top       8898-CEIFEZ-5QX
+top       1446-EOSUKZ-KSJ
 freq                    1
 
 
@@ -184,17 +184,17 @@ CallerID: P-value (Chi-Square-Test) ->0.013503213131
 
 8: EmploymentLength, int64
 count    5000.000000
-mean       10.730400
+mean        9.730400
 std         9.690929
-min         1.000000
-25%         3.000000
-50%         8.000000
-75%        16.000000
-max        53.000000
+min         0.000000
+25%         2.000000
+50%         7.000000
+75%        15.000000
+max        52.000000
 
 Normality Snapshot:
-Mean: 10.7304
-Median: 8.0
+Mean: 9.7304
+Median: 7.0
 Skew: 1.25191770218
 Kurtosis: 1.05286542766
 

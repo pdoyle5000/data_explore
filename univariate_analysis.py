@@ -156,8 +156,7 @@ def clean_attributes(db):
     db['LogAvgTotal'] = np.log(db['TotalAvgBill'] + 1)
     
     # Create LogEmploymentLength variable
-    db['EmploymentLength'] = db['EmploymentLength'] + 1
-    db['LogEmployment'] = np.log(db['EmploymentLength'])
+    db['LogEmployment'] = np.log(db['EmploymentLength'] + 1)
 
     cols_to_delete = [
             'HHIncome', 
