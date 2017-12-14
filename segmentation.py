@@ -130,7 +130,8 @@ def stats_analysis(df, results, is_kmeans):
         if is_kmeans:
             print(result + " Centers\n")
             print(results[result].cluster_centers_)
-            print("\n")
+            print("Noramlized Centers:")
+            print(denormalize_centers(results[result].cluster_centers_))
         else:
             print(result + " Ward Alg\n")
 
@@ -232,21 +233,21 @@ def ward_analysis(df):
     #input()
 
 def denormalize_centers(results):
-    # first cal is log of employment length +1, change back
+    # Will not make sense for Age
     dresults = results
-    for result in dresults:
-        for row in dresults[result]:
-            row[0] = math.exp(row[0]) - 1
-            row[1] = math.exp(row[1]) - 1
+    for row in dresults:
+        row[0] = math.exp(row[0]) - 1
+        if len(row) > 2:
+             row[1] = math.exp(row[1]) - 1
     return dresults
 
 
 def main():
     cluster_df = import_data()
-    #print("K Means Testing!\n")
-    #k_means_analysis(cluster_df)
-    print("\n\nWard Testing!\n")
-    ward_analysis(cluster_df)
+    print("K Means Testing!\n")
+    k_means_analysis(cluster_df)
+    #print("\n\nWard Testing!\n")
+    #ward_analysis(cluster_df)
 
 
 if __name__ == "__main__":
