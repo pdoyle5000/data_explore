@@ -1,0 +1,1612 @@
+K Means Testing!
+
+2KmeansClusters2D-LogEmployment Centers
+
+[[  1.33704216  18.42510926]
+ [  2.46097012  58.25533629]]
+
+
+
+
+2 Clusters.  Cluster Group 1
+       LogEmployment  PhoneCoTenure
+count    2517.000000    2517.000000
+mean        1.337042      18.425109
+std         0.981465      11.165028
+min         0.000000       0.000000
+25%         0.693147       8.000000
+50%         1.386294      18.000000
+75%         2.079442      28.000000
+max         3.688879      38.000000
+
+
+2 Clusters.  Cluster Group 2
+       LogEmployment  PhoneCoTenure
+count    2483.000000    2483.000000
+mean        2.460970      58.255336
+std         0.836777      10.443164
+min         0.000000      39.000000
+25%         1.945910      49.000000
+50%         2.564949      60.000000
+75%         3.091042      68.000000
+max         3.970292      72.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=6994.081779142256, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13836.875549744967, pvalue=0.0)
+
+
+3KmeansClusters2D-LogEmployment Centers
+
+[[  2.61982103  63.59106145]
+ [  1.13317186  11.56109422]
+ [  1.86733328  37.17444089]]
+
+
+
+
+3 Clusters.  Cluster Group 1
+       LogEmployment  PhoneCoTenure
+count    1790.000000    1790.000000
+mean        2.619821      63.591061
+std         0.773053       6.693926
+min         0.000000      51.000000
+25%         2.197225      58.000000
+50%         2.772589      64.000000
+75%         3.218876      70.000000
+max         3.970292      72.000000
+
+
+3 Clusters.  Cluster Group 2
+       LogEmployment  PhoneCoTenure
+count    1645.000000    1645.000000
+mean        1.133172      11.561094
+std         0.944720       6.801008
+min         0.000000       0.000000
+25%         0.000000       6.000000
+50%         1.098612      11.000000
+75%         1.945910      17.000000
+max         3.526361      24.000000
+
+
+3 Clusters.  Cluster Group 3
+       LogEmployment  PhoneCoTenure
+count    1565.000000    1565.000000
+mean        1.867333      37.174441
+std         0.914401       7.504277
+min         0.000000      25.000000
+25%         1.386294      31.000000
+50%         1.945910      37.000000
+75%         2.564949      44.000000
+max         3.784190      50.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=2431.8695435495724, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13491.500397394893, pvalue=0.0)
+
+
+4KmeansClusters2D-LogEmployment Centers
+
+[[  2.12690369  47.68947819]
+ [  1.05415387   8.98619632]
+ [  2.72452009  66.54725275]
+ [  1.63165831  28.15834768]]
+
+
+
+
+4 Clusters.  Cluster Group 1
+       LogEmployment  PhoneCoTenure
+count    1169.000000    1169.000000
+mean        2.126904      47.689478
+std         0.853036       5.768974
+min         0.000000      38.000000
+25%         1.609438      43.000000
+50%         2.302585      48.000000
+75%         2.772589      53.000000
+max         3.784190      57.000000
+
+
+4 Clusters.  Cluster Group 2
+       LogEmployment  PhoneCoTenure
+count    1304.000000    1304.000000
+mean        1.054154       8.986196
+std         0.925779       5.061840
+min         0.000000       0.000000
+25%         0.000000       5.000000
+50%         1.098612       9.000000
+75%         1.791759      13.000000
+max         3.526361      18.000000
+
+
+4 Clusters.  Cluster Group 3
+       LogEmployment  PhoneCoTenure
+count    1365.000000    1365.000000
+mean        2.724520      66.547253
+std         0.730837       4.561586
+min         0.000000      58.000000
+25%         2.302585      63.000000
+50%         2.890372      67.000000
+75%         3.295837      71.000000
+max         3.970292      72.000000
+
+
+4 Clusters.  Cluster Group 4
+       LogEmployment  PhoneCoTenure
+count    1162.000000    1162.000000
+mean        1.631658      28.158348
+std         0.946700       5.447333
+min         0.000000      19.000000
+25%         1.098612      24.000000
+50%         1.791759      28.000000
+75%         2.302585      33.000000
+max         3.663562      37.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=328.24921467806388, pvalue=3.2825402156971696e-72)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13083.681120058458, pvalue=0.0)
+
+
+5KmeansClusters2D-LogEmployment Centers
+
+[[  1.92396956  39.4375    ]
+ [  2.79721753  68.23293904]
+ [  0.9986683    7.72695035]
+ [  2.30696289  54.83235639]
+ [  1.52128532  23.63333333]]
+
+
+
+
+5 Clusters.  Cluster Group 1
+       LogEmployment  PhoneCoTenure
+count     960.000000     960.000000
+mean        1.923970      39.437500
+std         0.889323       4.701768
+min         0.000000      32.000000
+25%         1.386294      35.000000
+50%         2.079442      39.000000
+75%         2.564949      44.000000
+max         3.784190      47.000000
+
+
+5 Clusters.  Cluster Group 2
+       LogEmployment  PhoneCoTenure
+count    1099.000000    1099.000000
+mean        2.797218      68.232939
+std         0.709264       3.312004
+min         0.000000      62.000000
+25%         2.484907      65.000000
+50%         2.944439      69.000000
+75%         3.332205      71.000000
+max         3.970292      72.000000
+
+
+5 Clusters.  Cluster Group 3
+       LogEmployment  PhoneCoTenure
+count    1128.000000    1128.000000
+mean        0.998668       7.726950
+std         0.918026       4.214091
+min         0.000000       0.000000
+25%         0.000000       4.000000
+50%         0.693147       8.000000
+75%         1.791759      11.000000
+max         3.526361      15.000000
+
+
+5 Clusters.  Cluster Group 4
+       LogEmployment  PhoneCoTenure
+count     853.000000     853.000000
+mean        2.306963      54.832356
+std         0.790644       4.021513
+min         0.000000      48.000000
+25%         1.791759      52.000000
+50%         2.397895      55.000000
+75%         2.890372      58.000000
+max         3.761200      61.000000
+
+
+5 Clusters.  Cluster Group 5
+       LogEmployment  PhoneCoTenure
+count     960.000000     960.000000
+mean        1.521285      23.633333
+std         0.950671       4.609114
+min         0.000000      16.000000
+25%         0.693147      20.000000
+50%         1.609438      24.000000
+75%         2.197225      28.000000
+max         3.663562      31.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=5.0331513887787569, pvalue=0.024888416738772054)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12748.684791044032, pvalue=0.0)
+
+
+6KmeansClusters2D-LogEmployment Centers
+
+[[  1.348445    18.28151261]
+ [  2.3309417   56.23076923]
+ [  2.82874247  68.59922929]
+ [  0.96807517   6.40708915]
+ [  1.71112465  30.46042216]
+ [  1.99183274  43.01328021]]
+
+
+
+
+6 Clusters.  Cluster Group 1
+       LogEmployment  PhoneCoTenure
+count     714.000000     714.000000
+mean        1.348445      18.281513
+std         0.948569       3.444290
+min         0.000000      13.000000
+25%         0.693147      15.000000
+50%         1.386294      18.000000
+75%         2.079442      21.000000
+max         3.465736      24.000000
+
+
+6 Clusters.  Cluster Group 2
+       LogEmployment  PhoneCoTenure
+count     806.000000     806.000000
+mean        2.330942      56.230769
+std         0.805136       3.680244
+min         0.000000      50.000000
+25%         1.945910      53.000000
+50%         2.484907      56.000000
+75%         2.890372      60.000000
+max         3.784190      62.000000
+
+
+6 Clusters.  Cluster Group 3
+       LogEmployment  PhoneCoTenure
+count    1038.000000    1038.000000
+mean        2.828742      68.599229
+std         0.680002       3.032336
+min         0.000000      63.000000
+25%         2.484907      66.000000
+50%         2.944439      69.000000
+75%         3.367296      71.000000
+max         3.970292      72.000000
+
+
+6 Clusters.  Cluster Group 4
+       LogEmployment  PhoneCoTenure
+count     931.000000     931.000000
+mean        0.968075       6.407089
+std         0.908297       3.376821
+min         0.000000       0.000000
+25%         0.000000       4.000000
+50%         0.693147       6.000000
+75%         1.791759       9.000000
+max         3.526361      12.000000
+
+
+6 Clusters.  Cluster Group 5
+       LogEmployment  PhoneCoTenure
+count     758.000000     758.000000
+mean        1.711125      30.460422
+std         0.935959       3.451937
+min         0.000000      25.000000
+25%         1.098612      27.000000
+50%         1.791759      30.000000
+75%         2.397895      33.000000
+max         3.663562      36.000000
+
+
+6 Clusters.  Cluster Group 6
+       LogEmployment  PhoneCoTenure
+count     753.000000     753.000000
+mean        1.991833      43.013280
+std         0.865310       3.706641
+min         0.000000      37.000000
+25%         1.386294      40.000000
+50%         2.079442      43.000000
+75%         2.639057      46.000000
+max         3.784190      49.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=474.34190695027797, pvalue=8.7049565823794025e-103)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12352.173927708165, pvalue=0.0)
+
+
+2KmeansClusters2D-LogAvgTotal Centers
+
+[[  3.01291517  18.42510926]
+ [  3.79736813  58.25533629]]
+
+
+
+
+2 Clusters.  Cluster Group 1
+       LogAvgTotal  PhoneCoTenure
+count  2517.000000    2517.000000
+mean      3.012915      18.425109
+std       0.769149      11.165028
+min       0.000000       0.000000
+25%       2.415914       8.000000
+50%       2.977846      18.000000
+75%       3.701414      28.000000
+max       4.639239      38.000000
+
+
+2 Clusters.  Cluster Group 2
+       LogAvgTotal  PhoneCoTenure
+count  2483.000000    2483.000000
+mean      3.797368      58.255336
+std       0.622963      10.443164
+min       1.827055      39.000000
+25%       3.317047      49.000000
+50%       3.831149      60.000000
+75%       4.260166      68.000000
+max       6.026790      72.000000
+
+
+ANOVA Test
+
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=47208.922094129266, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13836.875549744967, pvalue=0.0)
+
+
+3KmeansClusters2D-LogAvgTotal Centers
+
+[[  3.94111182  63.59106145]
+ [  2.87204411  11.56109422]
+ [  3.3439424   37.17444089]]
+
+
+
+
+3 Clusters.  Cluster Group 1
+       LogAvgTotal  PhoneCoTenure
+count  1790.000000    1790.000000
+mean      3.941112      63.591061
+std       0.573007       6.693926
+min       2.195756      51.000000
+25%       3.507073      58.000000
+50%       3.959102      64.000000
+75%       4.358279      70.000000
+max       6.026790      72.000000
+
+
+3 Clusters.  Cluster Group 2
+       LogAvgTotal  PhoneCoTenure
+count  1645.000000    1645.000000
+mean      2.872044      11.561094
+std       0.794208       6.801008
+min       0.000000       0.000000
+25%       2.246770       6.000000
+50%       2.797662      11.000000
+75%       3.627120      17.000000
+max       4.620765      24.000000
+
+
+3 Clusters.  Cluster Group 3
+       LogAvgTotal  PhoneCoTenure
+count  1565.000000    1565.000000
+mean      3.343942      37.174441
+std       0.623973       7.504277
+min       1.742163      25.000000
+25%       2.845574      31.000000
+50%       3.275886      37.000000
+75%       3.918545      44.000000
+max       4.747991      50.000000
+
+
+ANOVA Test
+
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=22803.839563935417, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13491.500397394893, pvalue=0.0)
+
+
+4KmeansClusters2D-LogAvgTotal Centers
+
+[[  4.05150194  66.54725275]
+ [  2.8017091    9.39852941]
+ [  3.25675118  29.54224774]
+ [  3.50546245  48.66761364]]
+
+
+
+
+4 Clusters.  Cluster Group 1
+       LogAvgTotal  PhoneCoTenure
+count  1365.000000    1365.000000
+mean      4.051502      66.547253
+std       0.545409       4.561586
+min       2.531374      58.000000
+25%       3.669490      63.000000
+50%       4.052220      67.000000
+75%       4.444089      71.000000
+max       6.026790      72.000000
+
+
+4 Clusters.  Cluster Group 2
+       LogAvgTotal  PhoneCoTenure
+count  1360.000000    1360.000000
+mean      2.801709       9.398529
+std       0.796489       5.341192
+min       0.000000       0.000000
+25%       2.197225       5.000000
+50%       2.715876       9.000000
+75%       3.566203      14.000000
+max       4.424847      19.000000
+
+
+4 Clusters.  Cluster Group 3
+       LogAvgTotal  PhoneCoTenure
+count  1219.000000    1219.000000
+mean      3.256751      29.542248
+std       0.653499       5.705309
+min       1.742163      20.000000
+25%       2.720660      25.000000
+50%       3.173413      30.000000
+75%       3.871347      34.000000
+max       4.639239      39.000000
+
+
+4 Clusters.  Cluster Group 4
+       LogAvgTotal  PhoneCoTenure
+count  1056.000000    1056.000000
+mean      3.505462      48.667614
+std       0.559159       5.187693
+min       1.827055      40.000000
+25%       3.074877      44.000000
+50%       3.446930      48.000000
+75%       3.992941      53.000000
+max       4.953430      57.000000
+
+
+ANOVA Test
+
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=10902.28866670718, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13162.170434072617, pvalue=0.0)
+
+
+5KmeansClusters2D-LogAvgTotal Centers
+
+[[  3.17723508  23.17699115]
+ [  3.58559385  53.20787746]
+ [  2.75630959   7.72695035]
+ [  4.10646772  67.81732419]
+ [  3.339708    37.89301802]]
+
+
+
+
+5 Clusters.  Cluster Group 1
+       LogAvgTotal  PhoneCoTenure
+count   904.000000     904.000000
+mean      3.177235      23.176991
+std       0.684324       4.357461
+min       1.824549      16.000000
+25%       2.602708      19.000000
+50%       3.059748      23.000000
+75%       3.839585      27.000000
+max       4.620765      30.000000
+
+
+5 Clusters.  Cluster Group 2
+       LogAvgTotal  PhoneCoTenure
+count   914.000000     914.000000
+mean      3.585594      53.207877
+std       0.543930       4.417989
+min       2.161572      46.000000
+25%       3.181507      49.000000
+50%       3.513782      53.000000
+75%       4.055062      57.000000
+max       5.098067      60.000000
+
+
+5 Clusters.  Cluster Group 3
+       LogAvgTotal  PhoneCoTenure
+count  1128.000000    1128.000000
+mean      2.756310       7.726950
+std       0.807877       4.214091
+min       0.000000       0.000000
+25%       2.142803       4.000000
+50%       2.663348       8.000000
+75%       3.522712      11.000000
+max       4.424847      15.000000
+
+
+5 Clusters.  Cluster Group 4
+       LogAvgTotal  PhoneCoTenure
+count  1166.000000    1166.000000
+mean      4.106468      67.817324
+std       0.531000       3.629645
+min       2.531374      61.000000
+25%       3.742775      65.000000
+50%       4.109772      69.000000
+75%       4.497816      71.000000
+max       6.026790      72.000000
+
+
+5 Clusters.  Cluster Group 5
+       LogAvgTotal  PhoneCoTenure
+count   888.000000     888.000000
+mean      3.339708      37.893018
+std       0.614501       4.342033
+min       1.742163      31.000000
+25%       2.851158      34.000000
+50%       3.270292      38.000000
+75%       3.916884      42.000000
+max       4.747991      45.000000
+
+
+ANOVA Test
+
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=3702.266138154997, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12685.100009224927, pvalue=0.0)
+
+
+6KmeansClusters2D-LogAvgTotal Centers
+
+[[  3.46748013  45.98648649]
+ [  2.7060486    6.71106557]
+ [  4.16942335  69.01656315]
+ [  3.27633891  32.36926606]
+ [  3.1220699   19.17647059]
+ [  3.69016818  58.08391608]]
+
+
+
+
+6 Clusters.  Cluster Group 1
+       LogAvgTotal  PhoneCoTenure
+count   740.000000     740.000000
+mean      3.467480      45.986486
+std       0.570812       3.677063
+min       1.827055      40.000000
+25%       3.036085      43.000000
+50%       3.381067      46.000000
+75%       3.988855      49.000000
+max       4.747991      52.000000
+
+
+6 Clusters.  Cluster Group 2
+       LogAvgTotal  PhoneCoTenure
+count   931.000000     931.000000
+mean      2.723277       6.407089
+std       0.816641       3.376821
+min       0.000000       0.000000
+25%       2.102913       4.000000
+50%       2.640485       6.000000
+75%       3.484312       9.000000
+max       4.424847      12.000000
+
+
+6 Clusters.  Cluster Group 3
+       LogAvgTotal  PhoneCoTenure
+count   966.000000     966.000000
+mean      4.169423      69.016563
+std       0.517172       2.714333
+min       2.531374      64.000000
+25%       3.808535      67.000000
+50%       4.178730      70.000000
+75%       4.543533      72.000000
+max       6.026790      72.000000
+
+
+6 Clusters.  Cluster Group 4
+       LogAvgTotal  PhoneCoTenure
+count   872.000000     872.000000
+mean      3.276339      32.369266
+std       0.638400       4.024765
+min       1.742163      26.000000
+25%       2.770983      29.000000
+50%       3.190138      32.000000
+75%       3.881740      36.000000
+max       4.639239      39.000000
+
+
+6 Clusters.  Cluster Group 5
+       LogAvgTotal  PhoneCoTenure
+count   776.000000     776.000000
+mean      3.077276      18.818299
+std       0.717002       3.773145
+min       1.560571      13.000000
+25%       2.451328      15.000000
+50%       2.934875      19.000000
+75%       3.783389      22.000000
+max       4.620765      25.000000
+
+
+6 Clusters.  Cluster Group 6
+       LogAvgTotal  PhoneCoTenure
+count   715.000000     715.000000
+mean      3.690168      58.083916
+std       0.519084       3.202101
+min       2.195756      53.000000
+25%       3.277725      55.000000
+50%       3.648651      58.000000
+75%       4.127720      61.000000
+max       5.098067      63.000000
+
+
+ANOVA Test
+
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=1420.0226545851285, pvalue=1.0547590706041607e-290)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12394.740686963298, pvalue=0.0)
+
+
+2KmeansClusters2D-Age Centers
+
+[[ 59.19173686  57.35018051]
+ [ 34.92740327  19.16633426]]
+
+
+
+
+2 Clusters.  Cluster Group 1
+               Age  PhoneCoTenure
+count  2493.000000    2493.000000
+mean     59.191737      57.350181
+std      13.195109      11.973005
+min      22.000000      19.000000
+25%      50.000000      49.000000
+50%      61.000000      59.000000
+75%      70.000000      68.000000
+max      79.000000      72.000000
+
+
+2 Clusters.  Cluster Group 2
+               Age  PhoneCoTenure
+count  2507.000000    2507.000000
+mean     34.927403      19.166334
+std      12.771908      12.436008
+min      18.000000       0.000000
+25%      25.000000       8.000000
+50%      32.000000      18.000000
+75%      43.000000      29.000000
+max      79.000000      53.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=34244.649015885712, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13833.352833229983, pvalue=0.0)
+
+
+3KmeansClusters2D-Age Centers
+
+[[ 64.49721707  63.21954236]
+ [ 31.75245807  12.93753615]
+ [ 45.91051995  40.16263603]]
+
+
+
+
+3 Clusters.  Cluster Group 1
+               Age  PhoneCoTenure
+count  1617.000000    1617.000000
+mean     64.497217      63.219542
+std       9.925223       8.225438
+min      34.000000      34.000000
+25%      57.000000      58.000000
+50%      66.000000      65.000000
+75%      73.000000      70.000000
+max      79.000000      72.000000
+
+
+3 Clusters.  Cluster Group 2
+               Age  PhoneCoTenure
+count  1725.000000    1725.000000
+mean     31.722319      12.913043
+std      11.283470       8.333498
+min      18.000000       0.000000
+25%      23.000000       6.000000
+50%      29.000000      11.000000
+75%      38.000000      19.000000
+max      75.000000      36.000000
+
+
+3 Clusters.  Cluster Group 3
+               Age  PhoneCoTenure
+count  1658.000000    1658.000000
+mean     45.907720      40.122437
+std      13.461559      11.440596
+min      21.000000      11.000000
+25%      35.000000      32.000000
+50%      45.000000      39.000000
+75%      55.000000      48.000000
+max      79.000000      72.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=33459.760686826274, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13453.358362277597, pvalue=0.0)
+
+
+4KmeansClusters2D-Age Centers
+
+[[ 37.8411215   47.63738318]
+ [ 65.33091628  63.52603823]
+ [ 58.24280783  27.24971231]
+ [ 29.09196891  12.95531088]]
+
+
+
+
+4 Clusters.  Cluster Group 1
+               Age  PhoneCoTenure
+count  1070.000000    1070.000000
+mean     37.841121      47.637383
+std       8.593458      10.242764
+min      20.000000      29.000000
+25%      31.000000      39.000000
+50%      38.000000      46.000000
+75%      44.000000      55.000000
+max      56.000000      72.000000
+
+
+4 Clusters.  Cluster Group 2
+               Age  PhoneCoTenure
+count  1517.000000    1517.000000
+mean     65.330916      63.526038
+std       8.777440       7.749637
+min      43.000000      43.000000
+25%      59.000000      58.000000
+50%      66.000000      66.000000
+75%      73.000000      71.000000
+max      79.000000      72.000000
+
+
+4 Clusters.  Cluster Group 3
+              Age  PhoneCoTenure
+count  869.000000     869.000000
+mean    58.242808      27.249712
+std      9.452877      10.477033
+min     40.000000       1.000000
+25%     51.000000      20.000000
+50%     57.000000      29.000000
+75%     65.000000      35.000000
+max     79.000000      46.000000
+
+
+4 Clusters.  Cluster Group 4
+               Age  PhoneCoTenure
+count  1544.000000    1544.000000
+mean     29.091969      12.955311
+std       8.082808       8.531742
+min      18.000000       0.000000
+25%      22.000000       6.000000
+50%      28.000000      11.000000
+75%      35.000000      20.000000
+max      52.000000      33.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=32571.795145310094, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13028.685346752723, pvalue=0.0)
+
+
+5KmeansClusters2D-Age Centers
+
+[[ 68.37931034  64.05418719]
+ [ 28.85794094   9.83798883]
+ [ 45.61926092  56.88801792]
+ [ 59.49748744  26.95226131]
+ [ 32.83928571  33.83809524]]
+
+
+
+
+5 Clusters.  Cluster Group 1
+               Age  PhoneCoTenure
+count  1218.000000    1218.000000
+mean     68.379310      64.054187
+std       6.713087       7.725276
+min      54.000000      43.000000
+25%      63.000000      59.000000
+50%      68.000000      66.000000
+75%      74.000000      71.000000
+max      79.000000      72.000000
+
+
+5 Clusters.  Cluster Group 2
+               Age  PhoneCoTenure
+count  1253.000000    1253.000000
+mean     28.857941       9.837989
+std       8.412238       6.017023
+min      18.000000       0.000000
+25%      22.000000       5.000000
+50%      27.000000       9.000000
+75%      35.000000      14.000000
+max      52.000000      23.000000
+
+
+5 Clusters.  Cluster Group 3
+              Age  PhoneCoTenure
+count  893.000000     893.000000
+mean    45.619261      56.888018
+std      8.523546       8.217940
+min     22.000000      41.000000
+25%     40.000000      50.000000
+50%     47.000000      57.000000
+75%     52.000000      63.000000
+max     61.000000      72.000000
+
+
+5 Clusters.  Cluster Group 4
+              Age  PhoneCoTenure
+count  796.000000     796.000000
+mean    59.497487      26.952261
+std      8.793722      10.758071
+min     44.000000       1.000000
+25%     52.000000      19.000000
+50%     58.000000      28.000000
+75%     66.000000      36.000000
+max     79.000000      45.000000
+
+
+5 Clusters.  Cluster Group 5
+              Age  PhoneCoTenure
+count  840.000000     840.000000
+mean    32.839286      33.838095
+std      7.347602       7.440505
+min     20.000000      20.000000
+25%     27.000000      28.000000
+50%     33.000000      33.000000
+75%     39.000000      39.000000
+max     48.000000      53.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=32242.319623091673, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12883.231486560297, pvalue=0.0)
+
+
+6KmeansClusters2D-Age Centers
+
+[[ 26.49909256   9.94192377]
+ [ 44.05342466  59.30821918]
+ [ 52.11586453  15.6969697 ]
+ [ 62.11030479  40.2743106 ]
+ [ 68.37915129  65.84501845]
+ [ 33.10911271  34.58273381]]
+
+
+
+
+6 Clusters.  Cluster Group 1
+               Age  PhoneCoTenure
+count  1102.000000    1102.000000
+mean     26.499093       9.941924
+std       6.281144       6.267159
+min      18.000000       0.000000
+25%      21.000000       5.000000
+50%      26.000000       9.000000
+75%      31.000000      15.000000
+max      41.000000      24.000000
+
+
+6 Clusters.  Cluster Group 2
+              Age  PhoneCoTenure
+count  730.000000     730.000000
+mean    44.053425      59.308219
+std      8.209108       7.173497
+min     22.000000      44.000000
+25%     38.000000      54.000000
+50%     46.000000      59.000000
+75%     51.000000      65.000000
+max     58.000000      72.000000
+
+
+6 Clusters.  Cluster Group 3
+              Age  PhoneCoTenure
+count  561.000000     561.000000
+mean    52.115865      15.696970
+std      8.939426       7.518131
+min     38.000000       1.000000
+25%     45.000000      10.000000
+50%     50.000000      16.000000
+75%     57.000000      21.000000
+max     79.000000      31.000000
+
+
+6 Clusters.  Cluster Group 4
+              Age  PhoneCoTenure
+count  689.000000     689.000000
+mean    62.110305      40.274311
+std      8.380107       7.676712
+min     47.000000      20.000000
+25%     55.000000      34.000000
+50%     61.000000      41.000000
+75%     68.000000      46.000000
+max     79.000000      54.000000
+
+
+6 Clusters.  Cluster Group 5
+               Age  PhoneCoTenure
+count  1084.000000    1084.000000
+mean     68.379151      65.845018
+std       6.807956       5.940608
+min      54.000000      50.000000
+25%      63.000000      61.000000
+50%      69.000000      68.000000
+75%      74.000000      71.000000
+max      79.000000      72.000000
+
+
+6 Clusters.  Cluster Group 6
+              Age  PhoneCoTenure
+count  834.000000     834.000000
+mean    33.109113      34.582734
+std      7.342346       7.308072
+min     20.000000      21.000000
+25%     27.000000      29.000000
+50%     33.000000      34.000000
+75%     39.000000      41.000000
+max     48.000000      53.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=31086.864272291245, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12342.830888814449, pvalue=0.0)
+
+
+2KmeansClusters3D-LogEmployment-v-LogAvgTotal Centers
+
+[[  2.46097012   3.79736813  58.25533629]
+ [  1.33704216   3.01291517  18.42510926]]
+
+
+
+
+2 Clusters.  Cluster Group 1
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    2483.000000  2483.000000    2483.000000
+mean        2.460970     3.797368      58.255336
+std         0.836777     0.622963      10.443164
+min         0.000000     1.827055      39.000000
+25%         1.945910     3.317047      49.000000
+50%         2.564949     3.831149      60.000000
+75%         3.091042     4.260166      68.000000
+max         3.970292     6.026790      72.000000
+
+
+2 Clusters.  Cluster Group 2
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    2517.000000  2517.000000    2517.000000
+mean        1.337042     3.012915      18.425109
+std         0.981465     0.769149      11.165028
+min         0.000000     0.000000       0.000000
+25%         0.693147     2.415914       8.000000
+50%         1.386294     2.977846      18.000000
+75%         2.079442     3.701414      28.000000
+max         3.688879     4.639239      38.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=6926.2358575348208, pvalue=0.0)
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=46988.234613906876, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13831.885533252791, pvalue=0.0)
+
+
+3KmeansClusters3D-LogEmployment-v-LogAvgTotal Centers
+
+[[  2.61982103   3.94111182  63.59106145]
+ [  1.13317186   2.87204411  11.56109422]
+ [  1.86733328   3.3439424   37.17444089]]
+
+
+
+
+3 Clusters.  Cluster Group 1
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1790.000000  1790.000000    1790.000000
+mean        2.619821     3.941112      63.591061
+std         0.773053     0.573007       6.693926
+min         0.000000     2.195756      51.000000
+25%         2.197225     3.507073      58.000000
+50%         2.772589     3.959102      64.000000
+75%         3.218876     4.358279      70.000000
+max         3.970292     6.026790      72.000000
+
+
+3 Clusters.  Cluster Group 2
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1645.000000  1645.000000    1645.000000
+mean        1.133172     2.872044      11.561094
+std         0.944720     0.794208       6.801008
+min         0.000000     0.000000       0.000000
+25%         0.000000     2.246770       6.000000
+50%         1.098612     2.797662      11.000000
+75%         1.945910     3.627120      17.000000
+max         3.526361     4.620765      24.000000
+
+
+3 Clusters.  Cluster Group 3
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1565.000000  1565.000000    1565.000000
+mean        1.867333     3.343942      37.174441
+std         0.914401     0.623973       7.504277
+min         0.000000     1.742163      25.000000
+25%         1.386294     2.845574      31.000000
+50%         1.945910     3.275886      37.000000
+75%         2.564949     3.918545      44.000000
+max         3.784190     4.747991      50.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=2431.8695435495724, pvalue=0.0)
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=22803.839563935417, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13491.500397394893, pvalue=0.0)
+
+
+4KmeansClusters3D-LogEmployment-v-LogAvgTotal Centers
+
+[[  2.11075232   3.47215075  47.18575293]
+ [  1.05415387   2.7910213    8.98619632]
+ [  2.71192703   4.0347641   66.14526316]
+ [  1.63165831   3.2467528   28.15834768]]
+
+
+
+
+4 Clusters.  Cluster Group 1
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1109.000000  1109.000000    1109.000000
+mean        2.110752     3.472151      47.185753
+std         0.847615     0.575664       5.489548
+min         0.000000     1.827055      38.000000
+25%         1.609438     3.046182      43.000000
+50%         2.197225     3.391465      47.000000
+75%         2.708050     3.981895      52.000000
+max         3.784190     4.953430      56.000000
+
+
+4 Clusters.  Cluster Group 2
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1304.000000  1304.000000    1304.000000
+mean        1.054154     2.791021       8.986196
+std         0.925779     0.800115       5.061840
+min         0.000000     0.000000       0.000000
+25%         0.000000     2.179341       5.000000
+50%         1.098612     2.707013       9.000000
+75%         1.791759     3.555858      13.000000
+max         3.526361     4.424847      18.000000
+
+
+4 Clusters.  Cluster Group 3
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1425.000000  1425.000000    1425.000000
+mean        2.711927     4.034764      66.145263
+std         0.741015     0.548626       4.859033
+min         0.000000     2.460937      57.000000
+25%         2.302585     3.644405      62.000000
+50%         2.833213     4.031175      67.000000
+75%         3.295837     4.433496      71.000000
+max         3.970292     6.026790      72.000000
+
+
+4 Clusters.  Cluster Group 4
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1162.000000  1162.000000    1162.000000
+mean        1.631658     3.246753      28.158348
+std         0.946700     0.656307       5.447333
+min         0.000000     1.742163      19.000000
+25%         1.098612     2.697903      24.000000
+50%         1.791759     3.159123      28.000000
+75%         2.302585     3.871163      33.000000
+max         3.663562     4.639239      37.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=292.31391063949246, pvalue=1.2848436763168919e-64)
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=9748.5463257050997, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13067.203798868617, pvalue=0.0)
+
+
+5KmeansClusters3D-LogEmployment-v-LogAvgTotal Centers
+
+[[  0.9986683    2.75630959   7.72695035]
+ [  2.30696289   3.6063586   54.83235639]
+ [  1.92396956   3.36812928  39.4375    ]
+ [  1.52128532   3.17896092  23.63333333]
+ [  2.79721753   4.13268869  68.23293904]]
+
+
+
+
+5 Clusters.  Cluster Group 1
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1128.000000  1128.000000    1128.000000
+mean        0.998668     2.756310       7.726950
+std         0.918026     0.807877       4.214091
+min         0.000000     0.000000       0.000000
+25%         0.000000     2.142803       4.000000
+50%         0.693147     2.663348       8.000000
+75%         1.791759     3.522712      11.000000
+max         3.526361     4.424847      15.000000
+
+
+5 Clusters.  Cluster Group 2
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     853.000000   853.000000     853.000000
+mean        2.306963     3.606359      54.832356
+std         0.790644     0.530534       4.021513
+min         0.000000     2.195756      48.000000
+25%         1.791759     3.197284      52.000000
+50%         2.397895     3.542171      55.000000
+75%         2.890372     4.054477      58.000000
+max         3.761200     5.098067      61.000000
+
+
+5 Clusters.  Cluster Group 3
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     960.000000   960.000000     960.000000
+mean        1.923970     3.368129      39.437500
+std         0.889323     0.607200       4.701768
+min         0.000000     1.765709      32.000000
+25%         1.386294     2.890921      35.000000
+50%         2.079442     3.303559      39.000000
+75%         2.564949     3.928060      44.000000
+max         3.784190     4.747991      47.000000
+
+
+5 Clusters.  Cluster Group 4
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     960.000000   960.000000     960.000000
+mean        1.521285     3.178961      23.633333
+std         0.950671     0.683638       4.609114
+min         0.000000     1.742163      16.000000
+25%         0.693147     2.607898      20.000000
+50%         1.609438     3.067987      24.000000
+75%         2.197225     3.841001      28.000000
+max         3.663562     4.620765      31.000000
+
+
+5 Clusters.  Cluster Group 5
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count    1099.000000  1099.000000    1099.000000
+mean        2.797218     4.132689      68.232939
+std         0.709264     0.524596       3.312004
+min         0.000000     2.531374      62.000000
+25%         2.484907     3.765470      65.000000
+50%         2.944439     4.145969      69.000000
+75%         3.332205     4.516612      71.000000
+max         3.970292     6.026790      72.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=19.947243254425903, pvalue=8.0482337459139598e-06)
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=3477.3427498583524, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12701.798911334623, pvalue=0.0)
+
+
+6KmeansClusters3D-LogEmployment-v-LogAvgTotal Centers
+
+[[  1.348445     3.06602537  18.28151261]
+ [  2.35159022   3.6802196   57.54846939]
+ [  2.05823494   3.43234647  44.82946794]
+ [  0.96807517   2.72327652   6.40708915]
+ [  2.85533734   4.16942335  69.01656315]
+ [  1.72163693   3.27866391  31.37385321]]
+
+
+
+
+6 Clusters.  Cluster Group 1
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     714.000000   714.000000     714.000000
+mean        1.348445     3.066025      18.281513
+std         0.948569     0.719679       3.444290
+min         0.000000     1.560571      13.000000
+25%         0.693147     2.444384      15.000000
+50%         1.386294     2.927376      18.000000
+75%         2.079442     3.775965      21.000000
+max         3.465736     4.620765      24.000000
+
+
+6 Clusters.  Cluster Group 2
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     784.000000   784.000000     784.000000
+mean        2.351590     3.680220      57.548469
+std         0.797017     0.516865       3.510640
+min         0.000000     2.195756      52.000000
+25%         1.945910     3.272610      54.000000
+50%         2.484907     3.642502      58.000000
+75%         2.890372     4.108093      61.000000
+max         3.828641     5.098067      63.000000
+
+
+6 Clusters.  Cluster Group 3
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     733.000000   733.000000     733.000000
+mean        2.058235     3.432346      44.829468
+std         0.855623     0.588823       3.610414
+min         0.000000     1.827055      39.000000
+25%         1.609438     2.991871      42.000000
+50%         2.197225     3.337547      45.000000
+75%         2.708050     3.964307      48.000000
+max         3.784190     4.747991      51.000000
+
+
+6 Clusters.  Cluster Group 4
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     931.000000   931.000000     931.000000
+mean        0.968075     2.723277       6.407089
+std         0.908297     0.816641       3.376821
+min         0.000000     0.000000       0.000000
+25%         0.000000     2.102913       4.000000
+50%         0.693147     2.640485       6.000000
+75%         1.791759     3.484312       9.000000
+max         3.526361     4.424847      12.000000
+
+
+6 Clusters.  Cluster Group 5
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     966.000000   966.000000     966.000000
+mean        2.855337     4.169423      69.016563
+std         0.664494     0.517172       2.714333
+min         0.000000     2.531374      64.000000
+25%         2.484907     3.808535      67.000000
+50%         2.995732     4.178730      70.000000
+75%         3.367296     4.543533      72.000000
+max         3.970292     6.026790      72.000000
+
+
+6 Clusters.  Cluster Group 6
+       LogEmployment  LogAvgTotal  PhoneCoTenure
+count     872.000000   872.000000     872.000000
+mean        1.721637     3.278664      31.373853
+std         0.933483     0.640422       3.992836
+min         0.000000     1.742163      25.000000
+25%         1.098612     2.762077      28.000000
+50%         1.791759     3.196878      31.000000
+75%         2.397895     3.885407      35.000000
+max         3.688879     4.639239      38.000000
+
+
+ANOVA Test
+
+LogEmployment vs Labels p-value: F_onewayResult(statistic=722.48734896298481, pvalue=1.0242030309625233e-153)
+LogAvgTotal vs Labels p-value: F_onewayResult(statistic=807.46555096017573, pvalue=7.0254351380211825e-171)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12237.829996308574, pvalue=0.0)
+
+
+2KmeansClusters3D-Age-v-LogEmployment Centers
+
+[[ 34.88928857   1.23675738  19.13709033]
+ [ 59.18134508   2.55466653  57.30304243]]
+
+
+
+
+2 Clusters.  Cluster Group 1
+               Age  LogEmployment  PhoneCoTenure
+count  2503.000000    2503.000000    2503.000000
+mean     34.896125       1.237480      19.143428
+std      12.752408       0.932855      12.430358
+min      18.000000       0.000000       0.000000
+25%      25.000000       0.000000       8.000000
+50%      32.000000       1.386294      18.000000
+75%      43.000000       1.945910      29.000000
+max      79.000000       3.526361      53.000000
+
+
+2 Clusters.  Cluster Group 2
+               Age  LogEmployment  PhoneCoTenure
+count  2497.000000    2497.000000    2497.000000
+mean     59.184221       2.554470      57.311974
+std      13.191381       0.747608      12.003838
+min      22.000000       0.000000      19.000000
+25%      50.000000       2.079442      49.000000
+50%      61.000000       2.639057      59.000000
+75%      70.000000       3.135494      68.000000
+max      79.000000       3.970292      72.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=34247.593149734981, pvalue=0.0)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=6966.049370897761, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13834.820426452068, pvalue=0.0)
+
+
+3KmeansClusters3D-Age-v-LogEmployment Centers
+
+[[ 45.87214886   1.9227594   39.99819928]
+ [ 31.64527421   1.01918506  12.84247375]
+ [ 64.4845679    2.79365654  63.19444444]]
+
+
+
+
+3 Clusters.  Cluster Group 1
+               Age  LogEmployment  PhoneCoTenure
+count  1665.000000    1665.000000    1665.000000
+mean     45.868468       1.922323      39.965165
+std      13.451037       0.816690      11.465196
+min      21.000000       0.000000      11.000000
+25%      35.000000       1.386294      32.000000
+50%      45.000000       1.945910      39.000000
+75%      55.000000       2.484907      48.000000
+max      79.000000       3.663562      72.000000
+
+
+3 Clusters.  Cluster Group 2
+               Age  LogEmployment  PhoneCoTenure
+count  1713.000000    1713.000000    1713.000000
+mean     31.646235       1.018644      12.831874
+std      11.255103       0.896101       8.294224
+min      18.000000       0.000000       0.000000
+25%      23.000000       0.000000       6.000000
+50%      29.000000       1.098612      11.000000
+75%      38.000000       1.791759      19.000000
+max      75.000000       3.526361      36.000000
+
+
+3 Clusters.  Cluster Group 3
+               Age  LogEmployment  PhoneCoTenure
+count  1622.000000    1622.000000    1622.000000
+mean     64.455610       2.793045      63.194205
+std       9.950535       0.623858       8.234975
+min      34.000000       0.693147      34.000000
+25%      57.000000       2.397895      58.000000
+50%      66.000000       2.890372      65.000000
+75%      73.000000       3.286402      70.000000
+max      79.000000       3.970292      72.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=33483.942783766564, pvalue=0.0)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=2261.7107490445987, pvalue=0.0)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13465.450953993446, pvalue=0.0)
+
+
+4KmeansClusters3D-Age-v-LogEmployment Centers
+
+[[ 58.24280783   2.26171137  27.24971231]
+ [ 29.09196891   0.91494276  12.95531088]
+ [ 37.8411215    1.7060827   47.63738318]
+ [ 65.33091628   2.81629312  63.52603823]]
+
+
+
+
+4 Clusters.  Cluster Group 1
+              Age  LogEmployment  PhoneCoTenure
+count  869.000000     869.000000     869.000000
+mean    58.242808       2.261711      27.249712
+std      9.452877       0.662543      10.477033
+min     40.000000       0.000000       1.000000
+25%     51.000000       1.791759      20.000000
+50%     57.000000       2.302585      29.000000
+75%     65.000000       2.772589      35.000000
+max     79.000000       3.784190      46.000000
+
+
+4 Clusters.  Cluster Group 2
+               Age  LogEmployment  PhoneCoTenure
+count  1544.000000    1544.000000    1544.000000
+mean     29.091969       0.914943      12.955311
+std       8.082808       0.851647       8.531742
+min      18.000000       0.000000       0.000000
+25%      22.000000       0.000000       6.000000
+50%      28.000000       0.693147      11.000000
+75%      35.000000       1.609438      20.000000
+max      52.000000       3.044522      33.000000
+
+
+4 Clusters.  Cluster Group 3
+              Age  LogEmployment  PhoneCoTenure
+count  1072.00000    1072.000000    1072.000000
+mean     37.87500       1.704949      47.638060
+std       8.62115       0.825038      10.233208
+min      20.00000       0.000000      29.000000
+25%      31.00000       1.098612      39.000000
+50%      38.00000       1.791759      46.000000
+75%      44.25000       2.302585      55.000000
+max      56.00000       3.433987      72.000000
+
+
+4 Clusters.  Cluster Group 4
+               Age  LogEmployment  PhoneCoTenure
+count  1515.000000    1515.000000    1515.000000
+mean     65.343234       2.818561      63.546535
+std       8.776677       0.619154       7.734168
+min      43.000000       0.693147      43.000000
+25%      59.000000       2.484907      58.000000
+50%      66.000000       2.890372      66.000000
+75%      73.000000       3.295837      71.000000
+max      79.000000       3.970292      72.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=32483.697661953989, pvalue=0.0)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=132.56846652246685, pvalue=1.7484621143023091e-30)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12982.212991740904, pvalue=0.0)
+
+
+5KmeansClusters3D-Age-v-LogEmployment Centers
+
+[[ 59.49748744   2.28349513  26.95226131]
+ [ 68.47394541   2.87771301  64.04797353]
+ [ 28.92975533   0.88009537   9.96369376]
+ [ 32.85269461   1.32912771  34.18323353]
+ [ 45.79731243   2.18835869  57.07614782]]
+
+
+
+
+5 Clusters.  Cluster Group 1
+              Age  LogEmployment  PhoneCoTenure
+count  796.000000     796.000000     796.000000
+mean    59.497487       2.283495      26.952261
+std      8.793722       0.665980      10.758071
+min     44.000000       0.000000       1.000000
+25%     52.000000       1.791759      19.000000
+50%     58.000000       2.302585      28.000000
+75%     66.000000       2.772589      36.000000
+max     79.000000       3.784190      45.000000
+
+
+5 Clusters.  Cluster Group 2
+               Age  LogEmployment  PhoneCoTenure
+count  1209.000000    1209.000000    1209.000000
+mean     68.473945       2.877713      64.047974
+std       6.645682       0.627187       7.738761
+min      54.000000       0.693147      43.000000
+25%      63.000000       2.484907      59.000000
+50%      69.000000       2.995732      66.000000
+75%      74.000000       3.367296      71.000000
+max      79.000000       3.970292      72.000000
+
+
+5 Clusters.  Cluster Group 3
+               Age  LogEmployment  PhoneCoTenure
+count  1267.000000    1267.000000    1267.000000
+mean     28.929755       0.880095       9.963694
+std       8.419808       0.850203       6.101843
+min      18.000000       0.000000       0.000000
+25%      22.000000       0.000000       5.000000
+50%      27.000000       0.693147       9.000000
+75%      35.000000       1.609438      15.000000
+max      52.000000       3.044522      23.000000
+
+
+5 Clusters.  Cluster Group 4
+              Age  LogEmployment  PhoneCoTenure
+count  835.000000     835.000000     835.000000
+mean    32.852695       1.329128      34.183234
+std      7.361257       0.839548       7.392634
+min     20.000000       0.000000      21.000000
+25%     27.000000       0.693147      28.000000
+50%     33.000000       1.386294      33.000000
+75%     39.000000       1.945910      40.000000
+max     48.000000       3.044522      54.000000
+
+
+5 Clusters.  Cluster Group 5
+              Age  LogEmployment  PhoneCoTenure
+count  893.000000     893.000000     893.000000
+mean    45.797312       2.188359      57.076148
+std      8.528264       0.727965       8.197589
+min     22.000000       0.000000      41.000000
+25%     40.000000       1.791759      50.000000
+50%     47.000000       2.302585      57.000000
+75%     52.000000       2.772589      64.000000
+max     61.000000       3.555348      72.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=31972.704046779287, pvalue=0.0)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=8.1440138880043165, pvalue=0.0043292318841113226)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12743.489590644862, pvalue=0.0)
+
+
+6KmeansClusters3D-Age-v-LogEmployment Centers
+
+[[ 68.39239332   2.91592252  65.9025974 ]
+ [ 26.51314597   0.72179138   9.93381686]
+ [ 43.97771588   2.1418738   59.52924791]
+ [ 61.92724679   2.45682278  40.58630528]
+ [ 33.11961722   1.36012097  34.61363636]
+ [ 52.27304965   2.01997214  15.76950355]]
+
+
+
+
+6 Clusters.  Cluster Group 1
+               Age  LogEmployment  PhoneCoTenure
+count  1080.000000    1080.000000    1080.000000
+mean     68.406481       2.915474      65.874074
+std       6.800518       0.611303       5.914660
+min      54.000000       0.693147      50.000000
+25%      63.000000       2.564949      61.000000
+50%      69.000000       3.044522      68.000000
+75%      74.000000       3.401197      71.000000
+max      79.000000       3.970292      72.000000
+
+
+6 Clusters.  Cluster Group 2
+               Age  LogEmployment  PhoneCoTenure
+count  1103.000000    1103.000000    1103.000000
+mean     26.513146       0.721791       9.933817
+std       6.295618       0.764346       6.270098
+min      18.000000       0.000000       0.000000
+25%      21.000000       0.000000       5.000000
+50%      26.000000       0.693147       9.000000
+75%      31.000000       1.386294      15.000000
+max      42.000000       2.833213      24.000000
+
+
+6 Clusters.  Cluster Group 3
+              Age  LogEmployment  PhoneCoTenure
+count  719.000000     719.000000     719.000000
+mean    43.993046       2.142230      59.518776
+std      8.231755       0.749014       7.077909
+min     22.000000       0.000000      44.000000
+25%     38.000000       1.609438      54.000000
+50%     46.000000       2.302585      60.000000
+75%     51.000000       2.708050      65.000000
+max     58.000000       3.496508      72.000000
+
+
+6 Clusters.  Cluster Group 4
+              Age  LogEmployment  PhoneCoTenure
+count  698.000000     698.000000     698.000000
+mean    61.896848       2.456286      40.541547
+std      8.398313       0.645898       7.602885
+min     47.000000       0.000000      22.000000
+25%     55.000000       1.979293      34.000000
+50%     61.000000       2.484907      41.000000
+75%     68.000000       2.944439      47.000000
+max     79.000000       3.784190      54.000000
+
+
+6 Clusters.  Cluster Group 5
+              Age  LogEmployment  PhoneCoTenure
+count  836.000000     836.000000     836.000000
+mean    33.119617       1.360121      34.613636
+std      7.338687       0.841890       7.326942
+min     20.000000       0.000000      21.000000
+25%     27.000000       0.693147      29.000000
+50%     33.000000       1.386294      34.000000
+75%     39.000000       1.979293      41.000000
+max     48.000000       3.044522      53.000000
+
+
+6 Clusters.  Cluster Group 6
+              Age  LogEmployment  PhoneCoTenure
+count  564.000000     564.000000     564.000000
+mean    52.273050       2.019972      15.769504
+std      9.064986       0.670725       7.494229
+min     38.000000       0.000000       1.000000
+25%     45.000000       1.609438      10.000000
+50%     50.000000       2.079442      16.000000
+75%     57.000000       2.484907      21.000000
+max     79.000000       3.526361      31.000000
+
+
+ANOVA Test
+
+Age vs Labels p-value: F_onewayResult(statistic=31583.640516487074, pvalue=0.0)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=86.841433284860258, pvalue=1.4243858804816509e-20)
+PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12578.72096532342, pvalue=0.0)
+
+
