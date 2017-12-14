@@ -29,15 +29,36 @@ def import_data():
     df = pd.read_csv(FROM_ANALYSIS, dtype=forced_types)
     cluster_df = pd.DataFrame()
     cluster_df['LogEmployment'] = df['LogEmployment']
-    cluster_df['LogAvgTotal'] = df['LogAvgTotal']
+    cluster_df['Age'] = df['Age'].astype(np.int64)
     cluster_df['PhoneCoTenure'] = df['PhoneCoTenure']
+    cluster_df['LogAvgTotal'] = df['LogAvgTotal']
     return cluster_df
 
-def kmeans_cluster_graphs(df):
+def kmeans_cluster_graphs_2d(df):
+    headers = list(df)
+    kmeans_results = {}
+    for num_clusters in range(2,7):
+        title = str(num_clusters) + "KmeansClusters2D"
+        kmodel = KMeans(n_clusters=num_clusters)
+        kfit = kmodel.fit(df)
+        kcluster = kmodel.predict(df)
+        fig = plt.figure(num_clusters-1)
+        ax = plt.scatter(
+            df[df.columns[0]],
+            df[df.columns[1]],
+            c=colormap[kcluster])
+        kmeans_results[title] = kfit
+        plt.xlabel(headers[0])
+        plt.ylabel(headers[1])
+        plt.title(title)
+        fig.show()
+    return kmeans_results
+
+def kmeans_cluster_graphs_3d(df):
     headers = list(df)
     kmeans_results = {}
     for num_clusters in range(2, 7):
-        title = str(num_clusters) + "KmeansClusters"
+        title = str(num_clusters) + "KmeansClusters3D"
         kmodel = KMeans(n_clusters=num_clusters)
         kfit = kmodel.fit(df)
         kcluster = kmodel.predict(df)
@@ -53,13 +74,13 @@ def kmeans_cluster_graphs(df):
         ax.set_ylabel(headers[1])
         ax.set_zlabel(headers[2])
         plt.title(title)
-        fig.show()
+        #fig.show()
     return kmeans_results
 
 def ward_cluster_graphs(df):
     headers = list(df)
     ward_results = {}
-    for num_clusters in range(7, 12):
+    for num_clusters in range(2, 7):
         title = str(num_clusters) + "WardHierarchical"
         wmodel = AgglomerativeClustering(
             n_clusters=num_clusters,
@@ -77,34 +98,51 @@ def ward_cluster_graphs(df):
         ax.set_ylabel(headers[1])
         ax.set_zlabel(headers[2])
         plt.title(title)
-        wfig.show()
+        #wfig.show()
     return ward_results
 
 def k_means_analysis(df):
-    results = kmeans_cluster_graphs(df)
-    # Do the math to convert them back to not-logarithm
-    # Perform ANOVA on clusters vs data
+    emp_df = pd.DataFrame()
+    emp_df['LogEmployment'] = df['LogEmployment']
+    emp_df['PhoneCoTenure'] = df['PhoneCoTenure']
+    result_emp_len = kmeans_cluster_graphs_2d(emp_df)
+    #input()
 
-    i = 2
+    bill_df = pd.DataFrame()
+    bill_df['LogAvgTotal'] = df['LogAvgTotal']
+    bill_df['PhoneCoTenure'] = df['PhoneCoTenure']
+    result_avg_bill = kmeans_cluster_graphs_2d(bill_df)
+    #input()
+
+    region_df = pd.DataFrame()
+    #region_df['Age'] = df['Age']
+    region_df['CardTenure'] = df['CardTenure']
+    region_df['PhoneCoTenure'] = df['PhoneCoTenure']
+    result_region = kmeans_cluster_graphs_2d(region_df)
+    #input()
+
+    results3d = kmeans_cluster_graphs_3d(df)
+    input()
     log_results = {}
-    for result in sorted(results):
-        #print(result + " centers\n")
-        #print(results[result].cluster_centers_)
-        log_results[result] = results[result].cluster_centers_
-        i = i+1
+    for result in sorted(results3d):
+        log_results[result] = results3d[result].cluster_centers_
+    for result in sorted(result_emp_len):
+        log_results[result] = result_emp_len[result].cluster_centers_
+    for result in sorted(result_avg_bill):
+        log_results[result] = result_avg_bill[result].cluster_centers_
 
     real_results = denormalize_centers(log_results)
-    #print("Real_Results\n")
     for center in sorted(real_results):
         print(center + '\n')
         print(real_results[center])
         print('\n')
 
-    input()
+    
 
 def ward_analysis(df):
     results = ward_cluster_graphs(df)
-    input()
+    # Perform Anova Test using df and generated grouping.
+    #input()
 
 def denormalize_centers(results):
     # first cal is log of employment length +1, change back
@@ -118,8 +156,8 @@ def denormalize_centers(results):
 
 def main():
     cluster_df = import_data()
-    #k_means_analysis(cluster_df)
-    ward_analysis(cluster_df)
+    k_means_analysis(cluster_df)
+    #ward_analysis(cluster_df)
 
 
 if __name__ == "__main__":
