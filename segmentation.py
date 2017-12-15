@@ -142,6 +142,10 @@ def stats_analysis(df, results, is_kmeans):
             single_cluster_df = tmp_df[tmp_df['Labels'] == c_count]
             print("\n")
             print(str(n_lim) + " Clusters.  Cluster Group " + str(c_count + 1))
+            if 'LogEmployment' in single_cluster_df:
+                single_cluster_df['Employment'] = single_cluster_df['LogEmployment'].apply(np.exp)
+            if 'LogAvgTotal' in single_cluster_df:
+                single_cluster_df['AvgTotal'] = single_cluster_df['LogAvgTotal'].apply(np.exp)
             print(single_cluster_df.describe())
             c_count = c_count + 1
         n_lim = n_lim + 1
@@ -244,10 +248,10 @@ def denormalize_centers(results):
 
 def main():
     cluster_df = import_data()
-    print("K Means Testing!\n")
-    k_means_analysis(cluster_df)
-    #print("\n\nWard Testing!\n")
-    #ward_analysis(cluster_df)
+    #print("K Means Testing!\n")
+    #k_means_analysis(cluster_df)
+    print("\n\nWard Testing!\n")
+    ward_analysis(cluster_df)
 
 
 if __name__ == "__main__":
