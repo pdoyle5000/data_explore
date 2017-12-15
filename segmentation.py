@@ -82,7 +82,7 @@ def ward_cluster_graphs_2d(df):
     headers=list(df)
     ward_results = {}
     for num_clusters in range(2, 7):
-        title = str(num_clusters) + "WardHeirarchical2D"
+        title = str(num_clusters) + "WardHeirarchical2D-" + headers[0]
         wmodel = AgglomerativeClustering(
                 n_clusters=num_clusters,
                 linkage='ward')
@@ -104,7 +104,7 @@ def ward_cluster_graphs_3d(df):
     headers = list(df)
     ward_results = {}
     for num_clusters in range(2, 7):
-        title = str(num_clusters) + "WardHierarchical3D"
+        title = str(num_clusters) + "WardHierarchical3D-" + headers[0] + "-v-" + headers[1]
         wmodel = AgglomerativeClustering(
             n_clusters=num_clusters,
             linkage='ward')

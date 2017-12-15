@@ -1,6 +1,6 @@
 Ward Testing!
 
-2WardHeirarchical2D Ward Alg
+2WardHeirarchical2D-LogEmployment Ward Alg
 
 
 
@@ -34,7 +34,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=7459.4995748744468, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13869.688389437979, pvalue=0.0)
 
 
-3WardHeirarchical2D Ward Alg
+3WardHeirarchical2D-LogEmployment Ward Alg
 
 
 
@@ -80,7 +80,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=3510.9243483210635, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13621.593787773645, pvalue=0.0)
 
 
-4WardHeirarchical2D Ward Alg
+4WardHeirarchical2D-LogEmployment Ward Alg
 
 
 
@@ -138,7 +138,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=605.77464027988128, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13190.577155941606, pvalue=0.0)
 
 
-5WardHeirarchical2D Ward Alg
+5WardHeirarchical2D-LogEmployment Ward Alg
 
 
 
@@ -208,7 +208,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=15.338408183525994, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12856.396163962569, pvalue=0.0)
 
 
-6WardHeirarchical2D Ward Alg
+6WardHeirarchical2D-LogEmployment Ward Alg
 
 
 
@@ -290,7 +290,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=46.377906632807232, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12632.537225709035, pvalue=0.0)
 
 
-2WardHeirarchical2D Ward Alg
+2WardHeirarchical2D-LogAvgTotal Ward Alg
 
 
 
@@ -324,7 +324,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=53436.362936608166, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13945.283752179292, pvalue=0.0)
 
 
-3WardHeirarchical2D Ward Alg
+3WardHeirarchical2D-LogAvgTotal Ward Alg
 
 
 
@@ -370,7 +370,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=23361.30880885847, pvalu
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13498.595358579299, pvalue=0.0)
 
 
-4WardHeirarchical2D Ward Alg
+4WardHeirarchical2D-LogAvgTotal Ward Alg
 
 
 
@@ -428,7 +428,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=12666.413026100205, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13266.434871392012, pvalue=0.0)
 
 
-5WardHeirarchical2D Ward Alg
+5WardHeirarchical2D-LogAvgTotal Ward Alg
 
 
 
@@ -498,7 +498,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=5429.5229744720782, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12936.750997720515, pvalue=0.0)
 
 
-6WardHeirarchical2D Ward Alg
+6WardHeirarchical2D-LogAvgTotal Ward Alg
 
 
 
@@ -580,7 +580,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=1911.0091652320762, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12514.58377700012, pvalue=0.0)
 
 
-2WardHeirarchical2D Ward Alg
+2WardHeirarchical2D-Age Ward Alg
 
 
 
@@ -614,7 +614,7 @@ Age vs Labels p-value: F_onewayResult(statistic=34383.802118460124, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13902.499774565204, pvalue=0.0)
 
 
-3WardHeirarchical2D Ward Alg
+3WardHeirarchical2D-Age Ward Alg
 
 
 
@@ -660,7 +660,7 @@ Age vs Labels p-value: F_onewayResult(statistic=33772.35572545496, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13606.212455279434, pvalue=0.0)
 
 
-4WardHeirarchical2D Ward Alg
+4WardHeirarchical2D-Age Ward Alg
 
 
 
@@ -718,7 +718,7 @@ Age vs Labels p-value: F_onewayResult(statistic=33367.452871006288, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13419.251627157826, pvalue=0.0)
 
 
-5WardHeirarchical2D Ward Alg
+5WardHeirarchical2D-Age Ward Alg
 
 
 
@@ -788,7 +788,7 @@ Age vs Labels p-value: F_onewayResult(statistic=32499.725259382994, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13007.412197643578, pvalue=0.0)
 
 
-6WardHeirarchical2D Ward Alg
+6WardHeirarchical2D-Age Ward Alg
 
 
 
@@ -870,7 +870,7 @@ Age vs Labels p-value: F_onewayResult(statistic=31697.428310040992, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12633.961048550778, pvalue=0.0)
 
 
-2WardHierarchical3D Ward Alg
+2WardHierarchical3D-LogEmployment-v-LogAvgTotal Ward Alg
 
 
 
@@ -905,7 +905,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=56508.585637318472, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13984.719867173158, pvalue=0.0)
 
 
-3WardHierarchical3D Ward Alg
+3WardHierarchical3D-LogEmployment-v-LogAvgTotal Ward Alg
 
 
 
@@ -952,7 +952,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=23603.785316899117, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13536.883940701491, pvalue=0.0)
 
 
-4WardHierarchical3D Ward Alg
+4WardHierarchical3D-LogEmployment-v-LogAvgTotal Ward Alg
 
 
 
@@ -1011,7 +1011,7 @@ LogAvgTotal vs Labels p-value: F_onewayResult(statistic=11273.093456037524, pval
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13181.40278453407, pvalue=0.0)
 
 
-5WardHierarchical3D Ward Alg
+5WardHierarchical3D-LogEmployment-v-LogAvgTotal Ward Alg
 
 
 
@@ -1077,12 +1077,12 @@ max         3.526361     4.424847      10.000000   34.000000   83.500000
 
 ANOVA Test
 
-LogEmployment vs Labels p-value: F_onewayResult(statistic=76.428805703547624, pvalue=2.6500656374161656e-18)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=76.428805703547624, pvalue=2.6500656374161467e-18)
 LogAvgTotal vs Labels p-value: F_onewayResult(statistic=5456.006426643271, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12940.858254837984, pvalue=0.0)
 
 
-6WardHierarchical3D Ward Alg
+6WardHierarchical3D-LogEmployment-v-LogAvgTotal Ward Alg
 
 
 
@@ -1160,12 +1160,12 @@ max         3.970292     6.026790      72.000000   53.000000  414.382639
 
 ANOVA Test
 
-LogEmployment vs Labels p-value: F_onewayResult(statistic=162.96122844410507, pvalue=4.9600465465407292e-37)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=162.96122844410507, pvalue=4.9600465465408002e-37)
 LogAvgTotal vs Labels p-value: F_onewayResult(statistic=1735.6336179392001, pvalue=0.0)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12499.924177796242, pvalue=0.0)
 
 
-2WardHierarchical3D Ward Alg
+2WardHierarchical3D-Age-v-LogEmployment Ward Alg
 
 
 
@@ -1200,7 +1200,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=7626.6934982344937, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13880.904714006048, pvalue=0.0)
 
 
-3WardHierarchical3D Ward Alg
+3WardHierarchical3D-Age-v-LogEmployment Ward Alg
 
 
 
@@ -1247,7 +1247,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=4128.9196072110126, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13664.813058489624, pvalue=0.0)
 
 
-4WardHierarchical3D Ward Alg
+4WardHierarchical3D-Age-v-LogEmployment Ward Alg
 
 
 
@@ -1302,11 +1302,11 @@ max     65.000000       3.555348      72.000000   35.000000
 ANOVA Test
 
 Age vs Labels p-value: F_onewayResult(statistic=33302.479238679844, pvalue=0.0)
-LogEmployment vs Labels p-value: F_onewayResult(statistic=1424.6094825453843, pvalue=1.4143949837625938e-291)
+LogEmployment vs Labels p-value: F_onewayResult(statistic=1424.6094825453843, pvalue=1.4143949837624331e-291)
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=13389.530856521425, pvalue=0.0)
 
 
-5WardHierarchical3D Ward Alg
+5WardHierarchical3D-Age-v-LogEmployment Ward Alg
 
 
 
@@ -1377,7 +1377,7 @@ LogEmployment vs Labels p-value: F_onewayResult(statistic=1.8341720715950682, pv
 PhoneCoTenure vs Labels p-value: F_onewayResult(statistic=12768.123125493443, pvalue=0.0)
 
 
-6WardHierarchical3D Ward Alg
+6WardHierarchical3D-Age-v-LogEmployment Ward Alg
 
 
 
