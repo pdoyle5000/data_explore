@@ -1,5 +1,3 @@
-
-
 Ward Testing!
 
 2WardHeirarchical2D Ward Alg
