@@ -1,4 +1,4 @@
-```pip3 dependencies: pandas xlrd numpy scipy```
+```pip3 dependencies: pandas xlrd numpy scipy sklearn```
 
 To run:
 `./univariate_analysis.py`
